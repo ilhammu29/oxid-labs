@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Authentication // OXID LABS</title>
 
+    <!-- Browser Tab Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" href="{{ asset('images/oxid-logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/oxid-logo.png') }}">
+
     <!-- Anti-FOUT Theme Engine Execution -->
     <script>
         (function() {
