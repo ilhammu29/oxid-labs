@@ -9,9 +9,9 @@
     <meta name="color-scheme" content="dark light">
 
     <!-- Browser Tab Favicon & Touch Icons -->
-    <link rel="icon" type="image/png" href="{{ asset('images/oxid-logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-white.png') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-    <link rel="apple-touch-icon" href="{{ asset('images/oxid-logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/favicon-white.png') }}">
 
     <!-- Early Theme Detection Script (Guarantees zero FOUT / theme flash) -->
     <script>

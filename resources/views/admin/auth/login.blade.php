@@ -6,9 +6,9 @@
     <title>Admin Authentication // OXID LABS</title>
 
     <!-- Browser Tab Favicon & Touch Icons -->
-    <link rel="icon" type="image/png" href="{{ asset('images/oxid-logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-white.png') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-    <link rel="apple-touch-icon" href="{{ asset('images/oxid-logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/favicon-white.png') }}">
 
     <!-- Anti-FOUT Theme Engine Execution -->
     <script>
