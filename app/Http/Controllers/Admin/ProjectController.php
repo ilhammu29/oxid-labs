@@ -109,6 +109,7 @@ class ProjectController extends Controller
         // Handle thumbnail: upload file or custom URL
         if ($request->hasFile('thumbnail')) {
             $path = $request->file('thumbnail')->store('projects', 'public');
+            $this->mirrorToPublic($path);
             $validated['thumbnail'] = $path;
         } elseif (!empty($validated['thumbnail_url'])) {
             $validated['thumbnail'] = $validated['thumbnail_url'];
@@ -192,10 +193,9 @@ class ProjectController extends Controller
         // Handle thumbnail
         if ($request->hasFile('thumbnail')) {
             // Remove previous local file if applicable
-            if ($project->thumbnail && !Str::startsWith($project->thumbnail, ['http://', 'https://'])) {
-                Storage::disk('public')->delete($project->thumbnail);
-            }
+            $this->deletePublicThumbnail($project->thumbnail);
             $path = $request->file('thumbnail')->store('projects', 'public');
+            $this->mirrorToPublic($path);
             $validated['thumbnail'] = $path;
         } elseif (!empty($validated['thumbnail_url'])) {
             $validated['thumbnail'] = $validated['thumbnail_url'];
@@ -215,9 +215,7 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        if ($project->thumbnail && !Str::startsWith($project->thumbnail, ['http://', 'https://'])) {
-            Storage::disk('public')->delete($project->thumbnail);
-        }
+        $this->deletePublicThumbnail($project->thumbnail);
 
         $project->delete();
 
@@ -244,5 +242,48 @@ class ProjectController extends Controller
         $state = $project->is_featured ? 'featured' : 'standard';
 
         return back()->with('success', "Project marked as {$state}.");
+    }
+
+    /**
+     * Mirror a storage/app/public file to public_path('storage/...') for environments
+     * where storage symlinks are disabled or separated.
+     */
+    private function mirrorToPublic(string $path): void
+    {
+        try {
+            $source = storage_path('app/public/' . $path);
+            $destination = public_path('storage/' . $path);
+
+            if (file_exists($source) && is_file($source)) {
+                $destDir = dirname($destination);
+                if (!is_dir($destDir)) {
+                    @mkdir($destDir, 0755, true);
+                }
+                @copy($source, $destination);
+            }
+        } catch (\Throwable $e) {
+            // Fail gracefully
+        }
+    }
+
+    /**
+     * Remove a file from both storage/app/public and public_path('storage/...').
+     */
+    private function deletePublicThumbnail(?string $path): void
+    {
+        if (!$path || Str::startsWith($path, ['http://', 'https://'])) {
+            return;
+        }
+
+        try {
+            Storage::disk('public')->delete($path);
+        } catch (\Throwable $e) {}
+
+        try {
+            $publicFile = public_path('storage/' . $path);
+            if (file_exists($publicFile) && is_file($publicFile)) {
+                @unlink($publicFile);
+            }
+        } catch (\Throwable $e) {}
     }
 }

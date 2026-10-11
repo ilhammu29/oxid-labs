@@ -42,3 +42,8 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::patch('inquiries/{inquiry}/toggle-read', [InquiryController::class, 'toggleRead'])->name('inquiries.toggle-read');
     Route::delete('inquiries/{inquiry}', [InquiryController::class, 'destroy'])->name('inquiries.destroy');
 });
+
+// Storage Fallback Serving (cPanel / shared-hosting symlink fallback & auto-mirroring)
+Route::get('/storage/{path}', [HomeController::class, 'servePublicStorage'])
+    ->where('path', '.*')
+    ->name('storage.fallback');

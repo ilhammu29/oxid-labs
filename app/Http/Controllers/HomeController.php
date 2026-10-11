@@ -191,4 +191,47 @@ class HomeController extends Controller
 
         return back()->with('success', 'Transmission received. The OXID Labs engineering team will evaluate your inquiry shortly.');
     }
+
+    /**
+     * Fallback file server for public storage assets (especially in environments
+     * like cPanel shared hosting where symlinks are disabled or document roots separated).
+     * Automatically mirrors requested file from storage/app/public to public/storage.
+     */
+    public function servePublicStorage(string $path)
+    {
+        // Prevent directory traversal attacks
+        if (str_contains($path, '..') || str_contains($path, '\\')) {
+            abort(404);
+        }
+
+        // Prevent serving sensitive script or system extensions
+        $extension = strtolower(pathinfo($path, PATHINFO_EXTENSION));
+        $disallowed = ['php', 'phtml', 'phar', 'sh', 'bash', 'exe', 'env', 'htaccess', 'ini', 'config'];
+        if (in_array($extension, $disallowed, true)) {
+            abort(404);
+        }
+
+        $publicFile = public_path('storage/' . $path);
+        if (file_exists($publicFile) && is_file($publicFile)) {
+            return response()->file($publicFile);
+        }
+
+        $storageFile = storage_path('app/public/' . $path);
+        if (file_exists($storageFile) && is_file($storageFile)) {
+            // Self-heal: mirror to public path so subsequent requests bypass PHP and load via web server
+            try {
+                $publicDir = dirname($publicFile);
+                if (!is_dir($publicDir)) {
+                    @mkdir($publicDir, 0755, true);
+                }
+                @copy($storageFile, $publicFile);
+            } catch (\Throwable $e) {
+                // Silently continue if permissions restrict writing in public directory
+            }
+
+            return response()->file($storageFile);
+        }
+
+        abort(404);
+    }
 }

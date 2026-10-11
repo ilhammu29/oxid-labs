@@ -218,4 +218,45 @@ class SecurityAndQualityAuditTest extends TestCase
         $inquiryIndex->assertStatus(200);
         $this->assertDoesNotMatchRegularExpression("/return confirm\('[^']*'[^']*'\)/", $inquiryIndex->getContent());
     }
+
+    /**
+     * 7. Test storage fallback route serves valid files and denies path traversal or unsafe file types.
+     */
+    public function test_storage_fallback_route_serves_valid_files_and_blocks_traversal(): void
+    {
+        $testDir = storage_path('app/public/test-audit');
+        if (!is_dir($testDir)) {
+            mkdir($testDir, 0755, true);
+        }
+        $testFile = $testDir . '/sample.png';
+        file_put_contents($testFile, base64_decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=='));
+
+        try {
+            // Valid storage file serving
+            $response = $this->get('/storage/test-audit/sample.png');
+            $response->assertStatus(200);
+
+            // Path traversal protection
+            $this->get('/storage/../.env')->assertStatus(404);
+            $this->get('/storage/test-audit/../../etc/passwd')->assertStatus(404);
+
+            // Disallowed file extension protection
+            $this->get('/storage/test-audit/test.php')->assertStatus(404);
+
+            // Non-existent file
+            $this->get('/storage/test-audit/nonexistent.png')->assertStatus(404);
+        } finally {
+            if (file_exists($testFile)) {
+                @unlink($testFile);
+            }
+            if (is_dir($testDir)) {
+                @rmdir($testDir);
+            }
+            $mirroredFile = public_path('storage/test-audit/sample.png');
+            if (file_exists($mirroredFile)) {
+                @unlink($mirroredFile);
+                @rmdir(dirname($mirroredFile));
+            }
+        }
+    }
 }
