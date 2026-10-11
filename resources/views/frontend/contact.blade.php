@@ -68,7 +68,16 @@
                     <form id="contact-form" action="{{ route('contact.submit') }}" method="POST" class="space-y-5">
                         @csrf
                         
-                        <!-- Name & Email -->
+                        <!-- Anti-spam Honeypot Field (Hidden from real human users) -->
+                        <div style="position: absolute; left: -9999px; top: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+                            <input type="text" name="website" tabindex="-1" autocomplete="off" value="">
+                        </div>
+
+                        @if($errors->has('contact'))
+                            <div class="p-3.5 rounded-lg bg-rose-500/10 border border-rose-500/30 text-rose-300 font-mono text-xs">
+                                {{ $errors->first('contact') }}
+                            </div>
+                        @endif
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div class="space-y-1.5">
                                 <label for="name" class="block text-xs font-mono uppercase tracking-wider text-night-muted">Name *</label>

@@ -153,7 +153,7 @@
                                         Edit
                                     </a>
 
-                                    <form action="{{ route('admin.projects.destroy', $p) }}" method="POST" class="inline" onsubmit="return confirm('Confirm permanent deletion of {{ $p->title }}?')">
+                                    <form action="{{ route('admin.projects.destroy', $p) }}" method="POST" class="inline" data-title="{{ $p->title }}" onsubmit="return confirm('Confirm permanent deletion of: ' + this.getAttribute('data-title') + '?')">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="px-3 py-1.5 rounded-lg bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 font-medium text-xs transition-colors font-mono cursor-pointer">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ContactInquiry;
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
 
 class HomeController extends Controller
 {
@@ -115,10 +116,43 @@ class HomeController extends Controller
     }
 
     /**
-     * Handle contact form inquiry submission.
+     * Handle contact form inquiry submission with rate limiting and anti-spam defenses.
      */
     public function submitInquiry(Request $request)
     {
+        $ip = $request->ip() ?: '127.0.0.1';
+        $throttleKey = 'contact-submission|' . $ip;
+
+        if (RateLimiter::tooManyAttempts($throttleKey, 5)) {
+            $seconds = RateLimiter::availableIn($throttleKey);
+            $throttleMessage = "Transmission limit reached. Please wait {$seconds} seconds before sending another inquiry.";
+
+            if ($request->ajax() || $request->wantsJson()) {
+                return response()->json([
+                    'success' => false,
+                    'message' => $throttleMessage,
+                ], 429);
+            }
+
+            return back()->withErrors([
+                'contact' => $throttleMessage,
+            ])->withInput();
+        }
+
+        // Honeypot check: if hidden field is filled, silently drop to avoid training spam bots
+        if ($request->filled('website')) {
+            RateLimiter::hit($throttleKey, 600);
+
+            if ($request->ajax() || $request->wantsJson()) {
+                return response()->json([
+                    'success' => true,
+                    'message' => 'Transmission received. The OXID Labs engineering team will evaluate your inquiry shortly.'
+                ]);
+            }
+
+            return back()->with('success', 'Transmission received. The OXID Labs engineering team will evaluate your inquiry shortly.');
+        }
+
         $validated = $request->validate([
             'name' => 'required|string|max:100',
             'email' => 'required|email|max:150',
@@ -126,6 +160,7 @@ class HomeController extends Controller
             'project_type' => 'nullable|string|max:100',
             'timeline' => 'nullable|string|max:100',
             'message' => 'required|string|max:3000',
+            'website' => 'nullable|string|max:100',
         ]);
 
         $subject = $validated['subject'] ?? ($validated['project_type'] ?? 'Project Inquiry');
@@ -144,6 +179,8 @@ class HomeController extends Controller
             'subject' => $subject,
             'message' => $messageContent,
         ]);
+
+        RateLimiter::hit($throttleKey, 300);
 
         if ($request->ajax() || $request->wantsJson()) {
             return response()->json([

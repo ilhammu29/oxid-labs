@@ -89,7 +89,7 @@
                                         </button>
                                     </form>
 
-                                    <form action="{{ route('admin.inquiries.destroy', $inquiry) }}" method="POST" class="inline" onsubmit="return confirm('Purge transmission from {{ $inquiry->name }}?')">
+                                    <form action="{{ route('admin.inquiries.destroy', $inquiry) }}" method="POST" class="inline" data-sender="{{ $inquiry->name }}" onsubmit="return confirm('Purge transmission from: ' + this.getAttribute('data-sender') + '?')">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="px-2.5 py-1.5 rounded-lg bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 text-[11px] font-mono transition-colors cursor-pointer">

@@ -26,7 +26,7 @@ Route::get('/api/projects/{slug}', [HomeController::class, 'getProjectDetail'])-
 // Admin Authentication
 Route::get('/admin/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/admin/login', [AuthController::class, 'login'])->name('login.post');
-Route::post('/admin/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/admin/logout', [AuthController::class, 'logout'])->middleware('auth')->name('logout');
 
 // Admin Panel (Protected with auth and admin authorization)
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {

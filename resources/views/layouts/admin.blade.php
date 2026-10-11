@@ -143,7 +143,7 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex bg-night-base text-night-text antialiased selection:bg-night-cyan selection:text-white">
+<body class="min-h-screen flex bg-night-base text-night-text antialiased selection:bg-night-cyan selection:text-white overflow-x-hidden">
 
     <!-- Desktop Left Sidebar -->
     <aside class="w-72 border-r border-night-border bg-night-surface flex flex-col justify-between hidden lg:flex shrink-0 z-30 transition-colors">

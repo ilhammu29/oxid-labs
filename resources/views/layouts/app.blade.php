@@ -375,7 +375,7 @@
     </style>
     @stack('styles')
 </head>
-<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-night-cyan selection:text-white">
+<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-night-cyan selection:text-white overflow-x-hidden">
 
     <!-- Atmospheric Ambiance -->
     <div class="ambient-night-sky"></div>

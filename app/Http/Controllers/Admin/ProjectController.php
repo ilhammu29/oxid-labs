@@ -158,10 +158,19 @@ class ProjectController extends Controller
         ]);
 
         if (!empty($validated['slug'])) {
-            $validated['slug'] = Str::slug($validated['slug']);
+            $slug = Str::slug($validated['slug']);
         } else {
-            $validated['slug'] = Str::slug($validated['title']);
+            $slug = Str::slug($validated['title']);
         }
+
+        // Ensure slug uniqueness (excluding current project)
+        $originalSlug = $slug;
+        $counter = 1;
+        while (Project::where('slug', $slug)->where('id', '!=', $project->id)->exists()) {
+            $slug = "{$originalSlug}-{$counter}";
+            $counter++;
+        }
+        $validated['slug'] = $slug;
 
         // Parse tech stack tags
         $techStack = [];
