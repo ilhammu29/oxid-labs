@@ -7,7 +7,10 @@
     <!-- ========================================================================= -->
     <!-- HERO SECTION: CLEAN MINIMALIST HERO WITH REAL DEVICE MOCKUP SHOWCASE       -->
     <!-- ========================================================================= -->
-    <section class="relative w-full min-h-[85vh] flex flex-col justify-center overflow-hidden bg-night-base pt-10 pb-16 sm:pb-20">
+    <!-- ========================================================================= -->
+    <!-- HERO SECTION: CLEAN MINIMALIST HERO WITH REAL DEVICE MOCKUP SHOWCASE       -->
+    <!-- ========================================================================= -->
+    <section class="relative w-full min-h-[85vh] flex flex-col justify-center overflow-hidden bg-[#0E0E10] text-white pt-10 pb-16 sm:pb-20">
         
         <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 w-full">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -15,44 +18,44 @@
                 <!-- Hero Left: High-Impact Typography & Conversion Actions -->
                 <div class="lg:col-span-7 space-y-6 pt-2 lg:pt-0 text-left">
                     <!-- Category Eyebrow Badge -->
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 dark:bg-white/10 border border-slate-200 dark:border-white/15">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        <span class="text-[11px] font-mono tracking-widest uppercase text-slate-700 dark:text-slate-300 font-semibold">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-[11px] font-mono tracking-widest uppercase text-zinc-300 font-semibold">
                             WEB DEVELOPMENT SERVICES
                         </span>
                     </div>
 
                     <!-- Main Headline (Direct match with reference) -->
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-night-text tracking-tight leading-[1.12]">
-                        Landing Page <span class="text-slate-900 dark:text-white">Profesional</span> untuk <span class="text-slate-700 dark:text-slate-300">Bisnis &amp; Produk Anda</span>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
+                        Landing Page <span class="text-white">Profesional</span> untuk <span class="text-zinc-400">Bisnis &amp; Produk Anda</span>
                     </h1>
 
                     <!-- Subtitle / Value Proposition -->
-                    <p class="text-base sm:text-lg text-night-muted max-w-xl leading-relaxed font-normal">
+                    <p class="text-base sm:text-lg text-zinc-400 max-w-xl leading-relaxed font-normal">
                         Dari landing page hingga website lengkap, kami bantu wujudkan kehadiran digital yang modern, cepat, dan berorientasi pada hasil.
                     </p>
 
                     <!-- Primary Conversion Action Buttons -->
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                        <a href="#pricing" class="px-8 py-4 text-xs sm:text-sm font-semibold btn-pill-primary shadow-md">
+                        <a href="#pricing" class="px-8 py-4 text-xs sm:text-sm font-semibold btn-pill-white shadow-lg">
                             <span>Mulai Sekarang</span>
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                         </a>
                         
-                        <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="px-7 py-4 text-xs sm:text-sm font-semibold btn-pill-secondary flex items-center justify-center gap-2.5">
-                            <svg class="w-4 h-4 text-slate-600 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                        <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="px-7 py-4 text-xs sm:text-sm font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all flex items-center justify-center gap-2.5">
+                            <svg class="w-4 h-4 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
                             <span>Konsultasi Gratis via Chat / Email</span>
                         </a>
                     </div>
 
                     <!-- Client Trust & Delivery Assurance Note -->
-                    <div class="pt-2 flex items-center gap-6 text-xs text-night-dim font-mono">
+                    <div class="pt-2 flex items-center gap-6 text-xs text-zinc-400 font-mono">
                         <div class="flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                             <span>Estimasi 1 &ndash; 7 Hari</span>
                         </div>
                         <div class="flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                             <span>Garansi Support Teknis</span>
                         </div>
                     </div>
@@ -71,84 +74,80 @@
 
                     <!-- Floating Badges Layer (Below mockup - exact match with reference) -->
                     <div class="grid grid-cols-3 gap-3 w-full mt-6">
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-night-surface border border-night-border text-center shadow-sm hover:border-night-border-active transition-all">
-                            <div class="text-emerald-500 mb-1 flex justify-center">
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#151518] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
+                            <div class="text-emerald-400 mb-1 flex justify-center">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
                             </div>
-                            <div class="text-[11px] font-bold text-night-text leading-tight">Fast Loading</div>
-                            <div class="text-[10px] text-night-dim font-mono">&lt; 1.5s</div>
+                            <div class="text-[11px] font-bold text-white leading-tight">Fast Loading</div>
+                            <div class="text-[10px] text-zinc-400 font-mono">&lt; 1.5s</div>
                         </div>
 
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-night-surface border border-night-border text-center shadow-sm hover:border-night-border-active transition-all">
-                            <div class="text-slate-800 dark:text-zinc-200 mb-1 flex justify-center">
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#151518] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
+                            <div class="text-zinc-200 mb-1 flex justify-center">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                             </div>
-                            <div class="text-[11px] font-bold text-night-text leading-tight">Modern Design</div>
-                            <div class="text-[10px] text-night-dim font-mono">Responsive</div>
+                            <div class="text-[11px] font-bold text-white leading-tight">Modern Design</div>
+                            <div class="text-[10px] text-zinc-400 font-mono">Responsive</div>
                         </div>
 
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-night-surface border border-night-border text-center shadow-sm hover:border-night-border-active transition-all">
-                            <div class="text-slate-800 dark:text-zinc-200 mb-1 flex justify-center">
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#151518] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
+                            <div class="text-zinc-200 mb-1 flex justify-center">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                             </div>
-                            <div class="text-[11px] font-bold text-night-text leading-tight">Clean Code</div>
-                            <div class="text-[10px] text-night-dim font-mono">Easy to Scale</div>
+                            <div class="text-[11px] font-bold text-white leading-tight">Clean Code</div>
+                            <div class="text-[10px] text-zinc-400 font-mono">Easy to Scale</div>
                         </div>
                     </div>
 
                 </div>
-
-            </div>
-        </div>
 
             </div>
         </div>
 
         <!-- Horizontal Key Benefits Ribbon -->
         <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 mt-16 w-full">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-2xl bg-night-surface border border-night-border shadow-sm">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-2xl bg-[#151518] border border-white/10 shadow-sm">
                 <div class="flex items-center gap-3 p-2">
-                    <div class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white flex-shrink-0">
+                    <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-night-text">Proses Cepat</div>
-                        <div class="text-[11px] text-night-dim">1 – 7 hari kerja</div>
+                        <div class="text-xs font-bold text-white">Proses Cepat</div>
+                        <div class="text-[11px] text-zinc-400">1 – 7 hari kerja</div>
                     </div>
                 </div>
 
                 <div class="flex items-center gap-3 p-2">
-                    <div class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white flex-shrink-0">
+                    <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-night-text">Desain Modern</div>
-                        <div class="text-[11px] text-night-dim">Responsive di semua perangkat</div>
+                        <div class="text-xs font-bold text-white">Desain Modern</div>
+                        <div class="text-[11px] text-zinc-400">Responsive di semua perangkat</div>
                     </div>
                 </div>
 
                 <div class="flex items-center gap-3 p-2">
-                    <div class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white flex-shrink-0">
+                    <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-night-text">Kode Bersih</div>
-                        <div class="text-[11px] text-night-dim">Mudah dikembangkan</div>
+                        <div class="text-xs font-bold text-white">Kode Bersih</div>
+                        <div class="text-[11px] text-zinc-400">Mudah dikembangkan</div>
                     </div>
                 </div>
 
                 <div class="flex items-center gap-3 p-2">
-                    <div class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white flex-shrink-0">
+                    <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-night-text">Support Teknis</div>
-                        <div class="text-[11px] text-night-dim">Setelah project selesai</div>
+                        <div class="text-xs font-bold text-white">Support Teknis</div>
+                        <div class="text-[11px] text-zinc-400">Setelah project selesai</div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
 

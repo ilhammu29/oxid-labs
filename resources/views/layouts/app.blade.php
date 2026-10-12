@@ -361,13 +361,35 @@
         }
         html[data-theme="dark"] #global-header.header-scrolled,
         html.theme-dark #global-header.header-scrolled {
-            background-color: rgba(11, 15, 23, 0.90) !important;
+            background-color: rgba(14, 14, 16, 0.90) !important;
             border-bottom-color: var(--color-border) !important;
+        }
+
+        /* High-contrast header navigation over black hero on home page */
+        body.is-home #global-header.header-top nav a {
+            color: #94a3b8;
+        }
+        body.is-home #global-header.header-top nav a:hover,
+        body.is-home #global-header.header-top nav a.text-night-text {
+            color: #ffffff !important;
+        }
+        body.is-home #global-header.header-top .text-night-text {
+            color: #ffffff;
+        }
+        body.is-home #global-header.header-top .text-night-dim {
+            color: #94a3b8;
+        }
+        body.is-home #global-header.header-top .btn-pill-primary {
+            background-color: #ffffff;
+            color: #111113;
+        }
+        body.is-home #global-header.header-top .btn-pill-primary:hover {
+            background-color: #f4f4f6;
         }
     </style>
     @stack('styles')
 </head>
-<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden">
+<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden {{ request()->routeIs('home') ? 'is-home' : '' }}">
 
     <!-- Unified Global Header Navigation -->
     <header id="global-header" class="fixed top-0 left-0 right-0 z-50 header-top border-b transition-all duration-300">
