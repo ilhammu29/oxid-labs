@@ -56,6 +56,14 @@ class HomeController extends Controller
     }
 
     /**
+     * Display the dedicated Pricing Catalog page.
+     */
+    public function pricing()
+    {
+        return view('frontend.pricing');
+    }
+
+    /**
      * Display the dedicated Services page.
      */
     public function services()

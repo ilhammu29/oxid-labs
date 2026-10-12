@@ -204,4 +204,20 @@ class OxidLabsFeatureTest extends TestCase
         $response->assertSee('Name *');
         $response->assertSee('Email Address *');
     }
+
+    /**
+     * Test pricing page loads with discount packages.
+     */
+    public function test_pricing_page_loads(): void
+    {
+        $response = $this->get('/pricing');
+
+        $response->assertStatus(200);
+        $response->assertSee('Katalog Harga Layanan');
+        $response->assertSee('Starter Landing Page');
+        $response->assertSee('E-Commerce WhatsApp');
+        $response->assertSee('PROMO LAUNCHING STUDIO');
+    }
 }
+
+

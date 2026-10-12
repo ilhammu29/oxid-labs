@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 // Public Multi-Page Frontend
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/products', [HomeController::class, 'products'])->name('products');
+Route::get('/pricing', [HomeController::class, 'pricing'])->name('pricing');
+Route::redirect('/katalog-harga', '/pricing');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/capabilities', [HomeController::class, 'capabilities'])->name('capabilities');
 Route::get('/studio', [HomeController::class, 'studio'])->name('studio');

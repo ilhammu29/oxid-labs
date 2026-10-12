@@ -417,7 +417,7 @@
                 <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Layanan
                 </a>
-                <a href="{{ route('home') }}#pricing" class="hover:text-night-text transition-colors">
+                <a href="{{ route('pricing') }}" class="{{ request()->routeIs('pricing*') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Katalog Harga
                 </a>
                 <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
@@ -452,42 +452,42 @@
         </div>
     </header>
 
-    <!-- Accessible Mobile Drawer Menu -->
-    <div id="mobile-nav-drawer" class="hidden lg:hidden fixed inset-x-0 top-20 bottom-0 z-40 bg-night-base/98 backdrop-blur-xl px-6 py-8 flex flex-col justify-between overflow-y-auto border-t border-night-border">
+    <!-- Accessible Mobile Drawer Menu (Matte Black #0E0E10 matching Section 1) -->
+    <div id="mobile-nav-drawer" class="hidden lg:hidden fixed inset-x-0 top-20 bottom-0 z-40 bg-[#0E0E10] text-white backdrop-blur-2xl px-6 py-8 flex flex-col justify-between overflow-y-auto border-t border-white/10">
         <div class="space-y-4">
-            <div class="text-[11px] font-mono uppercase tracking-widest text-night-dim mb-2">Navigasi Utama</div>
-            <a href="{{ route('home') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('home') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+            <div class="text-[11px] font-mono uppercase tracking-widest text-zinc-500 mb-2">Navigasi Utama</div>
+            <a href="{{ route('home') }}" class="flex items-center justify-between py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('home') ? 'text-white font-bold' : 'text-zinc-400 hover:text-white' }}">
                 <span>Home</span>
-                <span class="text-xs text-night-dim font-mono">01</span>
+                <span class="text-xs text-zinc-500 font-mono">01</span>
             </a>
-            <a href="{{ route('services') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('services') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+            <a href="{{ route('services') }}" class="flex items-center justify-between py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('services') ? 'text-white font-bold' : 'text-zinc-400 hover:text-white' }}">
                 <span>Layanan</span>
-                <span class="text-xs text-night-dim font-mono">02</span>
+                <span class="text-xs text-zinc-500 font-mono">02</span>
             </a>
-            <a href="{{ route('home') }}#pricing" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider text-night-muted">
+            <a href="{{ route('pricing') }}" class="flex items-center justify-between py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('pricing*') ? 'text-white font-bold' : 'text-zinc-400 hover:text-white' }}">
                 <span>Katalog Harga</span>
-                <span class="text-xs text-night-dim font-mono">03</span>
+                <span class="text-xs text-zinc-500 font-mono">03</span>
             </a>
-            <a href="{{ route('products') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('products') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+            <a href="{{ route('products') }}" class="flex items-center justify-between py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('products') ? 'text-white font-bold' : 'text-zinc-400 hover:text-white' }}">
                 <span>Produk & Portofolio</span>
-                <span class="text-xs text-night-dim font-mono">04</span>
+                <span class="text-xs text-zinc-500 font-mono">04</span>
             </a>
-            <a href="{{ route('capabilities') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('capabilities') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+            <a href="{{ route('capabilities') }}" class="flex items-center justify-between py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('capabilities') ? 'text-white font-bold' : 'text-zinc-400 hover:text-white' }}">
                 <span>Kemampuan</span>
-                <span class="text-xs text-night-dim font-mono">05</span>
+                <span class="text-xs text-zinc-500 font-mono">05</span>
             </a>
-            <a href="{{ route('studio') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('studio') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+            <a href="{{ route('studio') }}" class="flex items-center justify-between py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('studio') ? 'text-white font-bold' : 'text-zinc-400 hover:text-white' }}">
                 <span>Studio</span>
-                <span class="text-xs text-night-dim font-mono">06</span>
+                <span class="text-xs text-zinc-500 font-mono">06</span>
             </a>
-            <a href="{{ route('contact') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('contact*') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+            <a href="{{ route('contact') }}" class="flex items-center justify-between py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('contact*') ? 'text-white font-bold' : 'text-zinc-400 hover:text-white' }}">
                 <span>Kontak</span>
-                <span class="text-xs text-night-dim font-mono">07</span>
+                <span class="text-xs text-zinc-500 font-mono">07</span>
             </a>
         </div>
 
         <div class="pt-8 space-y-4">
-            <a href="{{ route('contact') }}" class="w-full py-3.5 text-center text-xs font-semibold btn-pill-primary shadow-lg">
+            <a href="{{ route('contact') }}" class="w-full py-3.5 text-center text-xs font-semibold btn-pill-white shadow-lg">
                 Konsultasi Gratis Sekarang
             </a>
         </div>

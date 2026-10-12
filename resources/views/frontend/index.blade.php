@@ -37,7 +37,7 @@
 
                     <!-- Primary Conversion Action Buttons -->
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                        <a href="#pricing" class="px-8 py-4 text-xs sm:text-sm font-semibold btn-pill-white shadow-lg">
+                        <a href="{{ route('pricing') }}" class="px-8 py-4 text-xs sm:text-sm font-semibold btn-pill-white shadow-lg">
                             <span>Mulai Sekarang</span>
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                         </a>
@@ -74,7 +74,7 @@
 
                     <!-- Floating Badges Layer (Below mockup - exact match with reference) -->
                     <div class="grid grid-cols-3 gap-3 w-full mt-6">
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#151518] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#0E0E10] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
                             <div class="text-emerald-400 mb-1 flex justify-center">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
                             </div>
@@ -82,7 +82,7 @@
                             <div class="text-[10px] text-zinc-400 font-mono">&lt; 1.5s</div>
                         </div>
 
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#151518] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#0E0E10] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
                             <div class="text-zinc-200 mb-1 flex justify-center">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                             </div>
@@ -90,7 +90,7 @@
                             <div class="text-[10px] text-zinc-400 font-mono">Responsive</div>
                         </div>
 
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#151518] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#0E0E10] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
                             <div class="text-zinc-200 mb-1 flex justify-center">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                             </div>
@@ -106,7 +106,7 @@
 
         <!-- Horizontal Key Benefits Ribbon -->
         <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 mt-16 w-full">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-2xl bg-[#151518] border border-white/10 shadow-sm">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-2xl bg-[#0E0E10] border border-white/10 shadow-sm">
                 <div class="flex items-center gap-3 p-2">
                     <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
