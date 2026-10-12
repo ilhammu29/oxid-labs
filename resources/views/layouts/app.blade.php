@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="dark">
+<html lang="id" class="scroll-smooth" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'OXID LABS — Independent Digital Product Studio')</title>
-    <meta name="description" content="@yield('meta_description', 'OXID Labs is an independent technology and digital product studio building software, SaaS products, and intelligent digital workflows.')">
+    <title>@yield('title', 'OXID LABS — Solusi Website & Digital untuk Bisnis & Produk Anda')</title>
+    <meta name="description" content="@yield('meta_description', 'OXID Labs menyediakan layanan pembuatan landing page, website company profile, e-commerce, web application, dan sistem digital modern yang berorientasi pada hasil.')">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="color-scheme" content="dark light">
+    <meta name="color-scheme" content="light dark">
 
     <!-- Browser Tab Favicon & Touch Icons -->
     <link rel="icon" type="image/png" href="{{ asset('images/favicon-white.png') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link rel="apple-touch-icon" href="{{ asset('images/favicon-white.png') }}">
 
-    <!-- Early Theme Detection Script (Guarantees zero FOUT / theme flash) -->
+    <!-- Early Theme Detection Script -->
     <script>
         (function() {
             try {
                 const stored = localStorage.getItem('oxid_theme');
-                const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-                const theme = stored ? stored : (prefersLight ? 'light' : 'dark');
+                // Default to light to match user reference, unless user explicitly chose dark
+                const theme = stored ? stored : 'light';
                 document.documentElement.setAttribute('data-theme', theme);
                 if (theme === 'light') {
                     document.documentElement.classList.add('theme-light');
@@ -35,12 +35,13 @@
     <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN with Centralized Semantic Variable Mapping -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: ['class', '[data-theme="dark"]'],
             theme: {
                 extend: {
                     colors: {
@@ -83,101 +84,91 @@
 
     <style>
         /* ========================================================================= */
-        /* CENTRALIZED SEMANTIC DESIGN TOKENS (DARK & LIGHT THEMES)                   */
+        /* CENTRALIZED SEMANTIC DESIGN TOKENS (LIGHT & DARK THEMES)                   */
         /* ========================================================================= */
         :root,
-        html[data-theme="dark"],
-        html.theme-dark {
-            /* Background Surfaces */
-            --color-bg-base: #080D18;
-            --color-bg-midnight: #0B1425;
-            --color-bg-navy: #101C32;
-            --color-bg-surface: #0D1629;
-            --color-bg-raised: #111E36;
-
-            /* Borders */
-            --color-border: rgba(167, 178, 197, 0.12);
-            --color-border-subtle: rgba(255, 255, 255, 0.06);
-            --color-border-active: rgba(56, 189, 248, 0.32);
-
-            /* Typography */
-            --color-text-primary: #F2F5FA;
-            --color-text-muted: #A7B2C5;
-            --color-text-dim: #5E6D84;
-
-            /* Accents */
-            --color-accent-cyan: #00E5FF;
-            --color-accent-cyan-muted: #38BDF8;
-            --color-accent-violet: #8B5CF6;
-
-            /* Buttons & Controls */
-            --color-btn-primary-bg: #F2F5FA;
-            --color-btn-primary-text: #080D18;
-            --color-btn-primary-border: #F2F5FA;
-            --color-btn-primary-hover: #E2E8F0;
-
-            --color-btn-secondary-bg: rgba(255, 255, 255, 0.04);
-            --color-btn-secondary-hover: rgba(255, 255, 255, 0.08);
-
-            /* Scrollbars */
-            --color-scrollbar-thumb: #17243C;
-            --color-scrollbar-hover: #25395E;
-
-            /* Card Highlights */
-            --color-spotlight: rgba(56, 189, 248, 0.08);
-            --color-card-shadow: 0 10px 30px -10px rgba(4, 7, 14, 0.6);
-            --color-card-shadow-hover: 0 16px 36px -12px rgba(4, 7, 14, 0.8), 0 0 24px -6px rgba(56, 189, 248, 0.12);
-
-            /* Hero Atmosphere Glow */
-            --color-hero-glow: rgba(8, 13, 24, 0.70);
-            --color-hero-glow-outer: rgba(8, 13, 24, 0.35);
-        }
-
         html[data-theme="light"],
         html.theme-light {
-            /* Background Surfaces: Crisp, airy tech studio environment */
-            --color-bg-base: #F4F7FC;
-            --color-bg-midnight: #EAF0F8;
-            --color-bg-navy: #E1E8F2;
+            /* Background Surfaces: Crisp, pristine, modern digital studio */
+            --color-bg-base: #F8F9FA;
+            --color-bg-midnight: #F1F5F9;
+            --color-bg-navy: #E2E8F0;
             --color-bg-surface: #FFFFFF;
-            --color-bg-raised: #F8FAFD;
+            --color-bg-raised: #FFFFFF;
 
-            /* Borders: High-definition structural lines */
-            --color-border: rgba(36, 56, 90, 0.14);
-            --color-border-subtle: rgba(36, 56, 90, 0.08);
-            --color-border-active: rgba(2, 132, 199, 0.45);
+            /* Borders */
+            --color-border: #E2E8F0;
+            --color-border-subtle: #F1F5F9;
+            --color-border-active: #0B0F19;
 
-            /* Typography: High contrast, readable slate */
-            --color-text-primary: #172033;
-            --color-text-muted: #4A5870;
-            --color-text-dim: #71829D;
+            /* Typography */
+            --color-text-primary: #0F172A;
+            --color-text-muted: #475569;
+            --color-text-dim: #94A3B8;
 
-            /* Accents: Vibrant ocean blue and royal violet */
+            /* Accents */
             --color-accent-cyan: #0284C7;
-            --color-accent-cyan-muted: #087FA8;
-            --color-accent-violet: #6855C5;
+            --color-accent-cyan-muted: #0369A1;
+            --color-accent-violet: #6366F1;
 
             /* Buttons & Controls */
-            --color-btn-primary-bg: #172033;
+            --color-btn-primary-bg: #0B0F19;
             --color-btn-primary-text: #FFFFFF;
-            --color-btn-primary-border: #172033;
-            --color-btn-primary-hover: #23304A;
+            --color-btn-primary-border: #0B0F19;
+            --color-btn-primary-hover: #000000;
 
-            --color-btn-secondary-bg: rgba(23, 32, 51, 0.04);
-            --color-btn-secondary-hover: rgba(23, 32, 51, 0.08);
+            --color-btn-secondary-bg: #FFFFFF;
+            --color-btn-secondary-hover: #F8FAFC;
+
+            /* Shadows */
+            --color-card-shadow: 0 2px 10px -2px rgba(15, 23, 42, 0.04), 0 1px 3px -1px rgba(15, 23, 42, 0.02);
+            --color-card-shadow-hover: 0 12px 28px -6px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
 
             /* Scrollbars */
             --color-scrollbar-thumb: #CBD5E1;
             --color-scrollbar-hover: #94A3B8;
+        }
 
-            /* Card Highlights */
-            --color-spotlight: rgba(2, 132, 199, 0.06);
-            --color-card-shadow: 0 8px 24px -6px rgba(23, 32, 51, 0.07);
-            --color-card-shadow-hover: 0 16px 36px -10px rgba(23, 32, 51, 0.12), 0 0 20px -5px rgba(2, 132, 199, 0.14);
+        html[data-theme="dark"],
+        html.theme-dark {
+            /* Background Surfaces: Deep obsidian midnight */
+            --color-bg-base: #0B0F17;
+            --color-bg-midnight: #0F172A;
+            --color-bg-navy: #1E293B;
+            --color-bg-surface: #111827;
+            --color-bg-raised: #1A2234;
 
-            /* Hero Atmosphere Glow */
-            --color-hero-glow: rgba(244, 247, 252, 0.75);
-            --color-hero-glow-outer: rgba(244, 247, 252, 0.40);
+            /* Borders */
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-border-subtle: rgba(255, 255, 255, 0.04);
+            --color-border-active: rgba(255, 255, 255, 0.25);
+
+            /* Typography */
+            --color-text-primary: #F8FAFC;
+            --color-text-muted: #94A3B8;
+            --color-text-dim: #64748B;
+
+            /* Accents */
+            --color-accent-cyan: #38BDF8;
+            --color-accent-cyan-muted: #0284C7;
+            --color-accent-violet: #818CF8;
+
+            /* Buttons & Controls */
+            --color-btn-primary-bg: #FFFFFF;
+            --color-btn-primary-text: #0B0F19;
+            --color-btn-primary-border: #FFFFFF;
+            --color-btn-primary-hover: #E2E8F0;
+
+            --color-btn-secondary-bg: rgba(255, 255, 255, 0.05);
+            --color-btn-secondary-hover: rgba(255, 255, 255, 0.1);
+
+            /* Shadows */
+            --color-card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+            --color-card-shadow-hover: 0 14px 32px -4px rgba(0, 0, 0, 0.6);
+
+            /* Scrollbars */
+            --color-scrollbar-thumb: #1E293B;
+            --color-scrollbar-hover: #334155;
         }
 
         body {
@@ -190,68 +181,88 @@
             transition: background-color 0.25s ease, color 0.25s ease;
         }
 
-        ::selection {
-            background: var(--color-accent-cyan);
-            color: #FFFFFF;
+        /* Pill Buttons */
+        .btn-pill-primary {
+            background-color: var(--color-btn-primary-bg);
+            color: var(--color-btn-primary-text);
+            font-weight: 600;
+            border-radius: 9999px;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-pill-primary:hover {
+            background-color: var(--color-btn-primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
         }
 
-        /* Atmospheric Ambiance (Adapts dynamically between dark cosmos & light sky) */
-        .ambient-night-sky {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            background: 
-                radial-gradient(ellipse 950px 500px at 50% -5%, rgba(35, 76, 135, 0.18), transparent 70%),
-                radial-gradient(circle 850px at 85% 35%, rgba(16, 37, 70, 0.22), transparent 70%),
-                radial-gradient(circle 900px at 15% 85%, rgba(22, 45, 85, 0.18), transparent 75%);
-            transition: background 0.3s ease;
+        .btn-pill-secondary {
+            background-color: var(--color-btn-secondary-bg);
+            color: var(--color-text-primary);
+            font-weight: 600;
+            border: 1px solid var(--color-border);
+            border-radius: 9999px;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-pill-secondary:hover {
+            background-color: var(--color-btn-secondary-hover);
+            border-color: var(--color-border-active);
+            transform: translateY(-1px);
         }
 
-        html.theme-light .ambient-night-sky {
-            background: 
-                radial-gradient(ellipse 950px 500px at 50% -5%, rgba(186, 230, 253, 0.35), transparent 70%),
-                radial-gradient(circle 850px at 85% 35%, rgba(199, 210, 254, 0.25), transparent 70%),
-                radial-gradient(circle 900px at 15% 85%, rgba(224, 231, 255, 0.30), transparent 75%);
+        .btn-pill-white {
+            background-color: #FFFFFF;
+            color: #0B0F19;
+            font-weight: 600;
+            border-radius: 9999px;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-pill-white:hover {
+            background-color: #F1F5F9;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
 
-        html.theme-light #night-sky-stars {
-            display: none;
-        }
-
-        /* Architectural Card Surface with Tactile Spotlight */
-        .night-card {
-            position: relative;
+        /* Standard Studio Card */
+        .studio-card {
             background-color: var(--color-bg-surface);
             border: 1px solid var(--color-border);
+            border-radius: 1.25rem;
             box-shadow: var(--color-card-shadow);
-            transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
-            transform-style: preserve-3d;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .night-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: inherit;
-            background: radial-gradient(420px circle at var(--mouse-x, -999px) var(--mouse-y, -999px), var(--color-spotlight), transparent 70%);
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: 1;
-        }
-        .night-card:hover::before {
-            opacity: 1;
-        }
-        .night-card:hover {
+        .studio-card:hover {
             border-color: var(--color-border-active);
             box-shadow: var(--color-card-shadow-hover);
+            transform: translateY(-2px);
         }
 
-        /* Interface Scroll Reveal System */
+        /* Floating Trust Badges */
+        .floating-badge {
+            background-color: var(--color-bg-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 1rem;
+            box-shadow: var(--color-card-shadow);
+            transition: all 0.2s ease;
+        }
+        .floating-badge:hover {
+            border-color: var(--color-border-active);
+            transform: translateY(-1px);
+        }
+
+        /* Scroll Reveal System */
         .reveal-init {
             opacity: 0;
-            transform: translateY(22px);
-            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(18px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: opacity, transform;
         }
         .reveal-active {
@@ -264,78 +275,19 @@
         .delay-250 { transition-delay: 250ms; }
         .delay-300 { transition-delay: 300ms; }
 
-        /* Modal Fluid Entrance & Exit Transitions */
-        #project-modal {
-            opacity: 0;
-            transition: opacity 0.22s ease-out;
-        }
-        #project-modal.modal-visible {
-            opacity: 1;
-        }
-        #modal-card {
-            opacity: 0;
-            transform: scale(0.97) translateY(12px);
-            transition: opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1), transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        #modal-card.card-visible {
-            opacity: 1;
-            transform: scale(1) translateY(0);
-        }
-
-        html.theme-light #project-modal {
-            background-color: rgba(15, 23, 42, 0.45) !important;
-        }
-
-        /* Prefers-Reduced-Motion Full Compliance */
         @media (prefers-reduced-motion: reduce) {
             .reveal-init {
                 opacity: 1 !important;
                 transform: none !important;
                 transition: none !important;
             }
-            .night-card {
-                transform: none !important;
-                transition: none !important;
-            }
-            .night-card::before {
-                display: none !important;
-            }
-            #project-modal, #modal-card {
-                opacity: 1 !important;
+            .studio-card, .btn-pill-primary, .btn-pill-secondary, .floating-badge {
                 transform: none !important;
                 transition: none !important;
             }
         }
 
-        /* Architectural Button System */
-        .btn-night-primary {
-            background-color: var(--color-btn-primary-bg);
-            color: var(--color-btn-primary-text);
-            font-weight: 600;
-            border: 1px solid var(--color-btn-primary-border);
-            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .btn-night-primary:hover {
-            background-color: var(--color-btn-primary-hover);
-            border-color: var(--color-btn-primary-hover);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-        }
-
-        .btn-night-secondary {
-            background-color: var(--color-btn-secondary-bg);
-            color: var(--color-text-primary);
-            font-weight: 500;
-            border: 1px solid var(--color-border);
-            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .btn-night-secondary:hover {
-            background-color: var(--color-btn-secondary-hover);
-            border-color: var(--color-border-active);
-            transform: translateY(-1px);
-        }
-
-        /* Custom Scrollbar */
+        /* Scrollbars */
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -350,14 +302,7 @@
             background: var(--color-scrollbar-hover);
         }
 
-        /* Clamp Hero Title for Fluid Scale */
-        .fluid-hero-headline {
-            font-size: clamp(2rem, 4.2vw, 3.65rem);
-            line-height: 1.12;
-            letter-spacing: -0.03em;
-        }
-
-        /* Scroll-aware Navigation States */
+        /* Navbar Blur & Scroll States */
         #global-header {
             transition: background-color 0.25s ease, border-color 0.25s ease, backdrop-filter 0.25s ease, -webkit-backdrop-filter 0.25s ease;
         }
@@ -368,222 +313,230 @@
             -webkit-backdrop-filter: none !important;
         }
         #global-header.header-scrolled {
-            background-color: rgba(8, 13, 24, 0.88) !important;
+            background-color: rgba(248, 249, 250, 0.88) !important;
             border-bottom-color: var(--color-border) !important;
-            backdrop-filter: blur(12px) !important;
-            -webkit-backdrop-filter: blur(12px) !important;
+            backdrop-filter: blur(14px) !important;
+            -webkit-backdrop-filter: blur(14px) !important;
         }
-        html.theme-light #global-header.header-scrolled {
-            background-color: rgba(244, 247, 252, 0.90) !important;
+        html[data-theme="dark"] #global-header.header-scrolled,
+        html.theme-dark #global-header.header-scrolled {
+            background-color: rgba(11, 15, 23, 0.90) !important;
             border-bottom-color: var(--color-border) !important;
         }
     </style>
     @stack('styles')
 </head>
-<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-night-cyan selection:text-white overflow-x-hidden">
-
-    <!-- Atmospheric Ambiance -->
-    <div class="ambient-night-sky"></div>
-
-    <!-- Sparse Natural Starfield Canvas (Dark Mode Only) -->
-    <canvas id="night-sky-stars" class="fixed inset-0 pointer-events-none z-0"></canvas>
+<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden">
 
     <!-- Unified Global Header Navigation -->
     <header id="global-header" class="fixed top-0 left-0 right-0 z-50 header-top border-b transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 h-16 flex items-center justify-between">
-            <!-- Studio Logo & Wordmark (Links to Homepage) -->
-            <a href="{{ route('home') }}" class="flex items-center gap-2.5 group">
-                <div class="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center transition-transform group-hover:scale-95 shadow-sm overflow-hidden flex-shrink-0 border border-slate-200/50">
-                    <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID Labs" class="w-full h-full object-contain">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 h-20 flex items-center justify-between">
+            <!-- Studio Logo & Wordmark (Logo lama) -->
+            <a href="{{ route('home') }}" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded-xl bg-white p-1.5 flex items-center justify-center transition-transform group-hover:scale-95 shadow-sm overflow-hidden flex-shrink-0 border border-slate-200">
+                    <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID" class="w-full h-full object-contain">
                 </div>
-                <span class="font-sans font-bold text-base tracking-wider text-night-text">
-                    OXID<span class="text-night-dim font-normal ml-0.5">LABS</span>
-                </span>
+                <div class="flex items-baseline gap-1">
+                    <span class="font-sans font-extrabold text-lg tracking-wider text-night-text">
+                        OXID
+                    </span>
+                    <span class="font-sans font-light tracking-[0.25em] text-xs uppercase text-night-dim">
+                        LABS
+                    </span>
+                </div>
             </a>
 
             <!-- Desktop Primary Navigation Items -->
-            <nav class="hidden md:flex items-center gap-7 text-xs font-mono uppercase tracking-wider">
-                <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-night-text font-semibold' : 'text-night-muted hover:text-night-text' }} transition-colors">
+            <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase text-night-muted">
+                <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Home
                 </a>
-                <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'text-night-text font-semibold' : 'text-night-muted hover:text-night-text' }} transition-colors">
-                    Products
+                <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                    Layanan
                 </a>
-                <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'text-night-text font-semibold' : 'text-night-muted hover:text-night-text' }} transition-colors">
-                    Services
+                <a href="{{ route('home') }}#pricing" class="hover:text-night-text transition-colors">
+                    Katalog Harga
                 </a>
-                <a href="{{ route('capabilities') }}" class="{{ request()->routeIs('capabilities') ? 'text-night-text font-semibold' : 'text-night-muted hover:text-night-text' }} transition-colors">
-                    Capabilities
+                <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                    Produk & Portofolio
                 </a>
-                <a href="{{ route('studio') }}" class="{{ request()->routeIs('studio') ? 'text-night-text font-semibold' : 'text-night-muted hover:text-night-text' }} transition-colors">
+                <a href="{{ route('capabilities') }}" class="{{ request()->routeIs('capabilities') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                    Kemampuan
+                </a>
+                <a href="{{ route('studio') }}" class="{{ request()->routeIs('studio') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Studio
                 </a>
-                <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact*') ? 'text-night-text font-semibold' : 'text-night-muted hover:text-night-text' }} transition-colors">
-                    Contact
+                <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact*') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                    Kontak
                 </a>
             </nav>
 
-            <!-- Navigation Actions: Theme Toggle, CTA & Mobile Menu Trigger -->
-            <div class="flex items-center gap-2.5 sm:gap-3">
+            <!-- Navigation Actions: Theme Toggle, CTA & Mobile Trigger -->
+            <div class="flex items-center gap-3">
                 <!-- Theme Mode Toggle Control -->
                 <x-theme-toggle variant="default" />
 
-                <a href="{{ route('contact') }}" class="hidden sm:inline-flex px-4 py-2 rounded-lg text-xs font-semibold btn-night-primary">
-                    Start a Project
+                <a href="{{ route('contact') }}" class="hidden sm:inline-flex px-5 py-2.5 text-xs font-semibold btn-pill-primary">
+                    <span>Konsultasi Gratis</span>
+                    <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </a>
 
-                <button id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-lg border border-night-border bg-night-surface text-night-muted hover:text-night-text focus:outline-none">
-                    <svg id="hamburger-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16m-7 6h7"/></svg>
-                    <svg id="close-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
+                <button id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" class="lg:hidden p-2.5 rounded-xl border border-night-border bg-night-surface text-night-muted hover:text-night-text focus:outline-none">
+                    <svg id="hamburger-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                    <svg id="close-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                 </button>
             </div>
         </div>
     </header>
 
     <!-- Accessible Mobile Drawer Menu -->
-    <div id="mobile-nav-drawer" class="hidden md:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-night-base px-6 py-8 flex flex-col justify-between overflow-y-auto">
+    <div id="mobile-nav-drawer" class="hidden lg:hidden fixed inset-x-0 top-20 bottom-0 z-40 bg-night-base/98 backdrop-blur-xl px-6 py-8 flex flex-col justify-between overflow-y-auto border-t border-night-border">
         <div class="space-y-4">
-            <div class="text-[10px] font-mono uppercase tracking-widest text-night-dim mb-2">Navigation Index</div>
-            <a href="{{ route('home') }}" class="flex items-center justify-between py-2.5 border-b border-night-border text-sm font-mono uppercase tracking-wider {{ request()->routeIs('home') ? 'text-night-text font-bold text-night-cyan' : 'text-night-muted hover:text-night-text' }}">
+            <div class="text-[11px] font-mono uppercase tracking-widest text-night-dim mb-2">Navigasi Utama</div>
+            <a href="{{ route('home') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('home') ? 'text-night-text font-bold' : 'text-night-muted' }}">
                 <span>Home</span>
                 <span class="text-xs text-night-dim font-mono">01</span>
             </a>
-            <a href="{{ route('products') }}" class="flex items-center justify-between py-2.5 border-b border-night-border text-sm font-mono uppercase tracking-wider {{ request()->routeIs('products') ? 'text-night-text font-bold text-night-cyan' : 'text-night-muted hover:text-night-text' }}">
-                <span>Products</span>
+            <a href="{{ route('services') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('services') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+                <span>Layanan</span>
                 <span class="text-xs text-night-dim font-mono">02</span>
             </a>
-            <a href="{{ route('services') }}" class="flex items-center justify-between py-2.5 border-b border-night-border text-sm font-mono uppercase tracking-wider {{ request()->routeIs('services') ? 'text-night-text font-bold text-night-cyan' : 'text-night-muted hover:text-night-text' }}">
-                <span>Services</span>
+            <a href="{{ route('home') }}#pricing" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider text-night-muted">
+                <span>Katalog Harga</span>
                 <span class="text-xs text-night-dim font-mono">03</span>
             </a>
-            <a href="{{ route('capabilities') }}" class="flex items-center justify-between py-2.5 border-b border-night-border text-sm font-mono uppercase tracking-wider {{ request()->routeIs('capabilities') ? 'text-night-text font-bold text-night-cyan' : 'text-night-muted hover:text-night-text' }}">
-                <span>Capabilities</span>
+            <a href="{{ route('products') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('products') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+                <span>Produk & Portofolio</span>
                 <span class="text-xs text-night-dim font-mono">04</span>
             </a>
-            <a href="{{ route('studio') }}" class="flex items-center justify-between py-2.5 border-b border-night-border text-sm font-mono uppercase tracking-wider {{ request()->routeIs('studio') ? 'text-night-text font-bold text-night-cyan' : 'text-night-muted hover:text-night-text' }}">
-                <span>Studio</span>
+            <a href="{{ route('capabilities') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('capabilities') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+                <span>Kemampuan</span>
                 <span class="text-xs text-night-dim font-mono">05</span>
             </a>
-            <a href="{{ route('contact') }}" class="flex items-center justify-between py-2.5 border-b border-night-border text-sm font-mono uppercase tracking-wider {{ request()->routeIs('contact*') ? 'text-night-text font-bold text-night-cyan' : 'text-night-muted hover:text-night-text' }}">
-                <span>Contact</span>
+            <a href="{{ route('studio') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('studio') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+                <span>Studio</span>
                 <span class="text-xs text-night-dim font-mono">06</span>
+            </a>
+            <a href="{{ route('contact') }}" class="flex items-center justify-between py-3 border-b border-night-border text-sm font-semibold uppercase tracking-wider {{ request()->routeIs('contact*') ? 'text-night-text font-bold' : 'text-night-muted' }}">
+                <span>Kontak</span>
+                <span class="text-xs text-night-dim font-mono">07</span>
             </a>
         </div>
 
         <div class="pt-8 space-y-4">
-            <div class="flex items-center justify-between p-3.5 rounded-xl bg-night-surface border border-night-border">
-                <span class="text-xs font-mono text-night-text">Theme Appearance</span>
-                <x-theme-toggle variant="compact" />
-            </div>
-
-            <div class="p-4 rounded-xl bg-night-surface border border-night-border text-xs text-night-muted font-mono space-y-1">
-                <div class="text-night-text font-semibold flex items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                    OXID Studio &bull; Operational
-                </div>
-                <div class="text-[11px] text-night-dim">Jakarta &bull; Global Remote &bull; Q4 2026 Ready</div>
-            </div>
-            <a href="{{ route('contact') }}" class="block text-center px-4 py-3 rounded-lg text-xs font-semibold btn-night-primary shadow-lg">
-                Start a Project
+            <a href="{{ route('contact') }}" class="w-full py-3.5 text-center text-xs font-semibold btn-pill-primary shadow-lg">
+                Konsultasi Gratis Sekarang
             </a>
         </div>
     </div>
 
-    <!-- Main Page Content Slot (Pad top 16 for fixed navbar) -->
-    <main class="relative z-10 pt-16">
+    <!-- Main Page Content Slot (Pad top for navbar) -->
+    <main class="relative z-10 pt-20">
         @yield('content')
     </main>
 
-    <!-- Shared Global Footer -->
-    <footer class="relative z-10 bg-night-base border-t border-night-border py-14 px-6 sm:px-8 mt-12 transition-colors">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-3">
-                <div class="w-7 h-7 rounded-lg bg-white p-1 flex items-center justify-center shadow-sm overflow-hidden flex-shrink-0 border border-slate-200/50">
-                    <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID Labs" class="w-full h-full object-contain">
+    <!-- Shared Global Footer (Matching Reference Layout) -->
+    <footer class="relative z-10 bg-[#0B0F19] text-white pt-20 pb-12 px-6 sm:px-8 mt-20 border-t border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <!-- Pre-Footer Conversion Callout Banner -->
+            <div class="pb-16 border-b border-white/10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                <div class="flex items-start gap-4 max-w-xl">
+                    <div class="w-10 h-10 rounded-xl bg-white/10 border border-white/15 p-2 flex items-center justify-center flex-shrink-0">
+                        <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID" class="w-full h-full object-contain filter invert">
+                    </div>
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-sans font-bold text-white mb-2">
+                            Siap Membuat Website Impian Anda?
+                        </h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Konsultasikan kebutuhan bisnis dan produk Anda sekarang. Tim teknis OXID Labs siap membantu dari tahap ide hingga siap online.
+                        </p>
+                    </div>
                 </div>
-                <span class="font-sans font-bold text-sm text-night-text tracking-wider">OXID LABS</span>
-                <span class="text-xs text-night-dim font-mono">&bull; Independent Digital Product Studio</span>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full lg:w-auto">
+                    <a href="{{ route('contact') }}" class="px-7 py-3.5 text-xs sm:text-sm font-semibold btn-pill-white">
+                        <span>Hubungi Kami</span>
+                        <svg class="w-3.5 h-3.5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 text-xs sm:text-sm font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-colors inline-flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 0.743.966 1.202.664.592 1.224.776 1.397.863.173.086.274.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                        <span>WhatsApp Studio</span>
+                    </a>
+                </div>
             </div>
 
-            <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-night-muted">
-                <a href="{{ route('home') }}" class="hover:text-night-text transition-colors">Home</a>
-                <a href="{{ route('products') }}" class="hover:text-night-text transition-colors">Products</a>
-                <a href="{{ route('services') }}" class="hover:text-night-text transition-colors">Services</a>
-                <a href="{{ route('capabilities') }}" class="hover:text-night-text transition-colors">Capabilities</a>
-                <a href="{{ route('studio') }}" class="hover:text-night-text transition-colors">Studio</a>
-                <a href="{{ route('contact') }}" class="hover:text-night-text transition-colors">Contact</a>
-                <span class="text-night-dim/40">|</span>
-                <a href="{{ route('login') }}" class="text-night-dim hover:text-night-text transition-colors">Admin Console</a>
+            <!-- Footer Middle Columns -->
+            <div class="py-14 grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-white p-1.5 flex items-center justify-center shadow-sm overflow-hidden flex-shrink-0">
+                            <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID" class="w-full h-full object-contain">
+                        </div>
+                        <span class="font-sans font-extrabold text-base tracking-wider text-white">
+                            OXID <span class="font-light tracking-[0.25em] text-xs uppercase text-slate-400">LABS</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+                        Independent digital product studio. Membantu bisnis dan founder membangun landing page konversi tinggi, platform web, dan sistem aplikasi yang modern, cepat, dan scalable.
+                    </p>
+                    <div class="text-xs font-mono text-slate-500 pt-2">
+                        Build Your Digital Future &bull; oxid-labs.id
+                    </div>
+                </div>
+
+                <div class="md:col-span-3 space-y-3">
+                    <div class="text-xs font-mono uppercase tracking-wider text-slate-300 font-semibold mb-4">Navigasi Halaman</div>
+                    <div class="flex flex-col space-y-2 text-xs text-slate-400">
+                        <a href="{{ route('home') }}" class="hover:text-white transition-colors">Home</a>
+                        <a href="{{ route('services') }}" class="hover:text-white transition-colors">Layanan Digital</a>
+                        <a href="{{ route('home') }}#pricing" class="hover:text-white transition-colors">Katalog Harga & Paket</a>
+                        <a href="{{ route('products') }}" class="hover:text-white transition-colors">Katalog Produk & Portofolio</a>
+                        <a href="{{ route('capabilities') }}" class="hover:text-white transition-colors">Kemampuan Rekayasa</a>
+                        <a href="{{ route('studio') }}" class="hover:text-white transition-colors">Studio Manifesto</a>
+                        <a href="{{ route('contact') }}" class="hover:text-white transition-colors">Konsultasi & Kontak</a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 space-y-3">
+                    <div class="text-xs font-mono uppercase tracking-wider text-slate-300 font-semibold mb-4">Kontak & Konsultasi</div>
+                    <div class="space-y-3 text-xs text-slate-400">
+                        <div class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <a href="mailto:hello@oxid-labs.id" class="hover:text-white transition-colors font-mono">hello@oxid-labs.id</a>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                            <span class="font-mono">+62 812-3456-7890</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                            <span>Jakarta &bull; Global Remote Operation</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="text-[11px] font-mono text-night-dim text-center md:text-right">
-                Jakarta &bull; Global Remote &bull; &copy; {{ date('Y') }} OXID Labs. All rights reserved.
+            <!-- Footer Bottom Bar -->
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+                <div>
+                    &copy; {{ date('Y') }} OXID LABS. All rights reserved.
+                </div>
+                <div class="flex items-center gap-4 text-[11px] uppercase tracking-wider text-slate-400">
+                    <span>WEB</span>
+                    <span>&bull;</span>
+                    <span>APP</span>
+                    <span>&bull;</span>
+                    <span>DIGITAL PRODUCT</span>
+                    <span class="text-slate-600">|</span>
+                    <a href="{{ route('login') }}" class="hover:text-white transition-colors">Admin Console</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Starfield Script & Navigation Handlers -->
+    <!-- Header Scroll Handler -->
     <script>
-        // 1. Natural Sparse Starfield Rendering
-        (function() {
-            const canvas = document.getElementById('night-sky-stars');
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-            let stars = [];
-            const starCount = 85;
-
-            function initStars() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-                stars = [];
-
-                for (let i = 0; i < starCount; i++) {
-                    stars.push({
-                        x: Math.random() * canvas.width,
-                        y: Math.random() * canvas.height,
-                        radius: Math.random() * 0.9 + 0.6,
-                        alpha: Math.random() * 0.45 + 0.2,
-                        color: i % 5 === 0 ? '#93C5FD' : (i % 7 === 0 ? '#C7D2FE' : '#F8FAFC')
-                    });
-                }
-                drawStars();
-            }
-
-            function drawStars() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                for (let i = 0; i < stars.length; i++) {
-                    const s = stars[i];
-                    ctx.beginPath();
-                    ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
-                    ctx.fillStyle = s.color;
-                    ctx.globalAlpha = s.alpha;
-                    ctx.fill();
-                }
-                ctx.globalAlpha = 1.0;
-            }
-
-            window.addEventListener('resize', initStars, { passive: true });
-            initStars();
-        })();
-
-        // 2. Mobile Menu Drawer Toggle
-        const mobileNavToggle = document.getElementById('mobile-nav-toggle');
-        const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
-
-        if (mobileNavToggle && mobileNavDrawer) {
-            mobileNavToggle.addEventListener('click', () => {
-                const isOpen = !mobileNavDrawer.classList.contains('hidden');
-                mobileNavDrawer.classList.toggle('hidden');
-                if (hamburgerIcon && closeIcon) {
-                    hamburgerIcon.classList.toggle('hidden', !isOpen);
-                    closeIcon.classList.toggle('hidden', isOpen);
-                }
-            });
-        }
-
-        // 3. Scroll-aware Navigation Border & Background Transition
         const globalHeader = document.getElementById('global-header');
         function updateHeaderScrollState() {
             if (!globalHeader) return;
@@ -597,6 +550,23 @@
         }
         window.addEventListener('scroll', updateHeaderScrollState, { passive: true });
         updateHeaderScrollState();
+
+        // Mobile drawer toggle
+        const mobileToggle = document.getElementById('mobile-nav-toggle');
+        const mobileDrawer = document.getElementById('mobile-nav-drawer');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        if (mobileToggle && mobileDrawer) {
+            mobileToggle.addEventListener('click', () => {
+                const isOpen = !mobileDrawer.classList.contains('hidden');
+                mobileDrawer.classList.toggle('hidden');
+                if (hamburgerIcon && closeIcon) {
+                    hamburgerIcon.classList.toggle('hidden', !isOpen);
+                    closeIcon.classList.toggle('hidden', isOpen);
+                }
+            });
+        }
     </script>
 
     <!-- Global Project Inspection Modal -->

@@ -1,211 +1,168 @@
 @extends('layouts.app')
 
-@section('title', 'Capabilities — OXID LABS')
-@section('meta_description', 'Explore the engineering approach and technical methodology of OXID Labs: Product discovery, interface architecture, backend concurrency, and automated testing.')
+@section('title', 'Kemampuan Rekayasa & Standar Teknis — OXID LABS')
+@section('meta_description', 'Standar rekayasa perangkat lunak, metodologi pengembangan, dan arsitektur teknis yang diterapkan oleh OXID Labs.')
 
 @section('content')
-    <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
         
         <!-- Page Header -->
-        <div class="reveal-init max-w-3xl mb-16">
-            <span class="block text-xs font-mono uppercase tracking-[0.2em] text-night-cyan-muted mb-3">
-                ENGINEERING METHODOLOGY
+        <div class="max-w-3xl mb-16">
+            <span class="inline-block text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold mb-3">
+                KEMAMPUAN REKAYASA &amp; STANDAR TEKNIS
             </span>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-sans font-bold text-night-text tracking-tight mb-4">
-                How We Architect & Build Software
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-night-text tracking-tight mb-4">
+                How We Architect
             </h1>
             <p class="text-sm sm:text-base text-night-muted leading-relaxed">
-                A disciplined engineering approach focused on structural durability, domain precision, accessible ergonomics, and automated verification.
+                Pendekatan rekayasa terstruktur yang memadukan kode bersih, kecepatan performa, estetika modern, dan keandalan operasional jangka panjang.
             </p>
         </div>
 
-        <!-- Architectural Pipeline Flow Visualization -->
-        <div class="reveal-init delay-100 mb-20">
-            <span class="block text-xs font-mono uppercase tracking-[0.2em] text-night-dim mb-6">
+        <!-- System Delivery Pipeline Flow -->
+        <div class="mb-20">
+            <span class="block text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold mb-6">
                 SYSTEM DELIVERY PIPELINE
             </span>
             
             <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-                <div class="reveal-init delay-100 night-card p-5 rounded-xl border-l-2 border-l-night-cyan">
-                    <span class="text-[10px] font-mono text-night-cyan uppercase">PHASE 01</span>
-                    <h3 class="text-sm font-sans font-semibold text-night-text mt-1 mb-1.5">Discovery & Schema</h3>
-                    <p class="text-[11px] text-night-muted leading-relaxed">
-                        Data models, relational entities, business invariants, and state machines defined prior to writing code.
+                <div class="studio-card p-5 border-l-4 border-l-slate-900 dark:border-l-white">
+                    <span class="text-[10px] font-mono text-night-dim uppercase font-bold">FASE 01</span>
+                    <h3 class="text-sm font-bold text-night-text mt-1 mb-1.5">Discovery & Requirements</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Membedah tujuan bisnis, data target audiens, dan menyusun spesifikasi kebutuhan sistem yang jelas.
                     </p>
                 </div>
 
-                <div class="reveal-init delay-150 night-card p-5 rounded-xl border-l-2 border-l-night-violet">
-                    <span class="text-[10px] font-mono text-night-violet uppercase">PHASE 02</span>
-                    <h3 class="text-sm font-sans font-semibold text-night-text mt-1 mb-1.5">Interface Design</h3>
-                    <p class="text-[11px] text-night-muted leading-relaxed">
-                        Ergonomic design tokens, accessible contrast, tactile feedback, and fluid responsive layouts.
+                <div class="studio-card p-5 border-l-4 border-l-sky-500">
+                    <span class="text-[10px] font-mono text-sky-500 uppercase font-bold">FASE 02</span>
+                    <h3 class="text-sm font-bold text-night-text mt-1 mb-1.5">Desain &amp; UX</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Menyusun tata letak ergonomis, hierarki visual konversi, dan prototipe interaktif modern.
                     </p>
                 </div>
 
-                <div class="reveal-init delay-200 night-card p-5 rounded-xl border-l-2 border-l-night-cyan">
-                    <span class="text-[10px] font-mono text-night-cyan uppercase">PHASE 03</span>
-                    <h3 class="text-sm font-sans font-semibold text-night-text mt-1 mb-1.5">Backend Core</h3>
-                    <p class="text-[11px] text-night-muted leading-relaxed">
-                        Clean controllers, queued jobs, Redis memory caching, and microsecond query optimization.
+                <div class="studio-card p-5 border-l-4 border-l-indigo-500">
+                    <span class="text-[10px] font-mono text-indigo-500 uppercase font-bold">FASE 03</span>
+                    <h3 class="text-sm font-bold text-night-text mt-1 mb-1.5">Kode Bersih</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Pembangunan frontend responsif dan backend modular dengan optimasi query dan performa tinggi.
                     </p>
                 </div>
 
-                <div class="night-card p-5 rounded-xl border-l-2 border-l-night-violet">
-                    <span class="text-[10px] font-mono text-night-violet uppercase">PHASE 04</span>
-                    <h3 class="text-sm font-sans font-semibold text-night-text mt-1 mb-1.5">Integrations</h3>
-                    <p class="text-[11px] text-night-muted leading-relaxed">
-                        Idempotent webhook delivery, third-party APIs, and automated background data synchronization.
+                <div class="studio-card p-5 border-l-4 border-l-emerald-500">
+                    <span class="text-[10px] font-mono text-emerald-500 uppercase font-bold">FASE 04</span>
+                    <h3 class="text-sm font-bold text-night-text mt-1 mb-1.5">Integrasi &amp; QA</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Pengujian menyeluruh lintas perangkat, pengujian API/payment gateway, dan proteksi anti-spam.
                     </p>
                 </div>
 
-                <div class="night-card p-5 rounded-xl border-l-2 border-l-night-text">
-                    <span class="text-[10px] font-mono text-night-text uppercase">PHASE 05</span>
-                    <h3 class="text-sm font-sans font-semibold text-night-text mt-1 mb-1.5">Verification</h3>
-                    <p class="text-[11px] text-night-muted leading-relaxed">
-                        Unit, feature, and end-to-end regression test suites guaranteeing zero broken flows in production.
+                <div class="studio-card p-5 border-l-4 border-l-slate-700 dark:border-l-slate-300">
+                    <span class="text-[10px] font-mono text-night-dim uppercase font-bold">FASE 05</span>
+                    <h3 class="text-sm font-bold text-night-text mt-1 mb-1.5">Peluncuran</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Deployment ke server hosting, aktivasi sertifikat SSL HTTPS, optimasi SEO, dan serah terima panduan.
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- Six Foundational Engineering Pillars -->
-        <div class="space-y-6">
-            <span class="block text-xs font-mono uppercase tracking-[0.2em] text-night-dim mb-4">
-                FOUNDATIONAL DISCIPLINES
+        <!-- 6 Foundational Disciplines -->
+        <div class="mb-20">
+            <span class="block text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold mb-6">
+                DISIPLIN UTAMA KAMI
             </span>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- Pillar 1 -->
-                <article class="night-card p-7 rounded-xl space-y-3">
-                    <span class="text-xs font-mono text-night-cyan">01 — Domain Modeling</span>
-                    <h2 class="text-base font-sans font-semibold text-night-text">Product Discovery & Requirements</h2>
-                    <p class="text-xs text-night-muted leading-relaxed">
-                        We avoid premature coding by first mapping out the ubiquitous domain language, business rules, edge cases, and transactional boundaries. This eliminates expensive mid-project rewrites.
-                    </p>
-                    <div class="pt-3 border-t border-night-border/40 text-[11px] font-mono text-night-dim">
-                        Deliverables: Entity-relationship diagrams, state transition charts, and validated PRDs.
+                <article class="studio-card p-7 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
+                    <h3 class="text-base font-bold text-night-text">Kecepatan Sub-1.5 Detik</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Aset gambar terkompresi otomatis, caching agresif, dan arsitektur CSS/JS yang ringan membuat website memuat seketika di koneksi mobile.
+                    </p>
                 </article>
 
-                <!-- Pillar 2 -->
-                <article class="night-card p-7 rounded-xl space-y-3">
-                    <span class="text-xs font-mono text-night-violet">02 — Human Ergonomics</span>
-                    <h2 class="text-base font-sans font-semibold text-night-text">UX/UI & Interface Engineering</h2>
-                    <p class="text-xs text-night-muted leading-relaxed">
-                        Every interface is engineered for real human use: sub-100ms response feel, accessible WCAG contrast standards, visible keyboard navigation focus, and responsive fluidity down to small mobile viewports.
-                    </p>
-                    <div class="pt-3 border-t border-night-border/40 text-[11px] font-mono text-night-dim">
-                        Deliverables: Centralized design tokens, accessible components, and cross-browser testing.
+                <article class="studio-card p-7 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
                     </div>
+                    <h3 class="text-base font-bold text-night-text">Ergonomi Mobile-First</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Desain responsif yang dirancang khusus untuk kenyamanan ibu jari di smartphone, tombol mudah ditekan, dan tipografi mudah dibaca.
+                    </p>
                 </article>
 
-                <!-- Pillar 3 -->
-                <article class="night-card p-7 rounded-xl space-y-3">
-                    <span class="text-xs font-mono text-night-cyan">03 — Full-Stack Runtime</span>
-                    <h2 class="text-base font-sans font-semibold text-night-text">Full-Stack Application Development</h2>
-                    <p class="text-xs text-night-muted leading-relaxed">
-                        We develop with modern, battle-tested tools—Laravel 11, clean JavaScript, Tailwind CSS, Vue/React when appropriate—prioritizing developer ergonomics, fast execution, and zero unnecessary runtime dependencies.
-                    </p>
-                    <div class="pt-3 border-t border-night-border/40 text-[11px] font-mono text-night-dim">
-                        Deliverables: Modular architecture, maintainable controllers, and clean service layers.
+                <article class="studio-card p-7 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     </div>
+                    <h3 class="text-base font-bold text-night-text">Keamanan &amp; Perlindungan Data</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Sertifikat SSL standar, proteksi CSRF form, filter anti-spam honeypot, dan pemisahan file aplikasi dari direktori publik server.
+                    </p>
                 </article>
 
-                <!-- Pillar 4 -->
-                <article class="night-card p-7 rounded-xl space-y-3">
-                    <span class="text-xs font-mono text-night-violet">04 — Data Resilience</span>
-                    <h2 class="text-base font-sans font-semibold text-night-text">Database & Backend Architecture</h2>
-                    <p class="text-xs text-night-muted leading-relaxed">
-                        We treat relational data with strict discipline: explicit foreign keys, query indexing strategies, connection pooling, and multi-tenant isolation patterns (Row Level Security and schema segregation).
-                    </p>
-                    <div class="pt-3 border-t border-night-border/40 text-[11px] font-mono text-night-dim">
-                        Deliverables: Optimized PostgreSQL / SQLite schemas, migrations, and automated backups.
+                <article class="studio-card p-7 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                     </div>
+                    <h3 class="text-base font-bold text-night-text">Kode Bersih &amp; Terstruktur</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Dibangun dengan standar modern (Laravel, Tailwind CSS, Three.js) tanpa ketergantungan plugin pihak ketiga yang membengkak.
+                    </p>
                 </article>
 
-                <!-- Pillar 5 -->
-                <article class="night-card p-7 rounded-xl space-y-3">
-                    <span class="text-xs font-mono text-night-cyan">05 — Async Processing</span>
-                    <h2 class="text-base font-sans font-semibold text-night-text">Integrations & Workflow Automation</h2>
-                    <p class="text-xs text-night-muted leading-relaxed">
-                        We build background task orchestration with Redis queues, handling webhook ingestion with idempotency keys and exponential backoff retry mechanisms to survive upstream network drops.
-                    </p>
-                    <div class="pt-3 border-t border-night-border/40 text-[11px] font-mono text-night-dim">
-                        Deliverables: Asynchronous job queues, webhook listeners, and telemetry monitoring.
+                <article class="studio-card p-7 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z"/></svg>
                     </div>
+                    <h3 class="text-base font-bold text-night-text">Optimasi SEO On-Page</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Tag meta OpenGraph, struktur heading semantik h1-h3, sitemap, dan markup schema yang memudahkan mesin pencari Google membaca website.
+                    </p>
                 </article>
 
-                <!-- Pillar 6 -->
-                <article class="night-card p-7 rounded-xl space-y-3">
-                    <span class="text-xs font-mono text-night-violet">06 — Continuous Assurance</span>
-                    <h2 class="text-base font-sans font-semibold text-night-text">Testing, Deployment & Maintenance</h2>
-                    <p class="text-xs text-night-muted leading-relaxed">
-                        No feature ships without automated test coverage. We write unit and feature tests validating critical authentication, payment, calculation, and access control boundaries.
-                    </p>
-                    <div class="pt-3 border-t border-night-border/40 text-[11px] font-mono text-night-dim">
-                        Deliverables: Automated test suite, containerized staging setups, and deployment runbooks.
+                <article class="studio-card p-7 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-800 dark:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                     </div>
+                    <h3 class="text-base font-bold text-night-text">Kemudahan Scale-Up</h3>
+                    <p class="text-xs text-night-muted leading-relaxed">
+                        Arsitektur modular yang mempermudah penambahan modul pembayaran, area member, dasbor analitik, atau migrasi hosting tanpa kendala.
+                    </p>
                 </article>
 
             </div>
         </div>
 
-        <!-- Reliability Commitments Section -->
-        <div class="mt-20 p-8 sm:p-10 night-card rounded-xl">
-            <span class="block text-xs font-mono uppercase tracking-[0.2em] text-night-cyan-muted mb-4">
-                SYSTEM VALUES
-            </span>
-            <h2 class="text-xl sm:text-2xl font-sans font-bold text-night-text mb-6">
-                Our Standards for Durability & Ownership
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-night-muted leading-relaxed">
-                <div class="space-y-2">
-                    <h3 class="font-sans font-semibold text-night-text text-sm flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-night-cyan"></span>
-                        <span>Zero Vendor Lock-In</span>
-                    </h3>
-                    <p>
-                        Clients maintain complete ownership of their source code, database schemas, and infrastructure configs. Every system we build can be run and hosted independently.
-                    </p>
-                </div>
-
-                <div class="space-y-2">
-                    <h3 class="font-sans font-semibold text-night-text text-sm flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-night-violet"></span>
-                        <span>Graceful Degradation</span>
-                    </h3>
-                    <p>
-                        When external APIs or third-party webhooks experience downtime, our systems are built with fail-safes and queued retries to prevent customer-facing application crashes.
-                    </p>
-                </div>
-
-                <div class="space-y-2">
-                    <h3 class="font-sans font-semibold text-night-text text-sm flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-night-text"></span>
-                        <span>Strict Security Baselines</span>
-                    </h3>
-                    <p>
-                        From CSRF validation and parameterized SQL queries to sanitized inputs and strict permission checks, security is baked into the foundation rather than patched on later.
-                    </p>
-                </div>
+        <!-- Measurable Performance Metrics Grid -->
+        <div class="rounded-2xl p-8 sm:p-12 bg-slate-900 text-white shadow-xl">
+            <div class="max-w-2xl mb-10">
+                <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest">METRIK PERFORMA</span>
+                <h3 class="text-2xl font-bold mt-1 text-white">Standar Mutu yang Terukur</h3>
             </div>
-        </div>
 
-        <!-- Closing CTA -->
-        <div class="mt-20 text-center space-y-4">
-            <h2 class="text-2xl sm:text-3xl font-sans font-bold text-night-text">
-                Ready to architect your next system with confidence?
-            </h2>
-            <p class="text-xs sm:text-sm text-night-muted max-w-md mx-auto leading-relaxed">
-                Discuss technical requirements, system architecture, or migration roadmaps with our engineers.
-            </p>
-            <div class="pt-2">
-                <a href="{{ route('contact') }}" class="px-6 py-2.5 rounded-lg text-xs font-semibold btn-night-primary inline-flex items-center gap-2">
-                    <span>Discuss Your Architecture</span>
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </a>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-3xl sm:text-4xl font-extrabold font-mono text-white mb-1">95+</div>
+                    <div class="text-xs text-slate-300">Google Lighthouse Score</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-3xl sm:text-4xl font-extrabold font-mono text-emerald-400 mb-1">&lt; 1.5s</div>
+                    <div class="text-xs text-slate-300">Rata-rata Waktu Muat</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-3xl sm:text-4xl font-extrabold font-mono text-white mb-1">100%</div>
+                    <div class="text-xs text-slate-300">Responsif Seluler</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-3xl sm:text-4xl font-extrabold font-mono text-cyan-400 mb-1">A+</div>
+                    <div class="text-xs text-slate-300">Standar Keamanan SSL</div>
+                </div>
             </div>
         </div>
 

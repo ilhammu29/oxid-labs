@@ -322,7 +322,10 @@
     // LAYER 3: FOREGROUND SYSTEMS (SYSTEMS CORE + ORBITALS + DATA TELEMETRY)
     // =========================================================================
     const systemsGroup = new THREE.Group();
-    systemsGroup.position.set(0, -1.0, 0);
+    const isInitDesktop = width >= 1024;
+    systemsGroup.position.set(isInitDesktop ? 2.8 : 0, isInitDesktop ? 0.2 : -0.8, 0);
+    const initScale = isInitDesktop ? 1.05 : 0.82;
+    systemsGroup.scale.set(initScale, initScale, initScale);
     systemsGroup.rotation.x = 0.50;
     scene.add(systemsGroup);
 
@@ -776,6 +779,12 @@
         camera.aspect = w / h;
         camera.updateProjectionMatrix();
         renderer.setSize(w, h);
+
+        const isDesktop = w >= 1024;
+        systemsGroup.position.x = isDesktop ? 2.8 : 0;
+        systemsGroup.position.y = isDesktop ? 0.2 : -0.8;
+        const scaleVal = isDesktop ? 1.05 : 0.82;
+        systemsGroup.scale.set(scaleVal, scaleVal, scaleVal);
     }
     window.addEventListener('resize', onResize);
 

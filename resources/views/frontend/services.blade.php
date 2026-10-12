@@ -1,222 +1,262 @@
 @extends('layouts.app')
 
-@section('title', 'Services — OXID LABS')
-@section('meta_description', 'Professional engineering services by OXID Labs: Web applications, custom business software, SaaS products, workflow automation, and architecture consulting.')
+@section('title', 'Layanan Pembuatan Website & Solusi Digital — OXID LABS')
+@section('meta_description', 'Layanan lengkap pembuatan landing page, website profil perusahaan, e-commerce, web application, dan maintenance sistem oleh OXID Labs.')
 
 @section('content')
-    <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
         
         <!-- Page Header -->
         <div class="max-w-3xl mb-16">
-            <span class="block text-xs font-mono uppercase tracking-[0.2em] text-night-cyan-muted mb-3">
-                PROFESSIONAL SERVICES
-            </span>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-sans font-bold text-night-text tracking-tight mb-4">
+            <span class="inline-block text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold mb-3">
                 Engineering & Technical Services
+            </span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-night-text tracking-tight mb-4">
+                Solusi Website &amp; Digital untuk Bisnis Anda
             </h1>
             <p class="text-sm sm:text-base text-night-muted leading-relaxed">
-                Disciplined software engineering, product architecture, and operational automation tailored for real-world business challenges.
+                Kami merancang dan membangun sistem digital yang disesuaikan secara presisi dengan kebutuhan bisnis nyata: cepat, konversi tinggi, aman, dan mudah dikembangkan.
             </p>
         </div>
 
-        <!-- Services Deep Breakdown -->
-        <div class="space-y-12">
+        <!-- 6 Detailed Services Breakdown -->
+        <div class="space-y-8 mb-20">
             
-            <!-- Service 1 -->
-            <article class="reveal-init night-card p-8 sm:p-10 rounded-xl">
-                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-8 border-b border-night-border/40">
+            <!-- Service 1: Landing Page -->
+            <article class="studio-card p-8 sm:p-10">
+                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                     <div class="space-y-2">
-                        <span class="text-xs font-mono text-night-cyan uppercase tracking-wider">01 — Web Platforms</span>
-                        <h2 class="text-xl sm:text-2xl font-sans font-bold text-night-text">Website & Web Application Development</h2>
+                        <span class="text-xs font-mono text-slate-500 font-bold uppercase tracking-wider">01 &bull; Konversi &amp; Promosi</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-night-text">Website & Web Application Development</h2>
                     </div>
-                    <a href="{{ route('contact', ['scope' => 'Web Application Development']) }}" class="px-5 py-2 rounded-lg text-xs font-semibold btn-night-primary self-start">
-                        Inquire About Web Apps &rarr;
+                    <a href="{{ route('contact', ['scope' => 'Landing Page']) }}" class="px-6 py-3 text-xs font-semibold btn-pill-primary self-start">
+                        Pesan Landing Page &rarr;
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 text-xs">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 text-xs">
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">The Problem</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Tantangan Bisnis</span>
                         <p class="text-night-muted leading-relaxed">
-                            Templated sites that suffer from slow load times, fragile mobile layouts, poor contrast accessibility, and high ongoing maintenance costs.
+                            Iklan berjalan tetapi pengunjung tidak melakukan transaksi karena landing page lambat, berantakan di HP, atau pesan promosi tidak jelas.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Who It Is For</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Target Pengguna</span>
                         <p class="text-night-muted leading-relaxed">
-                            Founders, technical ventures, and businesses requiring a distinctive, fast digital presence with intentional art direction.
+                            UMKM, pengiklan Meta/Google Ads, pemilik brand fashion, produk digital, creator, dan bisnis yang merilis penawaran khusus.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Scope of Work</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Lingkup Pekerjaan</span>
                         <p class="text-night-muted leading-relaxed">
-                            Tailored UI design tokens, responsive Tailwind architecture, accessible interactive moments (Three.js/WebGL), and self-hosted CMS orchestration.
+                            Copywriting layout terarah, integrasi tombol WhatsApp/Formulir, optimasi kecepatan sub-1.5 detik, dan tracking analitik piksel.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Expected Deliverables</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Hasil Akhir</span>
                         <p class="text-night-muted leading-relaxed">
-                            Production-ready source repository, 95+ performance metrics, responsive cross-device verification, and documented maintenance guide.
+                            Landing page responsif live dengan skor performa 95+, domain setup siap pakai, dan dokumentasi panduan mudah.
                         </p>
                     </div>
                 </div>
             </article>
 
-            <!-- Service 2 -->
-            <article class="reveal-init night-card p-8 sm:p-10 rounded-xl">
-                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-8 border-b border-night-border/40">
+            <!-- Service 2: Website Company Profile -->
+            <article class="studio-card p-8 sm:p-10">
+                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                     <div class="space-y-2">
-                        <span class="text-xs font-mono text-night-violet uppercase tracking-wider">02 — Operational Software</span>
-                        <h2 class="text-xl sm:text-2xl font-sans font-bold text-night-text">Custom Software & Internal Business Systems</h2>
+                        <span class="text-xs font-mono text-slate-500 font-bold uppercase tracking-wider">02 &bull; Kredibilitas &amp; Korporat</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-night-text">Website Company Profile &amp; Lembaga</h2>
                     </div>
-                    <a href="{{ route('contact', ['scope' => 'Internal Business Systems']) }}" class="px-5 py-2 rounded-lg text-xs font-semibold btn-night-primary self-start">
-                        Inquire About Custom Software &rarr;
+                    <a href="{{ route('contact', ['scope' => 'Company Profile']) }}" class="px-6 py-3 text-xs font-semibold btn-pill-primary self-start">
+                        Pesan Company Profile &rarr;
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 text-xs">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 text-xs">
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">The Problem</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Tantangan Bisnis</span>
                         <p class="text-night-muted leading-relaxed">
-                            Daily operations constrained by fragmented spreadsheets, manual calculations with high error rates, and inflexible off-the-shelf software.
+                            Calon klien atau mitra ragu bermitra karena website perusahaan terlihat kuno, lambat, atau belum memiliki situs resmi yang kredibel.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Who It Is For</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Target Pengguna</span>
                         <p class="text-night-muted leading-relaxed">
-                            SMEs, culinary & F&B enterprises (like recipe costing in PawonHPP), logistics teams, and businesses with custom operational logic.
+                            Perusahaan B2B, konsultan, agensi, kantor hukum, studio kreatif, kontraktor, dan lembaga profesional.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Scope of Work</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Lingkup Pekerjaan</span>
                         <p class="text-night-muted leading-relaxed">
-                            Relational database schema modeling, specialized calculation algorithms, role-based access permissions, and automated report exports.
+                            Struktur multi-halaman (Home, About, Services, Portofolio, Kontak), email bisnis (@perusahaan.com), dan SEO dasar.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Expected Deliverables</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Hasil Akhir</span>
                         <p class="text-night-muted leading-relaxed">
-                            Secure web portal, automated `.xlsx` / PDF export engines, auditable transaction logs, and full database backup workflows.
+                            Situs profil perusahaan modern, sertifikat SSL HTTPS aktif, dan formulir inquiry yang langsung terhubung ke email Anda.
                         </p>
                     </div>
                 </div>
             </article>
 
-            <!-- Service 3 -->
-            <article class="reveal-init night-card p-8 sm:p-10 rounded-xl">
-                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-8 border-b border-night-border/40">
+            <!-- Service 3: E-Commerce Website -->
+            <article class="studio-card p-8 sm:p-10">
+                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                     <div class="space-y-2">
-                        <span class="text-xs font-mono text-night-cyan uppercase tracking-wider">03 — Product Engineering</span>
-                        <h2 class="text-xl sm:text-2xl font-sans font-bold text-night-text">SaaS Product Development</h2>
+                        <span class="text-xs font-mono text-slate-500 font-bold uppercase tracking-wider">03 &bull; Penjualan &amp; Transaksi</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-night-text">Toko Online (E-Commerce) &amp; Katalog Produk</h2>
                     </div>
-                    <a href="{{ route('contact', ['scope' => 'SaaS Product Development']) }}" class="px-5 py-2 rounded-lg text-xs font-semibold btn-night-primary self-start">
-                        Inquire About SaaS Engineering &rarr;
+                    <a href="{{ route('contact', ['scope' => 'E-Commerce']) }}" class="px-6 py-3 text-xs font-semibold btn-pill-primary self-start">
+                        Pesan E-Commerce &rarr;
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 text-xs">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 text-xs">
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">The Problem</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Tantangan Bisnis</span>
                         <p class="text-night-muted leading-relaxed">
-                            Promising digital product concepts that fail to launch due to architectural paralysis, lack of multi-tenancy, or billing integration complexity.
+                            Ketergantungan penuh pada marketplace pihak ketiga dengan potongan komisi tinggi dan ketiadaan database pelanggan mandiri.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Who It Is For</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Target Pengguna</span>
                         <p class="text-night-muted leading-relaxed">
-                            Independent founders and startups building recurring subscription platforms, B2B software, or specialized niche tools.
+                            Brand D2C (Direct to Consumer), distributor ritel, penjual produk digital, dan toko busana/lifestyle.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Scope of Work</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Lingkup Pekerjaan</span>
                         <p class="text-night-muted leading-relaxed">
-                            Domain modeling, multi-tenant data isolation (Row Level Security), payment gateway webhooks, subscription lifecycle management, and onboarding flows.
+                            Katalog varian produk, keranjang belanja, integrasi payment gateway otomatis (Midtrans / QRIS / VA), dan manajemen pesanan.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Expected Deliverables</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Hasil Akhir</span>
                         <p class="text-night-muted leading-relaxed">
-                            Functional production MVP, integrated billing & checkout conduits, administrative metrics console, and comprehensive regression tests.
+                            Toko online siap pakai, dashboard admin kelola stok &amp; harga, serta notifikasi pesanan otomatis via WhatsApp/Email.
                         </p>
                     </div>
                 </div>
             </article>
 
-            <!-- Service 4 -->
-            <article class="reveal-init night-card p-8 sm:p-10 rounded-xl">
-                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-8 border-b border-night-border/40">
+            <!-- Service 4: Web Application & Custom SaaS -->
+            <article class="studio-card p-8 sm:p-10">
+                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                     <div class="space-y-2">
-                        <span class="text-xs font-mono text-night-violet uppercase tracking-wider">04 — Systems Integration</span>
-                        <h2 class="text-xl sm:text-2xl font-sans font-bold text-night-text">Workflow Automation & Systems Integration</h2>
+                        <span class="text-xs font-mono text-slate-500 font-bold uppercase tracking-wider">04 &bull; Operasional &amp; SaaS</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-night-text">SaaS Product Development &amp; Aplikasi Web Custom</h2>
                     </div>
-                    <a href="{{ route('contact', ['scope' => 'Workflow Automation']) }}" class="px-5 py-2 rounded-lg text-xs font-semibold btn-night-primary self-start">
-                        Inquire About Automation &rarr;
+                    <a href="{{ route('contact', ['scope' => 'Web Application']) }}" class="px-6 py-3 text-xs font-semibold btn-pill-primary self-start">
+                        Pesan Web App &rarr;
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 text-xs">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 text-xs">
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">The Problem</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Tantangan Bisnis</span>
                         <p class="text-night-muted leading-relaxed">
-                            High overhead and human error caused by manually moving data between CRMs, billing systems, spreadsheets, and messaging platforms.
+                            Pencatatan manual di spreadsheet yang rentan salah rumus, data terpecah, dan alur kerja antar staf yang tidak tersinkronisasi.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Who It Is For</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Target Pengguna</span>
                         <p class="text-night-muted leading-relaxed">
-                            Growing operational teams needing to scale throughput without linearly hiring more manual administrative staff.
+                            Bisnis F&B (perhitungan HPP &amp; resep), manajemen stok pergudangan, sistem booking, dan founder yang membangun produk SaaS.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Scope of Work</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Lingkup Pekerjaan</span>
                         <p class="text-night-muted leading-relaxed">
-                            Asynchronous queue workers, webhook delivery pipelines with idempotency keys, document data extraction, and structured event streaming.
+                            Database relasional (MySQL / PostgreSQL), otentikasi multi-user dengan hak akses berbeda, dan kalkulasi otomatis.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Expected Deliverables</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Hasil Akhir</span>
                         <p class="text-night-muted leading-relaxed">
-                            Zero-touch automated data sync pipelines, automated retry error handling, alert notification conduits, and operational telemetry.
+                            Aplikasi web secure, ekspor data Excel/PDF, log riwayat transaksi, dan garansi kestabilan performa.
                         </p>
                     </div>
                 </div>
             </article>
 
-            <!-- Service 5 -->
-            <article class="reveal-init night-card p-8 sm:p-10 rounded-xl">
-                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-8 border-b border-night-border/40">
+            <!-- Service 5: Website Redesign -->
+            <article class="studio-card p-8 sm:p-10">
+                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                     <div class="space-y-2">
-                        <span class="text-xs font-mono text-night-cyan uppercase tracking-wider">05 — Architectural Consulting</span>
-                        <h2 class="text-xl sm:text-2xl font-sans font-bold text-night-text">Technical Consulting & System Architecture</h2>
+                        <span class="text-xs font-mono text-slate-500 font-bold uppercase tracking-wider">05 &bull; Pembaruan &amp; Performa</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-night-text">Redesain &amp; Modernisasi Website Lama</h2>
                     </div>
-                    <a href="{{ route('contact', ['scope' => 'System Architecture Consulting']) }}" class="px-5 py-2 rounded-lg text-xs font-semibold btn-night-primary self-start">
-                        Inquire About Architecture &rarr;
+                    <a href="{{ route('contact', ['scope' => 'Website Redesign']) }}" class="px-6 py-3 text-xs font-semibold btn-pill-primary self-start">
+                        Pesan Redesain &rarr;
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 text-xs">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 text-xs">
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">The Problem</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Tantangan Bisnis</span>
                         <p class="text-night-muted leading-relaxed">
-                            Sluggish backend response times, unresolved technical debt, ambiguous database schemas, or uncertainty about which technology stack to adopt.
+                            Website lama sulit diedit, lambat diakses, tampilan tidak menarik di smartphone, dan ranking pencarian Google terus turun.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Who It Is For</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Target Pengguna</span>
                         <p class="text-night-muted leading-relaxed">
-                            Founders seeking an objective technical audit, architectural second opinion, or a concrete roadmap for modernization.
+                            Bisnis yang ingin memperbarui identitas visual (rebranding), meningkatkan kecepatan, dan memperkuat konversi pelanggan.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Scope of Work</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Lingkup Pekerjaan</span>
                         <p class="text-night-muted leading-relaxed">
-                            Database query indexing analysis, concurrency audit, framework boundary reviews, security hardening check, and infrastructure cost optimization.
+                            Penyusunan ulang UI/UX, migrasi konten tanpa merusak URL SEO lama, dan penulisan ulang kode agar bersih dan ringan.
                         </p>
                     </div>
                     <div class="space-y-1.5">
-                        <span class="font-mono text-night-dim uppercase tracking-wider">Expected Deliverables</span>
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Hasil Akhir</span>
                         <p class="text-night-muted leading-relaxed">
-                            Written Architectural RFC document, prioritized remediation backlog, benchmark profiling metrics, and direct Q&A walkthrough.
+                            Tampilan baru yang segar dan profesional, kecepatan loading meningkat hingga 3x lipat, dan pengalaman pengguna optimal.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service 6: Maintenance & SEO -->
+            <article class="studio-card p-8 sm:p-10">
+                <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
+                    <div class="space-y-2">
+                        <span class="text-xs font-mono text-slate-500 font-bold uppercase tracking-wider">06 &bull; Keamanan &amp; Perawatan</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-night-text">Workflow Automation & Systems Integration</h2>
+                    </div>
+                    <a href="{{ route('contact', ['scope' => 'Maintenance & Support']) }}" class="px-6 py-3 text-xs font-semibold btn-pill-primary self-start">
+                        Pesan Maintenance &rarr;
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 text-xs">
+                    <div class="space-y-1.5">
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Tantangan Bisnis</span>
+                        <p class="text-night-muted leading-relaxed">
+                            Tidak memiliki staf teknis internal untuk mengurus backup server, mengatasi error, pembaruan keamanan, atau update konten rutin.
+                        </p>
+                    </div>
+                    <div class="space-y-1.5">
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Target Pengguna</span>
+                        <p class="text-night-muted leading-relaxed">
+                            Pemilik bisnis yang ingin fokus pada operasional dan penjualan tanpa pusing memikirkan masalah teknis server.
+                        </p>
+                    </div>
+                    <div class="space-y-1.5">
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Lingkup Pekerjaan</span>
+                        <p class="text-night-muted leading-relaxed">
+                            Backup berkala, update plugin/framework, monitoring uptime 24/7, pemulihan darurat, dan audit kata kunci SEO.
+                        </p>
+                    </div>
+                    <div class="space-y-1.5">
+                        <span class="font-mono text-night-dim uppercase tracking-wider font-semibold">Hasil Akhir</span>
+                        <p class="text-night-muted leading-relaxed">
+                            Website selalu online, aman dari malware atau serangan bot, serta performa pencarian lokal yang terus meningkat.
                         </p>
                     </div>
                 </div>
@@ -224,21 +264,20 @@
 
         </div>
 
-        <!-- Closing CTA -->
-        <div class="mt-20 p-8 sm:p-12 night-card rounded-xl text-center space-y-4">
-            <span class="text-xs font-mono uppercase tracking-[0.2em] text-night-cyan-muted">
-                GET IN TOUCH
-            </span>
-            <h2 class="text-2xl sm:text-3xl font-sans font-bold text-night-text">
-                Discuss your system requirements with our team.
-            </h2>
-            <p class="text-xs sm:text-sm text-night-muted max-w-lg mx-auto leading-relaxed">
-                We review briefs promptly and outline an honest, pragmatic path toward execution.
-            </p>
-            <div class="pt-2">
-                <a href="{{ route('contact') }}" class="px-6 py-2.5 rounded-lg text-xs font-semibold btn-night-primary inline-flex items-center gap-2">
-                    <span>Start a Project Conversation</span>
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        <!-- Quick Package Navigation CTA -->
+        <div class="rounded-2xl p-8 sm:p-12 bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div class="space-y-2">
+                <h3 class="text-xl sm:text-2xl font-bold">Tertarik Memulai Proyek Website Anda?</h3>
+                <p class="text-xs sm:text-sm text-slate-400 max-w-lg">
+                    Lihat detail paket harga kami atau diskusikan kebutuhan kustom langsung dengan tim engineering OXID Labs.
+                </p>
+            </div>
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <a href="{{ route('home') }}#pricing" class="px-6 py-3 text-xs sm:text-sm font-semibold btn-pill-white">
+                    Lihat Paket Harga
+                </a>
+                <a href="{{ route('contact') }}" class="px-6 py-3 text-xs sm:text-sm font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-colors">
+                    Kontak Langsung
                 </a>
             </div>
         </div>

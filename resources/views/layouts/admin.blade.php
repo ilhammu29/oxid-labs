@@ -75,61 +75,100 @@
 
     <style>
         :root,
-        html[data-theme="dark"],
-        html.theme-dark {
-            --color-bg-base: #080D18;
-            --color-bg-midnight: #0B1425;
-            --color-bg-navy: #101C32;
-            --color-bg-surface: #0D1629;
-            --color-bg-raised: #111E36;
-            --color-border: rgba(167, 178, 197, 0.12);
-            --color-border-subtle: rgba(255, 255, 255, 0.06);
-            --color-border-active: rgba(56, 189, 248, 0.28);
-            --color-text-primary: #F2F5FA;
-            --color-text-muted: #A7B2C5;
-            --color-text-dim: #5E6D84;
-            --color-accent-cyan: #00E5FF;
-            --color-accent-cyan-muted: #38BDF8;
-            --color-accent-violet: #8B5CF6;
-            --color-scrollbar-thumb: #1A2844;
-            --color-scrollbar-hover: #25385C;
-        }
-
         html[data-theme="light"],
         html.theme-light {
-            --color-bg-base: #F4F7FC;
-            --color-bg-midnight: #EAF0F8;
-            --color-bg-navy: #E1E8F2;
+            --color-bg-base: #F8F9FA;
+            --color-bg-midnight: #F1F5F9;
+            --color-bg-navy: #E2E8F0;
             --color-bg-surface: #FFFFFF;
-            --color-bg-raised: #F8FAFD;
-            --color-border: rgba(36, 56, 90, 0.14);
-            --color-border-subtle: rgba(36, 56, 90, 0.08);
-            --color-border-active: rgba(2, 132, 199, 0.40);
-            --color-text-primary: #172033;
-            --color-text-muted: #4A5870;
-            --color-text-dim: #71829D;
+            --color-bg-raised: #FFFFFF;
+            --color-border: #E2E8F0;
+            --color-border-subtle: #F1F5F9;
+            --color-border-active: #0B0F19;
+            --color-text-primary: #0F172A;
+            --color-text-muted: #475569;
+            --color-text-dim: #94A3B8;
             --color-accent-cyan: #0284C7;
-            --color-accent-cyan-muted: #087FA8;
-            --color-accent-violet: #6855C5;
+            --color-accent-cyan-muted: #0369A1;
+            --color-accent-violet: #6366F1;
+            --color-btn-primary-bg: #0B0F19;
+            --color-btn-primary-text: #FFFFFF;
+            --color-btn-secondary-bg: #FFFFFF;
+            --color-btn-secondary-text: #0F172A;
+            --color-btn-secondary-border: #E2E8F0;
             --color-scrollbar-thumb: #CBD5E1;
             --color-scrollbar-hover: #94A3B8;
+        }
+
+        html[data-theme="dark"],
+        html.theme-dark {
+            --color-bg-base: #0B0F17;
+            --color-bg-midnight: #0F172A;
+            --color-bg-navy: #1E293B;
+            --color-bg-surface: #111827;
+            --color-bg-raised: #1A2234;
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-border-subtle: rgba(255, 255, 255, 0.04);
+            --color-border-active: rgba(56, 189, 248, 0.35);
+            --color-text-primary: #F8FAFC;
+            --color-text-muted: #94A3B8;
+            --color-text-dim: #64748B;
+            --color-accent-cyan: #00E5FF;
+            --color-accent-cyan-muted: #38BDF8;
+            --color-accent-violet: #818CF8;
+            --color-btn-primary-bg: #FFFFFF;
+            --color-btn-primary-text: #0B0F17;
+            --color-btn-secondary-bg: #111827;
+            --color-btn-secondary-text: #F8FAFC;
+            --color-btn-secondary-border: rgba(255, 255, 255, 0.1);
+            --color-scrollbar-thumb: #1E293B;
+            --color-scrollbar-hover: #334155;
         }
 
         body {
             background-color: var(--color-bg-base);
             color: var(--color-text-primary);
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
             transition: background-color 0.25s ease, color 0.25s ease;
         }
         .admin-surface {
             background-color: var(--color-bg-surface);
             border: 1px solid var(--color-border);
-            box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
             transition: background-color 0.25s ease, border-color 0.25s ease;
         }
         .admin-surface-subtle {
             background-color: var(--color-bg-midnight);
             border: 1px solid var(--color-border-subtle);
+        }
+        .btn-pill-primary {
+            background-color: var(--color-btn-primary-bg);
+            color: var(--color-btn-primary-text);
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-pill-primary:hover {
+            opacity: 0.92;
+            transform: translateY(-1px);
+        }
+        .btn-pill-secondary {
+            background-color: var(--color-btn-secondary-bg);
+            color: var(--color-btn-secondary-text);
+            border: 1px solid var(--color-btn-secondary-border);
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-pill-secondary:hover {
+            opacity: 0.92;
+            transform: translateY(-1px);
         }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
@@ -148,7 +187,7 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex bg-night-base text-night-text antialiased selection:bg-night-cyan selection:text-white overflow-x-hidden">
+<body class="min-h-screen flex bg-night-base text-night-text antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-slate-900 overflow-x-hidden">
 
     <!-- Desktop Left Sidebar -->
     <aside class="w-72 border-r border-night-border bg-night-surface flex flex-col justify-between hidden lg:flex shrink-0 z-30 transition-colors">
@@ -177,8 +216,8 @@
                     <span class="px-3 text-[10px] font-mono font-semibold uppercase tracking-wider text-night-dim">
                         Overview
                     </span>
-                    <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all duration-200 {{ request()->routeIs('admin.dashboard') ? 'bg-night-cyan text-white font-semibold shadow-sm' : 'text-night-muted hover:text-night-text hover:bg-white/5' }}">
-                        <svg class="w-4 h-4 {{ request()->routeIs('admin.dashboard') ? 'text-white' : 'text-night-cyan' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all duration-200 {{ request()->routeIs('admin.dashboard') ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-semibold shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60' }}">
+                        <svg class="w-4 h-4 {{ request()->routeIs('admin.dashboard') ? 'text-white dark:text-slate-950' : 'text-slate-400' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
                         </svg>
                         <span>Dashboard</span>
@@ -190,17 +229,17 @@
                     <span class="px-3 text-[10px] font-mono font-semibold uppercase tracking-wider text-night-dim">
                         Content Management
                     </span>
-                    <a href="{{ route('admin.projects.index') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all duration-200 {{ request()->routeIs('admin.projects.index') || request()->routeIs('admin.projects.edit') ? 'bg-night-cyan text-white font-semibold shadow-sm' : 'text-night-muted hover:text-night-text hover:bg-white/5' }}">
+                    <a href="{{ route('admin.projects.index') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all duration-200 {{ request()->routeIs('admin.projects.index') || request()->routeIs('admin.projects.edit') ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-semibold shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60' }}">
                         <div class="flex items-center gap-3">
-                            <svg class="w-4 h-4 {{ request()->routeIs('admin.projects.index') || request()->routeIs('admin.projects.edit') ? 'text-white' : 'text-night-cyan' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 {{ request()->routeIs('admin.projects.index') || request()->routeIs('admin.projects.edit') ? 'text-white dark:text-slate-950' : 'text-slate-400' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                             </svg>
                             <span>Projects Catalog</span>
                         </div>
                     </a>
 
-                    <a href="{{ route('admin.projects.create') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all duration-200 {{ request()->routeIs('admin.projects.create') ? 'bg-night-cyan text-white font-semibold shadow-sm' : 'text-night-muted hover:text-night-text hover:bg-white/5' }}">
-                        <svg class="w-4 h-4 {{ request()->routeIs('admin.projects.create') ? 'text-white' : 'text-night-dim' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <a href="{{ route('admin.projects.create') }}" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all duration-200 {{ request()->routeIs('admin.projects.create') ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-semibold shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60' }}">
+                        <svg class="w-4 h-4 {{ request()->routeIs('admin.projects.create') ? 'text-white dark:text-slate-950' : 'text-slate-400' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                         </svg>
                         <span>Add New Project</span>
@@ -212,9 +251,9 @@
                     <span class="px-3 text-[10px] font-mono font-semibold uppercase tracking-wider text-night-dim">
                         Operations
                     </span>
-                    <a href="{{ route('admin.inquiries.index') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all duration-200 {{ request()->routeIs('admin.inquiries.*') ? 'bg-night-cyan text-white font-semibold shadow-sm' : 'text-night-muted hover:text-night-text hover:bg-white/5' }}">
+                    <a href="{{ route('admin.inquiries.index') }}" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all duration-200 {{ request()->routeIs('admin.inquiries.*') ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-semibold shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60' }}">
                         <div class="flex items-center gap-3">
-                            <svg class="w-4 h-4 {{ request()->routeIs('admin.inquiries.*') ? 'text-white' : 'text-night-cyan' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 {{ request()->routeIs('admin.inquiries.*') ? 'text-white dark:text-slate-950' : 'text-slate-400' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
                             <span>Inquiries Inbox</span>
@@ -227,7 +266,7 @@
                     <span class="px-3 text-[10px] font-mono font-semibold uppercase tracking-wider text-night-dim">
                         System Shortcuts
                     </span>
-                    <a href="{{ route('home') }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-night-muted hover:text-night-cyan hover:bg-white/5 transition-all">
+                    <a href="{{ route('home') }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all">
                         <div class="flex items-center gap-3">
                             <svg class="w-4 h-4 text-night-dim" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -243,7 +282,7 @@
         <!-- User Info & Logout Footer -->
         <div class="p-4 border-t border-night-border bg-night-midnight transition-colors">
             <div class="flex items-center gap-3 mb-3 px-2 py-1">
-                <div class="w-9 h-9 rounded-xl bg-night-cyan/10 border border-night-cyan/20 text-night-cyan flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                <div class="w-9 h-9 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-950 flex items-center justify-center font-mono font-bold text-xs shrink-0 shadow-sm">
                     {{ strtoupper(substr(Auth::user()->name ?? 'A', 0, 2)) }}
                 </div>
                 <div class="min-w-0 flex-1">
@@ -253,7 +292,7 @@
             </div>
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
-                <button type="submit" class="w-full py-2.5 rounded-xl border border-night-border bg-night-surface text-xs font-mono uppercase tracking-wider text-night-muted hover:text-rose-400 hover:border-rose-500/40 hover:bg-rose-500/10 transition-colors flex items-center justify-center gap-2">
+                <button type="submit" class="w-full py-2.5 rounded-xl border border-night-border bg-night-surface text-xs font-mono uppercase tracking-wider text-slate-600 dark:text-slate-400 hover:text-rose-500 hover:border-rose-300 dark:hover:border-rose-800 transition-colors flex items-center justify-center gap-2">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
                     </svg>
@@ -270,7 +309,7 @@
             <!-- Drawer Header -->
             <div class="h-20 flex items-center justify-between px-6 border-b border-night-border bg-night-midnight">
                 <div class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-xl bg-white p-1 flex items-center justify-center border border-slate-200/50">
+                    <div class="w-8 h-8 rounded-xl bg-white p-1 flex items-center justify-center border border-slate-200/50 shadow-sm">
                         <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID Labs" class="w-full h-full object-contain">
                     </div>
                     <span class="font-display font-extrabold text-sm tracking-wider text-night-text">OXID ADMIN</span>
@@ -282,23 +321,23 @@
 
             <!-- Drawer Nav -->
             <nav class="p-4 space-y-4 text-xs font-medium">
-                <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.dashboard') ? 'bg-night-cyan text-white font-semibold' : 'text-night-muted hover:bg-white/5' }}">
+                <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.dashboard') ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-semibold' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800' }}">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
                     <span>Dashboard</span>
                 </a>
-                <a href="{{ route('admin.projects.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.projects.index') ? 'bg-night-cyan text-white font-semibold' : 'text-night-muted hover:bg-white/5' }}">
+                <a href="{{ route('admin.projects.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.projects.index') ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-semibold' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800' }}">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                     <span>Projects Catalog</span>
                 </a>
-                <a href="{{ route('admin.projects.create') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.projects.create') ? 'bg-night-cyan text-white font-semibold' : 'text-night-muted hover:bg-white/5' }}">
+                <a href="{{ route('admin.projects.create') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.projects.create') ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-semibold' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800' }}">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
                     <span>Add Project</span>
                 </a>
-                <a href="{{ route('admin.inquiries.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.inquiries.*') ? 'bg-night-cyan text-white font-semibold' : 'text-night-muted hover:bg-white/5' }}">
+                <a href="{{ route('admin.inquiries.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-xl {{ request()->routeIs('admin.inquiries.*') ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-semibold' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800' }}">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     <span>Inquiries Inbox</span>
                 </a>
-                <a href="{{ route('home') }}" target="_blank" class="flex items-center gap-3 px-4 py-3 rounded-xl text-night-muted hover:bg-white/5">
+                <a href="{{ route('home') }}" target="_blank" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     <span>Live Public Website &nearr;</span>
                 </a>
@@ -313,7 +352,7 @@
 
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
-                <button type="submit" class="w-full py-2.5 rounded-xl bg-rose-500/10 text-rose-400 border border-rose-500/30 text-xs font-mono uppercase tracking-wider flex items-center justify-center gap-2">
+                <button type="submit" class="w-full py-2.5 rounded-xl bg-rose-500/10 text-rose-500 border border-rose-500/30 text-xs font-mono uppercase tracking-wider flex items-center justify-center gap-2">
                     <span>Sign Out</span>
                 </button>
             </form>
@@ -345,13 +384,13 @@
                 <!-- Theme Toggle Button -->
                 <x-theme-toggle variant="default" />
 
-                <a href="{{ route('home') }}" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-xl border border-night-border bg-white/5 hover:bg-white/10 text-night-muted hover:text-night-text text-xs font-mono transition-colors">
+                <a href="{{ route('home') }}" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-night-border bg-night-surface hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-mono transition-colors shadow-sm">
                     <span>Public Site</span>
-                    <span class="text-night-cyan text-xs">&nearr;</span>
+                    <span class="text-xs">&nearr;</span>
                 </a>
 
                 @if(!request()->routeIs('admin.projects.create'))
-                    <a href="{{ route('admin.projects.create') }}" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-night-cyan text-white font-semibold text-xs uppercase tracking-wider hover:opacity-90 transition-opacity shadow-sm">
+                    <a href="{{ route('admin.projects.create') }}" class="btn-pill-primary inline-flex items-center gap-1.5 px-4 py-2 text-xs uppercase tracking-wider shadow-sm">
                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
                         <span>New Project</span>
                     </a>

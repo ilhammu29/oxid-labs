@@ -145,14 +145,14 @@
         <!-- Brand Header -->
         <div class="text-center mb-8">
             <a href="{{ route('home') }}" class="inline-flex items-center gap-3.5 group">
-                <div class="w-11 h-11 rounded-xl bg-white p-2 flex items-center justify-center shadow-lg border border-night-border group-hover:scale-105 transition-transform duration-300">
+                <div class="w-12 h-12 rounded-2xl bg-white p-2 flex items-center justify-center shadow-sm border border-slate-200/80 group-hover:scale-105 transition-transform duration-300">
                     <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID Labs" class="w-full h-full object-contain">
                 </div>
                 <div class="text-left">
-                    <span class="font-display font-extrabold text-2xl tracking-wider text-night-text block leading-none">
-                        OXID<span class="text-night-dim font-light">LABS</span>
+                    <span class="font-display font-extrabold text-2xl tracking-tight text-slate-900 dark:text-white block leading-none">
+                        OXID<span class="text-slate-400 font-normal">LABS</span>
                     </span>
-                    <span class="text-[9px] font-mono uppercase tracking-[0.25em] text-night-cyan font-semibold block mt-1">
+                    <span class="text-[9px] font-mono uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400 font-semibold block mt-1">
                         Control Gateway
                     </span>
                 </div>
@@ -160,32 +160,32 @@
         </div>
 
         <!-- Login Card -->
-        <div class="login-card p-8 sm:p-10 rounded-2xl">
+        <div class="p-8 sm:p-10 rounded-3xl bg-white dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800/80 shadow-xl backdrop-blur-xl">
             <div class="mb-7">
-                <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-night-cyan text-[10px] font-mono uppercase tracking-wider mb-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-night-cyan animate-pulse"></span>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/60 text-slate-700 dark:text-slate-300 text-[10px] font-mono uppercase tracking-wider mb-3">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                     Restricted Area
                 </div>
-                <h1 class="text-xl font-display font-bold text-night-text uppercase tracking-tight">Admin Console Access</h1>
-                <p class="text-xs text-night-muted mt-1.5 leading-relaxed">Authenticate administrative credentials to manage studio systems and catalog deployments.</p>
+                <h1 class="text-xl font-bold text-slate-900 dark:text-white uppercase tracking-tight">Admin Console Access</h1>
+                <p class="text-xs text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">Authenticate administrative credentials to manage studio systems and catalog deployments.</p>
             </div>
 
             <!-- Error Notifications -->
             @if ($errors->any())
-                <div class="mb-6 p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-500 dark:text-rose-300 text-xs flex items-start gap-3" role="alert">
-                    <svg class="w-4 h-4 text-rose-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="mb-6 p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-600 dark:text-rose-300 text-xs flex items-start gap-3" role="alert">
+                    <svg class="w-4 h-4 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
                     </svg>
                     <div>
-                        <span class="font-semibold block font-mono text-[11px] uppercase tracking-wider text-rose-400">Authentication Failed</span>
+                        <span class="font-semibold block font-mono text-[11px] uppercase tracking-wider text-rose-500">Authentication Failed</span>
                         <span class="text-xs mt-0.5 block">{{ $errors->first() }}</span>
                     </div>
                 </div>
             @endif
 
             @if (session('info'))
-                <div class="mb-6 p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-night-cyan text-xs flex items-center gap-2">
-                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <div class="mb-6 p-4 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 text-xs flex items-center gap-2">
+                    <svg class="w-4 h-4 shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     <span>{{ session('info') }}</span>
                 </div>
             @endif
@@ -193,9 +193,9 @@
             <form action="{{ route('login.post') }}" method="POST" class="space-y-5" autocomplete="on">
                 @csrf
 
-                <!-- Email Input (Strictly empty on fresh load, preserves old input on validation failure) -->
+                <!-- Email Input -->
                 <div class="space-y-1.5">
-                    <label for="email" class="block text-xs font-mono uppercase tracking-wider text-night-muted">
+                    <label for="email" class="block text-xs font-mono uppercase tracking-wider text-slate-600 dark:text-slate-400">
                         Admin Identifier (Email)
                     </label>
                     <input 
@@ -206,14 +206,14 @@
                         required 
                         autofocus 
                         placeholder="operator@oxidlabs.my.id" 
-                        class="w-full bg-[var(--color-input-bg)] border border-[var(--color-input-border)] rounded-xl px-4 py-3 text-sm text-night-text placeholder-night-dim focus:outline-none focus:border-night-cyan focus:ring-1 focus:ring-night-cyan/30 transition-all font-sans"
+                        class="w-full bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-slate-900 dark:focus:border-white focus:ring-1 focus:ring-slate-900/10 dark:focus:ring-white/20 transition-all font-sans"
                     >
                 </div>
 
                 <!-- Password Input with Show/Hide Toggle -->
                 <div class="space-y-1.5">
                     <div class="flex items-center justify-between">
-                        <label for="password" class="block text-xs font-mono uppercase tracking-wider text-night-muted">
+                        <label for="password" class="block text-xs font-mono uppercase tracking-wider text-slate-600 dark:text-slate-400">
                             Security Key (Password)
                         </label>
                     </div>
@@ -224,13 +224,13 @@
                             name="password" 
                             required 
                             placeholder="••••••••••••" 
-                            class="w-full bg-[var(--color-input-bg)] border border-[var(--color-input-border)] rounded-xl px-4 py-3 pr-11 text-sm text-night-text placeholder-night-dim focus:outline-none focus:border-night-cyan focus:ring-1 focus:ring-night-cyan/30 transition-all font-sans"
+                            class="w-full bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 pr-11 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-slate-900 dark:focus:border-white focus:ring-1 focus:ring-slate-900/10 dark:focus:ring-white/20 transition-all font-sans"
                         >
                         <button 
                             type="button" 
                             id="togglePassword" 
                             aria-label="Toggle password visibility" 
-                            class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-night-dim hover:text-night-cyan transition-colors focus:outline-none"
+                            class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors focus:outline-none"
                         >
                             <svg id="eyeIconOpen" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -244,12 +244,12 @@
                 </div>
 
                 <div class="flex items-center justify-between text-xs pt-1">
-                    <label class="flex items-center gap-2.5 text-night-muted cursor-pointer select-none group">
-                        <input type="checkbox" name="remember" class="w-4 h-4 rounded bg-[var(--color-input-bg)] border-[var(--color-input-border)] text-night-cyan focus:ring-0 focus:ring-offset-0 cursor-pointer">
-                        <span class="group-hover:text-night-text transition-colors">Retain Session</span>
+                    <label class="flex items-center gap-2.5 text-slate-600 dark:text-slate-400 cursor-pointer select-none group">
+                        <input type="checkbox" name="remember" class="w-4 h-4 rounded bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white focus:ring-0 focus:ring-offset-0 cursor-pointer">
+                        <span class="group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Retain Session</span>
                     </label>
-                    <span class="text-[11px] font-mono text-night-dim flex items-center gap-1.5">
-                        <svg class="w-3 h-3 text-night-cyan/80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    <span class="text-[11px] font-mono text-slate-400 flex items-center gap-1.5">
+                        <svg class="w-3 h-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                         TLS Protected
                     </span>
                 </div>
@@ -257,8 +257,7 @@
                 <button 
                     type="submit" 
                     id="submitBtn"
-                    class="w-full py-3.5 rounded-xl font-semibold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer shadow-lg hover:opacity-90"
-                    style="background-color: var(--color-btn-bg); color: var(--color-btn-text); border: 1px solid var(--color-card-border);"
+                    class="w-full py-3.5 rounded-full bg-[#0B0F19] text-white hover:bg-black dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 font-semibold text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer shadow-md hover:-translate-y-0.5"
                 >
                     <span>Authenticate Access</span>
                     <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -269,7 +268,7 @@
         </div>
 
         <div class="mt-6 text-center">
-            <a href="{{ route('home') }}" class="text-xs text-night-dim hover:text-night-cyan transition-colors font-mono inline-flex items-center gap-1.5">
+            <a href="{{ route('home') }}" class="text-xs text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors font-mono inline-flex items-center gap-1.5">
                 <span>&larr;</span>
                 <span>Return to Public Experience</span>
             </a>
