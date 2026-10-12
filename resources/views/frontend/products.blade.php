@@ -22,7 +22,7 @@
         <!-- Filter Tabs & Real-Time Search -->
         <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-10 pb-6 border-b border-night-border">
             <div class="flex flex-wrap items-center gap-2" id="catalog-filter-tabs">
-                <button type="button" data-filter="all" class="filter-tab-btn active px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-[#0B0F19] text-white dark:bg-white dark:text-black shadow-sm">
+                <button type="button" data-filter="all" class="filter-tab-btn active px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-[#111113] text-white dark:bg-white dark:text-black shadow-sm">
                     Semua Produk ({{ $projects->count() }})
                 </button>
                 @foreach($categories as $category)
@@ -162,10 +162,10 @@
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     tabs.forEach(t => {
-                        t.classList.remove('active', 'bg-[#0B0F19]', 'text-white', 'dark:bg-white', 'dark:text-black', 'font-semibold', 'shadow-sm');
+                        t.classList.remove('active', 'bg-[#111113]', 'text-white', 'dark:bg-white', 'dark:text-black', 'font-semibold', 'shadow-sm');
                         t.classList.add('bg-night-surface', 'border', 'border-night-border', 'text-night-muted');
                     });
-                    tab.classList.add('active', 'bg-[#0B0F19]', 'text-white', 'dark:bg-white', 'dark:text-black', 'font-semibold', 'shadow-sm');
+                    tab.classList.add('active', 'bg-[#111113]', 'text-white', 'dark:bg-white', 'dark:text-black', 'font-semibold', 'shadow-sm');
                     tab.classList.remove('bg-night-surface', 'text-night-muted');
 
                     activeFilter = tab.getAttribute('data-filter');

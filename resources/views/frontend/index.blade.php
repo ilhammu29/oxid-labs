@@ -5,22 +5,15 @@
 
 @section('content')
     <!-- ========================================================================= -->
-    <!-- HERO SECTION: THREE.JS SPATIAL VISUALIZER + DEVICE MOCKUP SHOWCASE        -->
+    <!-- HERO SECTION: CLEAN MINIMALIST HERO WITH REAL DEVICE MOCKUP SHOWCASE       -->
     <!-- ========================================================================= -->
-    <section class="relative w-full min-h-[90vh] flex flex-col justify-center overflow-hidden bg-night-base pt-8 pb-16 sm:pb-24">
+    <section class="relative w-full min-h-[85vh] flex flex-col justify-center overflow-hidden bg-night-base pt-10 pb-16 sm:pb-20">
         
-        <!-- Three.js Interactive Spatial Canvas Background -->
-        <div id="three-hero-container" class="absolute inset-0 z-0 pointer-events-none opacity-80 dark:opacity-60"></div>
-
-        <!-- Ambient Lighting Glows -->
-        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-sky-200/40 dark:bg-sky-900/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
-        <div class="absolute bottom-1/3 left-1/4 w-80 h-80 bg-indigo-200/30 dark:bg-indigo-950/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
-
         <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 w-full">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
                 
                 <!-- Hero Left: High-Impact Typography & Conversion Actions -->
-                <div class="lg:col-span-7 space-y-6 pt-4 lg:pt-0 text-left">
+                <div class="lg:col-span-7 space-y-6 pt-2 lg:pt-0 text-left">
                     <!-- Category Eyebrow Badge -->
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 dark:bg-white/10 border border-slate-200 dark:border-white/15">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -53,10 +46,10 @@
                     </div>
 
                     <!-- Client Trust & Delivery Assurance Note -->
-                    <div class="pt-4 flex items-center gap-6 text-xs text-night-dim font-mono">
+                    <div class="pt-2 flex items-center gap-6 text-xs text-night-dim font-mono">
                         <div class="flex items-center gap-1.5">
                             <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            <span>Estimasi 1 - 7 Hari</span>
+                            <span>Estimasi 1 &ndash; 7 Hari</span>
                         </div>
                         <div class="flex items-center gap-1.5">
                             <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
@@ -65,80 +58,48 @@
                     </div>
                 </div>
 
-                <!-- Hero Right: High-Tech Device Showcase + Floating Badges -->
+                <!-- Hero Right: High-Resolution Device Presentation Mockup (OXID Labs Tech Device Mockup) -->
                 <div class="lg:col-span-5 relative flex flex-col items-center justify-center">
                     
-                    <!-- Sleek Realistic Device Presentation Mockup Card -->
-                    <div class="w-full relative rounded-2xl bg-gradient-to-b from-slate-900 to-[#0B0F19] p-5 sm:p-6 shadow-2xl border border-slate-800 text-white overflow-hidden group">
-                        
-                        <!-- Top Browser / OS Bar -->
-                        <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
-                            <div class="flex items-center gap-2">
-                                <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
-                                <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
-                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                    <!-- Direct Transparent Mockup Image -->
+                    <div class="relative w-full flex items-center justify-center animate-float">
+                        <img src="{{ asset('images/oxid-device-mockup.png') }}" 
+                             alt="OXID Labs Tech Device Mockup" 
+                             class="w-full max-w-lg lg:max-w-xl h-auto object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-105"
+                             loading="eager">
+                    </div>
+
+                    <!-- Floating Badges Layer (Below mockup - exact match with reference) -->
+                    <div class="grid grid-cols-3 gap-3 w-full mt-6">
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-night-surface border border-night-border text-center shadow-sm hover:border-night-border-active transition-all">
+                            <div class="text-emerald-500 mb-1 flex justify-center">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
                             </div>
-                            <div class="flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/5 border border-white/10 text-[10px] font-mono text-slate-300">
-                                <span class="text-slate-500">https://</span>oxidlabs.my.id
-                            </div>
-                            <div class="text-[10px] font-mono text-slate-400">OXID v2.6</div>
+                            <div class="text-[11px] font-bold text-night-text leading-tight">Fast Loading</div>
+                            <div class="text-[10px] text-night-dim font-mono">&lt; 1.5s</div>
                         </div>
 
-                        <!-- Mockup Inner Content Frame (Matching Reference Visual) -->
-                        <div class="relative rounded-xl bg-black/60 border border-white/10 p-5 sm:p-6 overflow-hidden">
-                            <div class="absolute -right-12 -top-12 w-44 h-44 bg-cyan-500/20 rounded-full blur-2xl pointer-events-none"></div>
-                            
-                            <div class="space-y-4">
-                                <div class="inline-block px-2.5 py-0.5 rounded bg-white/10 text-[10px] font-mono text-cyan-300">
-                                    LIVE ARCHITECTURE
-                                </div>
-                                <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight leading-snug">
-                                    Build Better <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-cyan-400">Digital Products</span>
-                                </h2>
-                                <p class="text-xs text-slate-300 leading-relaxed max-w-xs">
-                                    Modern solutions for your business. Fast. Scalable. Future-ready.
-                                </p>
-                                <div class="flex items-center gap-2.5 pt-1">
-                                    <span class="px-3.5 py-1.5 rounded-full bg-white text-black text-[11px] font-semibold">
-                                        Explore Scope
-                                    </span>
-                                    <span class="px-3.5 py-1.5 rounded-full bg-white/10 text-white text-[11px] font-medium border border-white/15">
-                                        Interactive 3D
-                                    </span>
-                                </div>
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-night-surface border border-night-border text-center shadow-sm hover:border-night-border-active transition-all">
+                            <div class="text-slate-800 dark:text-zinc-200 mb-1 flex justify-center">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                             </div>
+                            <div class="text-[11px] font-bold text-night-text leading-tight">Modern Design</div>
+                            <div class="text-[10px] text-night-dim font-mono">Responsive</div>
                         </div>
 
-                        <!-- Floating Badges Layer (Below mockup - exact match with reference) -->
-                        <div class="grid grid-cols-3 gap-2.5 mt-5">
-                            <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-center">
-                                <div class="text-emerald-400 mb-1 flex justify-center">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
-                                </div>
-                                <div class="text-[11px] font-bold text-white leading-tight">Fast Loading</div>
-                                <div class="text-[10px] text-slate-400 font-mono">&lt; 1.5s</div>
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-night-surface border border-night-border text-center shadow-sm hover:border-night-border-active transition-all">
+                            <div class="text-slate-800 dark:text-zinc-200 mb-1 flex justify-center">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                             </div>
-
-                            <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-center">
-                                <div class="text-sky-400 mb-1 flex justify-center">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                                </div>
-                                <div class="text-[11px] font-bold text-white leading-tight">Modern Design</div>
-                                <div class="text-[10px] text-slate-400 font-mono">Responsive</div>
-                            </div>
-
-                            <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-center">
-                                <div class="text-violet-400 mb-1 flex justify-center">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-                                </div>
-                                <div class="text-[11px] font-bold text-white leading-tight">Clean Code</div>
-                                <div class="text-[10px] text-slate-400 font-mono">Easy to Scale</div>
-                            </div>
+                            <div class="text-[11px] font-bold text-night-text leading-tight">Clean Code</div>
+                            <div class="text-[10px] text-night-dim font-mono">Easy to Scale</div>
                         </div>
-
                     </div>
 
                 </div>
+
+            </div>
+        </div>
 
             </div>
         </div>
@@ -657,7 +618,7 @@
     <!-- ========================================================================= -->
     <!-- SECTION 5: PROSES KERJA (DARI IDE HINGGA ONLINE, DENGAN PROSES JELAS)      -->
     <!-- ========================================================================= -->
-    <section class="py-24 px-6 sm:px-8 bg-[#0B0F19] text-white border-t border-white/10">
+    <section class="py-24 px-6 sm:px-8 bg-[#0E0E10] text-white border-t border-white/10">
         <div class="max-w-7xl mx-auto">
             
             <!-- Section Header (Exact Match with Reference 1) -->
@@ -835,7 +796,3 @@
         </div>
     </section>
 @endsection
-
-@push('scripts')
-<script src="{{ asset('js/hero-3d.js') }}"></script>
-@endpush

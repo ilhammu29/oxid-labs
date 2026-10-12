@@ -1,17 +1,17 @@
 <!-- Global Project Showcase Modal (Two-Column Editorial Interface) -->
 <div id="project-modal" 
-     class="fixed inset-0 z-50 hidden bg-night-base/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-5 md:p-6 lg:p-8" 
+     class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-md flex items-center justify-center p-3 sm:p-5 md:p-6 lg:p-8" 
      role="dialog" 
      aria-modal="true" 
      aria-labelledby="modal-project-title">
 
-    <div id="modal-card" class="night-card w-full max-w-5xl lg:max-w-6xl max-h-[92vh] sm:max-h-[88vh] rounded-2xl border border-night-border shadow-2xl flex flex-col overflow-hidden bg-night-surface relative">
+    <div id="modal-card" class="w-full max-w-5xl lg:max-w-6xl max-h-[92vh] sm:max-h-[88vh] rounded-3xl border border-night-border shadow-2xl flex flex-col overflow-hidden bg-night-surface relative">
         
         <!-- Compact Sticky Header Bar -->
-        <div class="flex-shrink-0 px-5 sm:px-6 py-3.5 border-b border-night-border/70 flex items-center justify-between bg-night-surface/95 backdrop-blur-sm z-30">
+        <div class="flex-shrink-0 px-5 sm:px-6 py-4 border-b border-night-border flex items-center justify-between bg-night-surface/95 backdrop-blur-sm z-30">
             <div class="flex items-center gap-2.5">
-                <span class="w-2 h-2 rounded-full bg-night-cyan shadow-[0_0_8px_rgba(0,229,255,0.6)]"></span>
-                <span class="text-xs font-mono uppercase tracking-widest text-night-dim">Project Showcase &bull; Architecture Specification</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-xs font-mono uppercase tracking-widest text-night-dim font-bold">Project Showcase &bull; Arsitektur Sistem</span>
             </div>
             
             <button type="button" 
@@ -19,7 +19,7 @@
                     onclick="closeProjectModal()" 
                     aria-label="Close dialog" 
                     title="Close (Esc)"
-                    class="w-8 h-8 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] border border-night-border text-night-muted hover:text-night-text flex items-center justify-center transition-all focus:outline-none focus:ring-1 focus:ring-night-cyan">
+                    class="w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 border border-night-border text-night-muted hover:text-night-text flex items-center justify-center transition-all focus:outline-none">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
@@ -31,16 +31,16 @@
             
             <!-- Loading State Placeholder -->
             <div id="modal-loading-state" class="w-full flex-1 flex flex-col items-center justify-center py-24 text-center font-mono text-xs text-night-dim">
-                <svg class="w-6 h-6 animate-spin mx-auto mb-3 text-night-cyan" fill="none" viewBox="0 0 24 24">
+                <svg class="w-6 h-6 animate-spin mx-auto mb-3 text-night-text" fill="none" viewBox="0 0 24 24">
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                 </svg>
-                <span>RETRIEVING SYSTEM ARCHITECTURE & MEDIA GALLERY...</span>
+                <span>MEMUAT ARSITEKTUR &amp; GALERI MEDIA...</span>
             </div>
 
             <!-- Left Column: Interactive Project Media Gallery (~58% width on desktop) -->
             <section id="modal-gallery-column" 
-                     class="hidden lg:w-[58%] w-full flex flex-col bg-night-base/80 border-b lg:border-b-0 lg:border-r border-night-border/70 relative select-none"
+                     class="hidden lg:w-[58%] w-full flex flex-col bg-slate-50 dark:bg-black/40 border-b lg:border-b-0 lg:border-r border-night-border relative select-none"
                      aria-label="Project media gallery">
 
                 <!-- Primary Media Viewport -->
@@ -52,13 +52,13 @@
                     </div>
 
                     <!-- Overlay Badge: Slide Counter -->
-                    <div id="gallery-counter" class="absolute top-4 left-4 z-20 px-2.5 py-1 rounded bg-night-base/85 backdrop-blur-md border border-night-border text-[11px] font-mono text-night-muted shadow-sm">
+                    <div id="gallery-counter" class="absolute top-4 left-4 z-20 px-2.5 py-1 rounded-full bg-white/90 dark:bg-black/90 backdrop-blur-md border border-night-border text-[11px] font-mono text-night-muted shadow-sm">
                         01 / 01
                     </div>
 
                     <!-- Overlay Badge: Video Demonstration Indicator -->
-                    <div id="gallery-video-badge" class="absolute top-4 right-4 z-20 hidden px-2.5 py-1 rounded bg-cyan-950/90 backdrop-blur-md border border-cyan-500/30 text-[10px] font-mono text-night-cyan uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
-                        <span class="w-1.5 h-1.5 rounded-full bg-night-cyan animate-pulse"></span>
+                    <div id="gallery-video-badge" class="absolute top-4 right-4 z-20 hidden px-2.5 py-1 rounded-full bg-black/90 backdrop-blur-md border border-white/20 text-[10px] font-mono text-white uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                         <span>Video Demo</span>
                     </div>
 
@@ -67,7 +67,7 @@
                             id="gallery-prev-btn" 
                             onclick="navigateGallerySlide(-1)" 
                             aria-label="Previous media slide"
-                            class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-night-base/80 hover:bg-night-base backdrop-blur-md border border-night-border text-night-muted hover:text-night-text flex items-center justify-center transition-all shadow-lg hover:scale-105 focus:outline-none">
+                            class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/90 dark:bg-black/90 hover:bg-white dark:hover:bg-black backdrop-blur-md border border-night-border text-night-muted hover:text-night-text flex items-center justify-center transition-all shadow-lg hover:scale-105 focus:outline-none">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                         </svg>
@@ -78,7 +78,7 @@
                             id="gallery-next-btn" 
                             onclick="navigateGallerySlide(1)" 
                             aria-label="Next media slide"
-                            class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-night-base/80 hover:bg-night-base backdrop-blur-md border border-night-border text-night-muted hover:text-night-text flex items-center justify-center transition-all shadow-lg hover:scale-105 focus:outline-none">
+                            class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/90 dark:bg-black/90 hover:bg-white dark:hover:bg-black backdrop-blur-md border border-night-border text-night-muted hover:text-night-text flex items-center justify-center transition-all shadow-lg hover:scale-105 focus:outline-none">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
@@ -108,7 +108,7 @@
                     <!-- 1. Category & Context Metadata Header -->
                     <div class="space-y-2">
                         <div class="flex flex-wrap items-center justify-between gap-2">
-                            <span id="modal-info-category" class="px-2.5 py-0.5 rounded bg-white/[0.04] border border-night-border font-mono text-[10px] text-night-cyan-muted uppercase tracking-wider font-semibold">
+                            <span id="modal-info-category" class="px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-white/10 border border-night-border font-mono text-[10px] text-night-text uppercase tracking-wider font-semibold">
                                 Category
                             </span>
                             <span id="modal-info-meta" class="font-mono text-xs text-night-dim">
@@ -117,7 +117,7 @@
                         </div>
 
                         <!-- 2. Project Title -->
-                        <h2 id="modal-project-title" class="text-2xl sm:text-3xl font-sans font-bold text-night-text tracking-tight leading-snug">
+                        <h2 id="modal-project-title" class="text-2xl sm:text-3xl font-sans font-extrabold text-night-text tracking-tight leading-snug">
                             Project Title
                         </h2>
 
@@ -128,9 +128,9 @@
                     </div>
 
                     <!-- 4. Problem & Architectural Purpose -->
-                    <div id="modal-info-architecture-box" class="p-5 rounded-xl bg-night-base/80 border border-night-border/80 space-y-2">
-                        <span class="block font-mono text-[11px] text-night-cyan-muted uppercase tracking-wider font-semibold">
-                            System Architecture & Objectives
+                    <div id="modal-info-architecture-box" class="p-5 rounded-2xl bg-slate-50 dark:bg-black/30 border border-night-border space-y-2">
+                        <span class="block font-mono text-[11px] text-night-dim uppercase tracking-wider font-bold">
+                            Arsitektur Sistem &amp; Ringkasan
                         </span>
                         <div id="modal-info-description" class="text-xs sm:text-sm text-night-muted leading-relaxed whitespace-pre-line">
                             Description text.
@@ -140,7 +140,7 @@
                     <!-- 5. Key System Capabilities / Highlights -->
                     <div id="modal-info-features-box" class="space-y-2 pt-1 hidden">
                         <span class="block font-mono text-[11px] text-night-dim uppercase tracking-wider font-medium">
-                            Core Capabilities & Design Highlights
+                            Fitur &amp; Kemampuan Utama
                         </span>
                         <ul id="modal-info-features-list" class="space-y-1.5 text-xs text-night-muted font-sans">
                             <!-- Injected list items -->
@@ -150,7 +150,7 @@
                     <!-- 6. Technology Stack & Infrastructure Protocols -->
                     <div id="modal-info-tech-box" class="space-y-2 pt-1">
                         <span class="block font-mono text-[11px] text-night-dim uppercase tracking-wider font-medium">
-                            Technology Stack & Infrastructure
+                            Technology Stack &amp; Tools
                         </span>
                         <div id="modal-info-tech-tags" class="flex flex-wrap gap-1.5">
                             <!-- Injected tech tags -->
@@ -160,14 +160,14 @@
                 </div>
 
                 <!-- Sticky Action Footer Bar (Anchored in right column) -->
-                <div id="modal-action-footer" class="flex-shrink-0 px-6 py-4 border-t border-night-border/70 bg-night-surface/95 backdrop-blur-sm flex items-center justify-between gap-3 z-20">
+                <div id="modal-action-footer" class="flex-shrink-0 px-6 py-4 border-t border-night-border bg-night-surface/95 backdrop-blur-sm flex items-center justify-between gap-3 z-20">
                     <div id="modal-action-links" class="flex flex-wrap items-center gap-2.5">
                         <!-- Dynamic Live Demo / View Repository injected here -->
                     </div>
                     <button type="button" 
                             onclick="closeProjectModal()" 
-                            class="px-4 py-2 rounded-lg text-xs font-mono text-night-muted hover:text-night-text bg-white/[0.04] hover:bg-white/[0.08] border border-night-border transition-colors">
-                        Close
+                            class="px-5 py-2 rounded-full text-xs font-semibold btn-pill-secondary">
+                        Tutup
                     </button>
                 </div>
 
@@ -445,11 +445,11 @@
                 <button type="button" 
                         onclick="setGallerySlide(${idx})" 
                         aria-label="View media slide ${idx + 1}" 
-                        class="thumb-btn flex-shrink-0 w-16 h-11 sm:w-20 sm:h-12 rounded-lg overflow-hidden border transition-all relative ${idx === activeSlideIndex ? 'border-night-cyan ring-1 ring-night-cyan/60 opacity-100 scale-102' : 'border-night-border/60 opacity-55 hover:opacity-90'}">
+                        class="thumb-btn flex-shrink-0 w-16 h-11 sm:w-20 sm:h-12 rounded-lg overflow-hidden border transition-all relative ${idx === activeSlideIndex ? 'border-slate-900 dark:border-white ring-1 ring-slate-900 dark:ring-white opacity-100 scale-102' : 'border-night-border/60 opacity-55 hover:opacity-90'}">
                     <img src="${item.thumb_url || item.url}" alt="${item.caption || 'Thumbnail'}" class="w-full h-full object-cover">
                     ${item.type === 'video' ? `
                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                            <svg class="w-4 h-4 text-night-cyan drop-shadow" fill="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 text-emerald-400 drop-shadow" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M8 5v14l11-7z"/>
                             </svg>
                         </div>
@@ -466,12 +466,12 @@
             const buttons = thumbStrip.querySelectorAll('.thumb-btn');
             buttons.forEach((btn, idx) => {
                 if (idx === activeSlideIndex) {
-                    btn.classList.add('border-night-cyan', 'ring-1', 'ring-night-cyan/60', 'opacity-100', 'scale-102');
+                    btn.classList.add('border-slate-900', 'dark:border-white', 'ring-1', 'ring-slate-900', 'dark:ring-white', 'opacity-100', 'scale-102');
                     btn.classList.remove('border-night-border/60', 'opacity-55');
                     // Ensure thumbnail is visible in horizontal scroll
                     btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
                 } else {
-                    btn.classList.remove('border-night-cyan', 'ring-1', 'ring-night-cyan/60', 'opacity-100', 'scale-102');
+                    btn.classList.remove('border-slate-900', 'dark:border-white', 'ring-1', 'ring-slate-900', 'dark:ring-white', 'opacity-100', 'scale-102');
                     btn.classList.add('border-night-border/60', 'opacity-55');
                 }
             });

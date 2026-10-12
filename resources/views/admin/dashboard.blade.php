@@ -72,7 +72,7 @@
         </div>
 
         <!-- Quick Actions & Studio Management Banner -->
-        <div class="p-6 sm:p-8 rounded-3xl bg-[#0B0F19] text-white dark:bg-slate-900 border border-slate-800 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="p-6 sm:p-8 rounded-3xl bg-[#0E0E10] text-white dark:bg-[#151518] border border-neutral-800 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
                 <div class="flex items-center gap-2 mb-2">
                     <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-white/90 font-mono text-[10px] uppercase tracking-wider">

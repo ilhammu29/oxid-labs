@@ -31,10 +31,10 @@
         })();
     </script>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -62,7 +62,7 @@
                     },
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-                        display: ['Syne', 'sans-serif'],
+                        display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
                         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
                     }
                 }
@@ -78,51 +78,51 @@
         html[data-theme="light"],
         html.theme-light {
             --color-bg-base: #F8F9FA;
-            --color-bg-midnight: #F1F5F9;
-            --color-bg-navy: #E2E8F0;
+            --color-bg-midnight: #F3F4F6;
+            --color-bg-navy: #E5E7EB;
             --color-bg-surface: #FFFFFF;
             --color-bg-raised: #FFFFFF;
-            --color-border: #E2E8F0;
-            --color-border-subtle: #F1F5F9;
-            --color-border-active: #0B0F19;
-            --color-text-primary: #0F172A;
-            --color-text-muted: #475569;
-            --color-text-dim: #94A3B8;
-            --color-accent-cyan: #0284C7;
-            --color-accent-cyan-muted: #0369A1;
-            --color-accent-violet: #6366F1;
-            --color-btn-primary-bg: #0B0F19;
+            --color-border: rgba(0, 0, 0, 0.07);
+            --color-border-subtle: rgba(0, 0, 0, 0.04);
+            --color-border-active: #111113;
+            --color-text-primary: #111113;
+            --color-text-muted: #52525B;
+            --color-text-dim: #71717A;
+            --color-accent-cyan: #111113;
+            --color-accent-cyan-muted: #27272A;
+            --color-accent-violet: #18181B;
+            --color-btn-primary-bg: #111113;
             --color-btn-primary-text: #FFFFFF;
             --color-btn-secondary-bg: #FFFFFF;
-            --color-btn-secondary-text: #0F172A;
-            --color-btn-secondary-border: #E2E8F0;
-            --color-scrollbar-thumb: #CBD5E1;
-            --color-scrollbar-hover: #94A3B8;
+            --color-btn-secondary-text: #111113;
+            --color-btn-secondary-border: rgba(0, 0, 0, 0.08);
+            --color-scrollbar-thumb: #D1D5DB;
+            --color-scrollbar-hover: #9CA3AF;
         }
 
         html[data-theme="dark"],
         html.theme-dark {
-            --color-bg-base: #0B0F17;
-            --color-bg-midnight: #0F172A;
-            --color-bg-navy: #1E293B;
-            --color-bg-surface: #111827;
-            --color-bg-raised: #1A2234;
+            --color-bg-base: #0E0E10;
+            --color-bg-midnight: #141416;
+            --color-bg-navy: #19191C;
+            --color-bg-surface: #151518;
+            --color-bg-raised: #1C1C20;
             --color-border: rgba(255, 255, 255, 0.08);
             --color-border-subtle: rgba(255, 255, 255, 0.04);
-            --color-border-active: rgba(56, 189, 248, 0.35);
-            --color-text-primary: #F8FAFC;
-            --color-text-muted: #94A3B8;
-            --color-text-dim: #64748B;
-            --color-accent-cyan: #00E5FF;
-            --color-accent-cyan-muted: #38BDF8;
-            --color-accent-violet: #818CF8;
-            --color-btn-primary-bg: #FFFFFF;
-            --color-btn-primary-text: #0B0F17;
-            --color-btn-secondary-bg: #111827;
-            --color-btn-secondary-text: #F8FAFC;
-            --color-btn-secondary-border: rgba(255, 255, 255, 0.1);
-            --color-scrollbar-thumb: #1E293B;
-            --color-scrollbar-hover: #334155;
+            --color-border-active: rgba(255, 255, 255, 0.35);
+            --color-text-primary: #F8F9FA;
+            --color-text-muted: #A1A1AA;
+            --color-text-dim: #71717A;
+            --color-accent-cyan: #F8F9FA;
+            --color-accent-cyan-muted: #D4D4D8;
+            --color-accent-violet: #E4E4E7;
+            --color-btn-primary-bg: #F8F9FA;
+            --color-btn-primary-text: #111113;
+            --color-btn-secondary-bg: #151518;
+            --color-btn-secondary-text: #F8F9FA;
+            --color-btn-secondary-border: rgba(255, 255, 255, 0.12);
+            --color-scrollbar-thumb: #27272A;
+            --color-scrollbar-hover: #3F3F46;
         }
 
         body {

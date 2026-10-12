@@ -23,10 +23,10 @@
         })();
     </script>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -52,7 +52,7 @@
                     },
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-                        display: ['Syne', 'sans-serif'],
+                        display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
                         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
                     }
                 }
@@ -64,72 +64,69 @@
         :root,
         html[data-theme="dark"],
         html.theme-dark {
-            --color-bg-base: #080D18;
-            --color-bg-midnight: #0B1425;
-            --color-bg-navy: #101C32;
-            --color-bg-surface: #0D1629;
-            --color-bg-raised: #111E36;
-            --color-border: rgba(167, 178, 197, 0.12);
-            --color-border-subtle: rgba(255, 255, 255, 0.06);
-            --color-border-active: rgba(56, 189, 248, 0.35);
-            --color-text-primary: #F2F5FA;
-            --color-text-muted: #A7B2C5;
-            --color-text-dim: #5E6D84;
-            --color-accent-cyan: #00E5FF;
-            --color-accent-cyan-muted: #38BDF8;
-            --color-accent-violet: #8B5CF6;
-            --color-card-bg: linear-gradient(180deg, rgba(13, 22, 41, 0.92) 0%, rgba(8, 13, 24, 0.97) 100%);
-            --color-card-border: rgba(167, 178, 197, 0.15);
-            --color-card-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75), 0 0 35px -5px rgba(56, 189, 248, 0.07);
-            --color-input-bg: rgba(8, 13, 24, 0.80);
-            --color-input-border: rgba(51, 65, 85, 0.6);
-            --color-btn-bg: #FFFFFF;
-            --color-btn-text: #080D18;
-            --bg-radial-1: rgba(56, 189, 248, 0.08);
-            --bg-radial-2: rgba(139, 92, 246, 0.05);
+            --color-bg-base: #0E0E10;
+            --color-bg-midnight: #141416;
+            --color-bg-navy: #19191C;
+            --color-bg-surface: #151518;
+            --color-bg-raised: #1C1C20;
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-border-subtle: rgba(255, 255, 255, 0.04);
+            --color-border-active: rgba(255, 255, 255, 0.35);
+            --color-text-primary: #F8F9FA;
+            --color-text-muted: #A1A1AA;
+            --color-text-dim: #71717A;
+            --color-accent-cyan: #F8F9FA;
+            --color-accent-cyan-muted: #D4D4D8;
+            --color-accent-violet: #E4E4E7;
+            --color-card-bg: #151518;
+            --color-card-border: rgba(255, 255, 255, 0.08);
+            --color-card-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75);
+            --color-input-bg: #0E0E10;
+            --color-input-border: rgba(255, 255, 255, 0.12);
+            --color-btn-bg: #F8F9FA;
+            --color-btn-text: #111113;
+            --bg-radial-1: transparent;
+            --bg-radial-2: transparent;
         }
 
         html[data-theme="light"],
         html.theme-light {
-            --color-bg-base: #F4F7FC;
-            --color-bg-midnight: #EAF0F8;
-            --color-bg-navy: #E1E8F2;
+            --color-bg-base: #F8F9FA;
+            --color-bg-midnight: #F3F4F6;
+            --color-bg-navy: #E5E7EB;
             --color-bg-surface: #FFFFFF;
-            --color-bg-raised: #F8FAFD;
-            --color-border: rgba(36, 56, 90, 0.14);
-            --color-border-subtle: rgba(36, 56, 90, 0.08);
-            --color-border-active: rgba(2, 132, 199, 0.45);
-            --color-text-primary: #172033;
-            --color-text-muted: #4A5870;
-            --color-text-dim: #71829D;
-            --color-accent-cyan: #0284C7;
-            --color-accent-cyan-muted: #087FA8;
-            --color-accent-violet: #6855C5;
-            --color-card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(244, 247, 252, 0.98) 100%);
-            --color-card-border: rgba(36, 56, 90, 0.14);
-            --color-card-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.12), 0 0 30px -5px rgba(2, 132, 199, 0.06);
-            --color-input-bg: rgba(255, 255, 255, 0.90);
-            --color-input-border: rgba(203, 213, 225, 0.9);
-            --color-btn-bg: #172033;
+            --color-bg-raised: #FFFFFF;
+            --color-border: rgba(0, 0, 0, 0.07);
+            --color-border-subtle: rgba(0, 0, 0, 0.04);
+            --color-border-active: #111113;
+            --color-text-primary: #111113;
+            --color-text-muted: #52525B;
+            --color-text-dim: #71717A;
+            --color-accent-cyan: #111113;
+            --color-accent-cyan-muted: #27272A;
+            --color-accent-violet: #18181B;
+            --color-card-bg: #FFFFFF;
+            --color-card-border: rgba(0, 0, 0, 0.08);
+            --color-card-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.06);
+            --color-input-bg: #F8F9FA;
+            --color-input-border: rgba(0, 0, 0, 0.12);
+            --color-btn-bg: #111113;
             --color-btn-text: #FFFFFF;
-            --bg-radial-1: rgba(2, 132, 199, 0.08);
-            --bg-radial-2: rgba(99, 102, 241, 0.05);
+            --bg-radial-1: transparent;
+            --bg-radial-2: transparent;
         }
 
         body {
             background-color: var(--color-bg-base);
             color: var(--color-text-primary);
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-image: 
-                radial-gradient(circle at 50% 10%, var(--bg-radial-1) 0%, transparent 45%),
-                radial-gradient(circle at 80% 85%, var(--bg-radial-2) 0%, transparent 40%);
             transition: background-color 0.25s ease, color 0.25s ease;
         }
         .login-card {
             background: var(--color-card-bg);
             border: 1px solid var(--color-card-border);
             box-shadow: var(--color-card-shadow);
-            backdrop-filter: blur(20px);
+            border-radius: 1.5rem;
             transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
         }
     </style>
@@ -257,7 +254,7 @@
                 <button 
                     type="submit" 
                     id="submitBtn"
-                    class="w-full py-3.5 rounded-full bg-[#0B0F19] text-white hover:bg-black dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 font-semibold text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer shadow-md hover:-translate-y-0.5"
+                    class="w-full py-3.5 rounded-full bg-[#111113] text-white hover:bg-black dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 font-semibold text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer shadow-md hover:-translate-y-0.5"
                 >
                     <span>Authenticate Access</span>
                     <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

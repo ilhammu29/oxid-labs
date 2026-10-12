@@ -89,86 +89,86 @@
         :root,
         html[data-theme="light"],
         html.theme-light {
-            /* Background Surfaces: Crisp, pristine, modern digital studio */
+            /* Background Surfaces: Putih Susu (Milk White) & Pure Surface */
             --color-bg-base: #F8F9FA;
-            --color-bg-midnight: #F1F5F9;
-            --color-bg-navy: #E2E8F0;
+            --color-bg-midnight: #F3F4F6;
+            --color-bg-navy: #E5E7EB;
             --color-bg-surface: #FFFFFF;
             --color-bg-raised: #FFFFFF;
 
-            /* Borders */
-            --color-border: #E2E8F0;
-            --color-border-subtle: #F1F5F9;
-            --color-border-active: #0B0F19;
+            /* Borders: Clean subtle monochrome */
+            --color-border: rgba(0, 0, 0, 0.07);
+            --color-border-subtle: rgba(0, 0, 0, 0.04);
+            --color-border-active: #111113;
 
-            /* Typography */
-            --color-text-primary: #0F172A;
-            --color-text-muted: #475569;
-            --color-text-dim: #94A3B8;
+            /* Typography: Hitam Doff & Neutral Grays */
+            --color-text-primary: #111113;
+            --color-text-muted: #52525B;
+            --color-text-dim: #71717A;
 
             /* Accents */
-            --color-accent-cyan: #0284C7;
-            --color-accent-cyan-muted: #0369A1;
-            --color-accent-violet: #6366F1;
+            --color-accent-cyan: #111113;
+            --color-accent-cyan-muted: #27272A;
+            --color-accent-violet: #18181B;
 
             /* Buttons & Controls */
-            --color-btn-primary-bg: #0B0F19;
+            --color-btn-primary-bg: #111113;
             --color-btn-primary-text: #FFFFFF;
-            --color-btn-primary-border: #0B0F19;
+            --color-btn-primary-border: #111113;
             --color-btn-primary-hover: #000000;
 
             --color-btn-secondary-bg: #FFFFFF;
-            --color-btn-secondary-hover: #F8FAFC;
+            --color-btn-secondary-hover: #F4F4F6;
 
             /* Shadows */
-            --color-card-shadow: 0 2px 10px -2px rgba(15, 23, 42, 0.04), 0 1px 3px -1px rgba(15, 23, 42, 0.02);
-            --color-card-shadow-hover: 0 12px 28px -6px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
+            --color-card-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.04), 0 1px 3px -1px rgba(0, 0, 0, 0.02);
+            --color-card-shadow-hover: 0 16px 36px -6px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
 
             /* Scrollbars */
-            --color-scrollbar-thumb: #CBD5E1;
-            --color-scrollbar-hover: #94A3B8;
+            --color-scrollbar-thumb: #D1D5DB;
+            --color-scrollbar-hover: #9CA3AF;
         }
 
         html[data-theme="dark"],
         html.theme-dark {
-            /* Background Surfaces: Deep obsidian midnight */
-            --color-bg-base: #0B0F17;
-            --color-bg-midnight: #0F172A;
-            --color-bg-navy: #1E293B;
-            --color-bg-surface: #111827;
-            --color-bg-raised: #1A2234;
+            /* Background Surfaces: Hitam Doff Murni (Matte Black, Zero Blue) */
+            --color-bg-base: #0E0E10;
+            --color-bg-midnight: #141416;
+            --color-bg-navy: #19191C;
+            --color-bg-surface: #151518;
+            --color-bg-raised: #1C1C20;
 
-            /* Borders */
+            /* Borders: Subtle white strokes */
             --color-border: rgba(255, 255, 255, 0.08);
             --color-border-subtle: rgba(255, 255, 255, 0.04);
-            --color-border-active: rgba(255, 255, 255, 0.25);
+            --color-border-active: rgba(255, 255, 255, 0.35);
 
-            /* Typography */
-            --color-text-primary: #F8FAFC;
-            --color-text-muted: #94A3B8;
-            --color-text-dim: #64748B;
+            /* Typography: Putih Susu & Light Grays */
+            --color-text-primary: #F8F9FA;
+            --color-text-muted: #A1A1AA;
+            --color-text-dim: #71717A;
 
             /* Accents */
-            --color-accent-cyan: #38BDF8;
-            --color-accent-cyan-muted: #0284C7;
-            --color-accent-violet: #818CF8;
+            --color-accent-cyan: #F8F9FA;
+            --color-accent-cyan-muted: #D4D4D8;
+            --color-accent-violet: #E4E4E7;
 
             /* Buttons & Controls */
-            --color-btn-primary-bg: #FFFFFF;
-            --color-btn-primary-text: #0B0F19;
-            --color-btn-primary-border: #FFFFFF;
-            --color-btn-primary-hover: #E2E8F0;
+            --color-btn-primary-bg: #F8F9FA;
+            --color-btn-primary-text: #111113;
+            --color-btn-primary-border: #F8F9FA;
+            --color-btn-primary-hover: #FFFFFF;
 
             --color-btn-secondary-bg: rgba(255, 255, 255, 0.05);
             --color-btn-secondary-hover: rgba(255, 255, 255, 0.1);
 
             /* Shadows */
-            --color-card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
-            --color-card-shadow-hover: 0 14px 32px -4px rgba(0, 0, 0, 0.6);
+            --color-card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+            --color-card-shadow-hover: 0 16px 36px -4px rgba(0, 0, 0, 0.7);
 
             /* Scrollbars */
-            --color-scrollbar-thumb: #1E293B;
-            --color-scrollbar-hover: #334155;
+            --color-scrollbar-thumb: #27272A;
+            --color-scrollbar-hover: #3F3F46;
         }
 
         body {
@@ -187,15 +187,15 @@
             color: var(--color-btn-primary-text);
             font-weight: 600;
             border-radius: 9999px;
-            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
             display: inline-flex;
             align-items: center;
             justify-content: center;
         }
         .btn-pill-primary:hover {
             background-color: var(--color-btn-primary-hover);
-            transform: translateY(-1px);
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
         }
 
         .btn-pill-secondary {
@@ -204,7 +204,7 @@
             font-weight: 600;
             border: 1px solid var(--color-border);
             border-radius: 9999px;
-            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -212,37 +212,37 @@
         .btn-pill-secondary:hover {
             background-color: var(--color-btn-secondary-hover);
             border-color: var(--color-border-active);
-            transform: translateY(-1px);
+            transform: translateY(-2px);
         }
 
         .btn-pill-white {
             background-color: #FFFFFF;
-            color: #0B0F19;
+            color: #111113;
             font-weight: 600;
             border-radius: 9999px;
-            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
             display: inline-flex;
             align-items: center;
             justify-content: center;
         }
         .btn-pill-white:hover {
-            background-color: #F1F5F9;
-            transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            background-color: #F4F4F6;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
         }
 
-        /* Standard Studio Card */
+        /* Sleek Studio Card (Minimalist, Non-Template Design) */
         .studio-card {
             background-color: var(--color-bg-surface);
             border: 1px solid var(--color-border);
             border-radius: 1.25rem;
             box-shadow: var(--color-card-shadow);
-            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .studio-card:hover {
             border-color: var(--color-border-active);
             box-shadow: var(--color-card-shadow-hover);
-            transform: translateY(-2px);
+            transform: translateY(-4px);
         }
 
         /* Floating Trust Badges */
@@ -251,11 +251,52 @@
             border: 1px solid var(--color-border);
             border-radius: 1rem;
             box-shadow: var(--color-card-shadow);
-            transition: all 0.2s ease;
+            transition: all 0.25s ease;
         }
         .floating-badge:hover {
             border-color: var(--color-border-active);
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+        }
+
+        /* Animations & Keyframes */
+        @keyframes floatSlow {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+        .animate-float {
+            animation: floatSlow 5s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(0.96);
+            }
+        }
+        .animate-pulse-glow {
+            animation: pulseGlow 2.5s ease-in-out infinite;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
 
         /* Scroll Reveal System */
@@ -435,101 +476,69 @@
         @yield('content')
     </main>
 
-    <!-- Shared Global Footer (Matching Reference Layout) -->
-    <footer class="relative z-10 bg-[#0B0F19] text-white pt-20 pb-12 px-6 sm:px-8 mt-20 border-t border-white/10">
-        <div class="max-w-7xl mx-auto">
-            <!-- Pre-Footer Conversion Callout Banner -->
-            <div class="pb-16 border-b border-white/10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-                <div class="flex items-start gap-4 max-w-xl">
-                    <div class="w-10 h-10 rounded-xl bg-white/10 border border-white/15 p-2 flex items-center justify-center flex-shrink-0">
-                        <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID" class="w-full h-full object-contain filter invert">
-                    </div>
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-sans font-bold text-white mb-2">
-                            Siap Membuat Website Impian Anda?
-                        </h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">
-                            Konsultasikan kebutuhan bisnis dan produk Anda sekarang. Tim teknis OXID Labs siap membantu dari tahap ide hingga siap online.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full lg:w-auto">
-                    <a href="{{ route('contact') }}" class="px-7 py-3.5 text-xs sm:text-sm font-semibold btn-pill-white">
-                        <span>Hubungi Kami</span>
-                        <svg class="w-3.5 h-3.5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                    </a>
-                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 text-xs sm:text-sm font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-colors inline-flex items-center justify-center gap-2">
-                        <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 0.743.966 1.202.664.592 1.224.776 1.397.863.173.086.274.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
-                        <span>WhatsApp Studio</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Footer Middle Columns -->
-            <div class="py-14 grid grid-cols-1 md:grid-cols-12 gap-10">
-                <div class="md:col-span-5 space-y-4">
+    <!-- Shared Global Footer (Matching Minimalist Studio Reference) -->
+    <footer class="relative z-10 bg-[#0E0E10] text-white pt-14 pb-10 px-6 sm:px-8 mt-20 border-t border-white/10">
+        <div class="max-w-7xl mx-auto space-y-10">
+            <!-- Compact 3-Column Studio Conversion Section -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center justify-between pb-8 border-b border-white/10">
+                <!-- Left: Wordmark & Tagline -->
+                <div class="md:col-span-4 space-y-2.5">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-lg bg-white p-1.5 flex items-center justify-center shadow-sm overflow-hidden flex-shrink-0">
                             <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID" class="w-full h-full object-contain">
                         </div>
                         <span class="font-sans font-extrabold text-base tracking-wider text-white">
-                            OXID <span class="font-light tracking-[0.25em] text-xs uppercase text-slate-400">LABS</span>
+                            OXID <span class="font-light tracking-[0.25em] text-xs uppercase text-zinc-400">LABS</span>
                         </span>
                     </div>
-                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
-                        Independent digital product studio. Membantu bisnis dan founder membangun landing page konversi tinggi, platform web, dan sistem aplikasi yang modern, cepat, dan scalable.
+                    <p class="text-xs text-zinc-400">
+                        Build Your Digital Future
                     </p>
-                    <div class="text-xs font-mono text-slate-500 pt-2">
-                        Build Your Digital Future &bull; oxid-labs.id
-                    </div>
                 </div>
 
-                <div class="md:col-span-3 space-y-3">
-                    <div class="text-xs font-mono uppercase tracking-wider text-slate-300 font-semibold mb-4">Navigasi Halaman</div>
-                    <div class="flex flex-col space-y-2 text-xs text-slate-400">
-                        <a href="{{ route('home') }}" class="hover:text-white transition-colors">Home</a>
-                        <a href="{{ route('services') }}" class="hover:text-white transition-colors">Layanan Digital</a>
-                        <a href="{{ route('home') }}#pricing" class="hover:text-white transition-colors">Katalog Harga & Paket</a>
-                        <a href="{{ route('products') }}" class="hover:text-white transition-colors">Katalog Produk & Portofolio</a>
-                        <a href="{{ route('capabilities') }}" class="hover:text-white transition-colors">Kemampuan Rekayasa</a>
-                        <a href="{{ route('studio') }}" class="hover:text-white transition-colors">Studio Manifesto</a>
-                        <a href="{{ route('contact') }}" class="hover:text-white transition-colors">Konsultasi & Kontak</a>
-                    </div>
+                <!-- Middle: Direct Callout Prompt -->
+                <div class="md:col-span-5 space-y-1">
+                    <h3 class="text-base sm:text-lg font-bold text-white">
+                        Siap Membuat Website Impian Anda?
+                    </h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed">
+                        Konsultasikan kebutuhan Anda sekarang. Tim kami siap membantu dari awal hingga online.
+                    </p>
                 </div>
 
-                <div class="md:col-span-4 space-y-3">
-                    <div class="text-xs font-mono uppercase tracking-wider text-slate-300 font-semibold mb-4">Kontak & Konsultasi</div>
-                    <div class="space-y-3 text-xs text-slate-400">
-                        <div class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            <a href="mailto:hello@oxid-labs.id" class="hover:text-white transition-colors font-mono">hello@oxid-labs.id</a>
-                        </div>
-                        <div class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                            <span class="font-mono">+62 812-3456-7890</span>
-                        </div>
-                        <div class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
-                            <span>Jakarta &bull; Global Remote Operation</span>
-                        </div>
+                <!-- Right: Action & Contacts -->
+                <div class="md:col-span-3 flex flex-col items-start md:items-end gap-3">
+                    <a href="{{ route('contact') }}" class="px-6 py-2.5 text-xs font-semibold btn-pill-white">
+                        <span>Hubungi Kami &rarr;</span>
+                    </a>
+                    <div class="flex flex-col sm:flex-row md:flex-col items-start md:items-end gap-2 text-xs font-mono text-zinc-400">
+                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 0.743.966 1.202.664.592 1.224.776 1.397.863.173.086.274.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                            <span>+62 812-3456-7890</span>
+                        </a>
+                        <a href="mailto:hello@oxid-labs.id" class="hover:text-white transition-colors flex items-center gap-1.5">
+                            <svg class="w-3.5 h-3.5 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <span>hello@oxid-labs.id</span>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Footer Bottom Bar -->
-            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
-                <div>
-                    &copy; {{ date('Y') }} OXID LABS. All rights reserved.
+            <!-- Footer Bottom Strip -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
+                <div class="flex items-center gap-3">
+                    <span>oxid-labs.id</span>
+                    <span>&bull;</span>
+                    <span>&copy; {{ date('Y') }} OXID LABS</span>
                 </div>
-                <div class="flex items-center gap-4 text-[11px] uppercase tracking-wider text-slate-400">
+                <div class="flex items-center gap-4 text-[11px] uppercase tracking-wider text-zinc-400">
                     <span>WEB</span>
                     <span>&bull;</span>
                     <span>APP</span>
                     <span>&bull;</span>
                     <span>DIGITAL PRODUCT</span>
-                    <span class="text-slate-600">|</span>
-                    <a href="{{ route('login') }}" class="hover:text-white transition-colors">Admin Console</a>
+                    <span class="text-zinc-600">|</span>
+                    <a href="{{ route('login') }}" class="hover:text-white transition-colors">Admin</a>
                 </div>
             </div>
         </div>
