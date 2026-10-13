@@ -29,48 +29,67 @@
         <!-- ========================================================================= -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
             
-            <!-- Left Banner: Featured Hero Marketplace Slider / Showcase -->
-            <div class="lg:col-span-8 rounded-3xl bg-[#0E0E10] text-white border border-white/10 p-6 sm:p-10 flex flex-col justify-between relative overflow-hidden shadow-xl">
-                <!-- Background ambient glow -->
-                <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
+            <!-- Left Banner: 3-Slide Carousel Showcase (Pure Banner Art, Minimalist & Modern) -->
+            <div class="lg:col-span-8 rounded-2xl sm:rounded-3xl border border-white/10 bg-[#0E0E10] overflow-hidden shadow-xl relative group flex flex-col justify-center min-h-[260px] sm:min-h-[380px] lg:min-h-[480px]">
+                <h1 class="sr-only">Software Products &amp; Portofolio Sistem Digital — OXID Labs</h1>
 
-                <div class="relative z-10 max-w-xl">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-bold mb-4">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                        OFFICIAL DIGITAL MARKETPLACE &bull; SOFTWARE PRODUCTS &bull; OXID LABS
+                <!-- Carousel Track Wrapper -->
+                <div class="relative w-full h-full overflow-hidden aspect-[1376/768] lg:aspect-auto lg:h-[480px]">
+                    <div id="banner-carousel-track" class="flex w-full h-full transition-transform duration-500 ease-out">
+                        <!-- Slide 1 -->
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <a href="#products-list" class="block w-full h-full cursor-pointer focus:outline-none" aria-label="Lihat Software Products dan Solusi Digital">
+                                <img src="{{ asset('images/banners/banner_1.jpg') }}" 
+                                     alt="OXID Labs - Build Your Digital Future - Software Products" 
+                                     class="w-full h-full object-cover select-none"
+                                     loading="eager">
+                            </a>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <a href="#products-list" class="block w-full h-full cursor-pointer focus:outline-none" aria-label="Lihat Produk Digital dan Inovasi SaaS">
+                                <img src="{{ asset('images/banners/banner_2.jpg') }}" 
+                                     alt="OXID Labs - Ideas Into Reality - Web &amp; SaaS Software Products" 
+                                     class="w-full h-full object-cover select-none"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <a href="#products-list" class="block w-full h-full cursor-pointer focus:outline-none" aria-label="Lihat Portofolio Teknologi dan Produk Digital">
+                                <img src="{{ asset('images/banners/banner_3.jpg') }}" 
+                                     alt="OXID Labs - Your Ideas, Our Technology - Digital Frontier Software Products" 
+                                     class="w-full h-full object-cover select-none"
+                                     loading="lazy">
+                            </a>
+                        </div>
                     </div>
 
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-snug mb-3">
-                        Software Products &amp; Portofolio Sistem Digital Siap Pakai
-                    </h1>
+                    <!-- Previous Navigation Button -->
+                    <button type="button" 
+                            id="banner-carousel-prev" 
+                            aria-label="Banner sebelumnya" 
+                            class="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 hover:bg-black/90 text-white backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-xl z-20 hover:scale-105 active:scale-95">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
 
-                    <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6">
-                        Beli template siap deploy atau pesan kustomisasi proyek digital dengan kode bersih, performa kilat, dan arsitektur terverifikasi langsung dari software engineer.
-                    </p>
+                    <!-- Next Navigation Button -->
+                    <button type="button" 
+                            id="banner-carousel-next" 
+                            aria-label="Banner berikutnya" 
+                            class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 hover:bg-black/90 text-white backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-xl z-20 hover:scale-105 active:scale-95">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
 
-                    <div class="flex flex-wrap items-center gap-3">
-                        <a href="#products-list" class="px-6 py-3 rounded-full text-xs font-semibold btn-pill-white shadow-md">
-                            Jelajahi Produk & Portofolio &darr;
-                        </a>
-                        <a href="{{ route('pricing') }}" class="px-5 py-3 rounded-full text-xs font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all">
-                            Lihat Katalog Harga &amp; Diskon &rarr;
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Bottom Trust Metrics inside banner -->
-                <div class="relative z-10 grid grid-cols-3 gap-4 pt-8 mt-8 border-t border-white/10 text-[11px] font-mono">
-                    <div>
-                        <div class="text-lg font-extrabold text-white font-sans">100%</div>
-                        <div class="text-zinc-400 text-[10px]">Source Code Milik Anda</div>
-                    </div>
-                    <div>
-                        <div class="text-lg font-extrabold text-white font-sans">&lt; 1.5s</div>
-                        <div class="text-zinc-400 text-[10px]">Fast Loading Speed</div>
-                    </div>
-                    <div>
-                        <div class="text-lg font-extrabold text-white font-sans">4.9 / 5.0</div>
-                        <div class="text-zinc-400 text-[10px]">Kepuasan Klien Studio</div>
+                    <!-- Indicators / Pagination Dots -->
+                    <div class="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-20 px-3 py-1.5 rounded-full bg-black/50 backdrop-blur-md border border-white/15" id="banner-carousel-dots">
+                        <button type="button" data-slide="0" aria-label="Slide 1" class="banner-dot w-6 h-2 rounded-full bg-emerald-400 transition-all duration-300 shadow"></button>
+                        <button type="button" data-slide="1" aria-label="Slide 2" class="banner-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300"></button>
+                        <button type="button" data-slide="2" aria-label="Slide 3" class="banner-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300"></button>
                     </div>
                 </div>
             </div>
@@ -612,6 +631,97 @@
                         countdownEl.textContent = `${hrs}:${mins}:${secs}`;
                     }
                 }, 1000);
+            }
+
+            // Hero Banner Carousel Controller
+            const carouselTrack = document.getElementById('banner-carousel-track');
+            const prevBtn = document.getElementById('banner-carousel-prev');
+            const nextBtn = document.getElementById('banner-carousel-next');
+            const dots = document.querySelectorAll('#banner-carousel-dots .banner-dot');
+            const totalSlides = 3;
+            let currentSlide = 0;
+            let autoSlideTimer = null;
+
+            function goToSlide(index) {
+                currentSlide = (index + totalSlides) % totalSlides;
+                if (carouselTrack) {
+                    carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+                }
+                dots.forEach((dot, idx) => {
+                    if (idx === currentSlide) {
+                        dot.className = 'banner-dot w-6 h-2 rounded-full bg-emerald-400 transition-all duration-300 shadow';
+                    } else {
+                        dot.className = 'banner-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300';
+                    }
+                });
+            }
+
+            function startAutoSlide() {
+                stopAutoSlide();
+                autoSlideTimer = setInterval(() => {
+                    goToSlide(currentSlide + 1);
+                }, 4500);
+            }
+
+            function stopAutoSlide() {
+                if (autoSlideTimer) {
+                    clearInterval(autoSlideTimer);
+                    autoSlideTimer = null;
+                }
+            }
+
+            if (carouselTrack) {
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        goToSlide(currentSlide - 1);
+                        startAutoSlide();
+                    });
+                }
+
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        goToSlide(currentSlide + 1);
+                        startAutoSlide();
+                    });
+                }
+
+                dots.forEach((dot, idx) => {
+                    dot.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        goToSlide(idx);
+                        startAutoSlide();
+                    });
+                });
+
+                // Pause on hover
+                const carouselParent = carouselTrack.parentElement;
+                if (carouselParent) {
+                    carouselParent.addEventListener('mouseenter', stopAutoSlide);
+                    carouselParent.addEventListener('mouseleave', startAutoSlide);
+
+                    // Touch swipe support for mobile
+                    let touchStartX = 0;
+                    let touchEndX = 0;
+
+                    carouselParent.addEventListener('touchstart', (e) => {
+                        touchStartX = e.changedTouches[0].screenX;
+                        stopAutoSlide();
+                    }, { passive: true });
+
+                    carouselParent.addEventListener('touchend', (e) => {
+                        touchEndX = e.changedTouches[0].screenX;
+                        if (touchStartX - touchEndX > 50) {
+                            goToSlide(currentSlide + 1);
+                        } else if (touchEndX - touchStartX > 50) {
+                            goToSlide(currentSlide - 1);
+                        }
+                        startAutoSlide();
+                    }, { passive: true });
+                }
+
+                startAutoSlide();
             }
         });
     </script>
