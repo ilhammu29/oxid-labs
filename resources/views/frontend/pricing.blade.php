@@ -148,7 +148,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Starter%20Landing%20Page%20(Rp%20500.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-secondary text-center hover:bg-night-surface">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Starter%20Landing%20Page%20(Rp%20500.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-secondary text-center hover:bg-night-surface">
                         Pesan Paket Starter &rarr;
                     </a>
                 </div>
@@ -218,7 +218,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Pro%20Conversion%20Landing%20Page%20(Rp%20950.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Pro%20Conversion%20Landing%20Page%20(Rp%20950.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Pesan Paket Pro Conversion &rarr;
                     </a>
                 </div>
@@ -283,7 +283,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%203D%20Interactive%20Landing%20Page%20(Rp%201.750.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%203D%20Interactive%20Landing%20Page%20(Rp%201.750.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Pesan Paket 3D Interactive &rarr;
                     </a>
                 </div>
@@ -344,7 +344,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Company%20Profile%20(Rp%201.390.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Company%20Profile%20(Rp%201.390.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Pesan Company Profile &rarr;
                     </a>
                 </div>
@@ -405,7 +405,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20E-Commerce%20(Rp%202.450.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20E-Commerce%20(Rp%202.450.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Pesan Toko Online &rarr;
                     </a>
                 </div>
@@ -466,7 +466,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Corporate%20Portal%20(Rp%202.850.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Corporate%20Portal%20(Rp%202.850.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Pesan Corporate Portal &rarr;
                     </a>
                 </div>
@@ -527,7 +527,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20Paket%20SaaS%20MVP%20(Rp%206.200.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20Paket%20SaaS%20MVP%20(Rp%206.200.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Konsultasi SaaS MVP &rarr;
                     </a>
                 </div>
@@ -588,7 +588,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20Paket%20Dashboard%20Internal%20(Rp%204.500.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20Paket%20Dashboard%20Internal%20(Rp%204.500.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Konsultasi Sistem Kustom &rarr;
                     </a>
                 </div>
@@ -649,7 +649,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20optimasi%20kecepatan%20website%20(Rp%20490.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20optimasi%20kecepatan%20website%20(Rp%20490.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Pesan Optimasi Kecepatan &rarr;
                     </a>
                 </div>
@@ -710,7 +710,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20berlangganan%20Website%20Maintenance%20(Rp%20350.000/bln)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20berlangganan%20Website%20Maintenance%20(Rp%20350.000/bln)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-primary text-center">
                         Langganan Maintenance &rarr;
                     </a>
                 </div>
@@ -859,7 +859,7 @@
                         Ceritakan ide proyek Anda. Kami akan memberikan estimasi waktu, rekomendasi tech stack, serta penawaran harga terbaik yang transparan dan dapat disesuaikan.
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website%20kustom" target="_blank" rel="noopener noreferrer" class="px-8 py-4 text-xs font-semibold btn-pill-white shadow-lg w-full sm:w-auto">
+                        <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website%20kustom" target="_blank" rel="noopener noreferrer" class="px-8 py-4 text-xs font-semibold btn-pill-white shadow-lg w-full sm:w-auto">
                             Konsultasi Langsung via WhatsApp
                         </a>
                         <a href="{{ route('contact') }}" class="px-7 py-4 text-xs font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all w-full sm:w-auto">

@@ -15,7 +15,7 @@
             </div>
             <div class="flex items-center gap-3 text-night-dim text-[11px] font-mono">
                 <span class="hidden md:inline">Saluran Resmi:</span>
-                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-500 transition-colors">WhatsApp Official</a>
+                <a href="https://wa.me/6289516885651" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-500 transition-colors">WhatsApp Official</a>
                 <span>&bull;</span>
                 <a href="https://t.me/oxidlabs" target="_blank" rel="noopener noreferrer" class="hover:text-sky-500 transition-colors">Telegram Studio</a>
             </div>
@@ -130,7 +130,7 @@
                                 <span>Berakhir: <strong id="flash-countdown" class="tabular-nums">08:42:15</strong></span>
                             </div>
 
-                            <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20klaim%20Flash%20Sale%20Landing%20Page%20(Rp%20950.000)" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-rose-600 text-white font-bold text-[10px] hover:bg-rose-700 transition-colors">
+                            <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20klaim%20Flash%20Sale%20Landing%20Page%20(Rp%20950.000)" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-rose-600 text-white font-bold text-[10px] hover:bg-rose-700 transition-colors">
                                 Klaim &rarr;
                             </a>
                         </div>
@@ -151,9 +151,9 @@
                         </p>
                         <ul class="space-y-2 text-xs">
                             <li>
-                                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-night-text hover:text-emerald-500 transition-colors">
+                                <a href="https://wa.me/6289516885651" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-night-text hover:text-emerald-500 transition-colors">
                                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                                    <span>WhatsApp Official: <strong>+62 812-3456-7890</strong></span>
+                                    <span>WhatsApp Official: <strong>+62 895-1688-5651</strong></span>
                                 </a>
                             </li>
                             <li>
@@ -163,9 +163,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:hello@oxidlabs.my.id" class="flex items-center gap-2 text-night-text hover:text-purple-500 transition-colors">
+                                <a href="mailto:oxidteam@oxidlabs.my.id" class="flex items-center gap-2 text-night-text hover:text-purple-500 transition-colors">
                                     <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                                    <span>Email: <strong>hello@oxidlabs.my.id</strong></span>
+                                    <span>Email: <strong>oxidteam@oxidlabs.my.id</strong></span>
                                 </a>
                             </li>
                         </ul>
@@ -482,7 +482,7 @@
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                         </button>
 
-                        <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20proyek%20{{ urlencode($project->title) }}" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3.5 rounded-xl bg-[#111113] text-white dark:bg-white dark:text-black hover:opacity-90 transition-all text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm" title="Pesan atau Konsultasikan Proyek Ini">
+                        <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20proyek%20{{ urlencode($project->title) }}" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3.5 rounded-xl bg-[#111113] text-white dark:bg-white dark:text-black hover:opacity-90 transition-all text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm" title="Pesan atau Konsultasikan Proyek Ini">
                             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.449.741.964 1.2.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.42-.101.825z"/></svg>
                             <span>Pesan</span>
                         </a>
@@ -517,7 +517,7 @@
                 </p>
             </div>
             <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto flex-shrink-0">
-                <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website%20kustom" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-full text-xs font-semibold btn-pill-white text-center shadow-lg">
+                <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website%20kustom" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-full text-xs font-semibold btn-pill-white text-center shadow-lg">
                     Konsultasi via WhatsApp &rarr;
                 </a>
                 <a href="{{ route('pricing') }}" class="w-full sm:w-auto px-6 py-3.5 rounded-full text-xs font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all text-center">

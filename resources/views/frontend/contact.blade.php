@@ -38,7 +38,7 @@
                     <p class="text-xs text-night-muted leading-relaxed">
                         Ingin konsultasi langsung tanpa mengisi formulir panjang? Tim kami siap menjawab pertanyaan Anda di WhatsApp.
                     </p>
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="w-full py-3 text-xs font-semibold rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center gap-2 shadow-sm transition-all">
+                    <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="w-full py-3 text-xs font-semibold rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center gap-2 shadow-sm transition-all">
                         <span>Buka Chat WhatsApp</span>
                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                     </a>
@@ -48,7 +48,7 @@
                 <div class="studio-card p-7 space-y-4 font-mono text-xs">
                     <div class="space-y-1 pb-3 border-b border-night-border">
                         <span class="text-night-dim block text-[10px] uppercase">Direct Studio Channel</span>
-                        <a href="mailto:hello@oxid-labs.id" class="text-night-text font-bold hover:underline">hello@oxid-labs.id</a>
+                        <a href="mailto:oxidteam@oxidlabs.my.id" class="text-night-text font-bold hover:underline">oxidteam@oxidlabs.my.id</a>
                     </div>
 
                     <div class="space-y-1 pb-3 border-b border-night-border">

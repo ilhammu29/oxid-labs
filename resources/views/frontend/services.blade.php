@@ -114,7 +114,7 @@
                         </div>
 
                         <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
-                            <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Website%20%26%20Landing%20Page%20Development" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
+                            <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Website%20%26%20Landing%20Page%20Development" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
                                 Konsultasi Layanan &rarr;
                             </a>
                             <a href="{{ route('pricing') }}" class="px-5 py-2.5 text-xs font-semibold btn-pill-secondary">
@@ -194,7 +194,7 @@
                         </div>
 
                         <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
-                            <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Website%20Company%20Profile" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
+                            <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Website%20Company%20Profile" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
                                 Konsultasi Layanan &rarr;
                             </a>
                             <a href="{{ route('pricing') }}" class="px-5 py-2.5 text-xs font-semibold btn-pill-secondary">
@@ -273,7 +273,7 @@
                         </div>
 
                         <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
-                            <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Toko%20Online%20E-Commerce" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
+                            <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Toko%20Online%20E-Commerce" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
                                 Konsultasi Layanan &rarr;
                             </a>
                             <a href="{{ route('pricing') }}" class="px-5 py-2.5 text-xs font-semibold btn-pill-secondary">
@@ -352,7 +352,7 @@
                         </div>
 
                         <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
-                            <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20SaaS%20Product%20Development" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
+                            <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20SaaS%20Product%20Development" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
                                 Konsultasi Layanan &rarr;
                             </a>
                             <a href="{{ route('pricing') }}" class="px-5 py-2.5 text-xs font-semibold btn-pill-secondary">
@@ -431,7 +431,7 @@
                         </div>
 
                         <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
-                            <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Redesain%20dan%20Modernisasi%20Website" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
+                            <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Redesain%20dan%20Modernisasi%20Website" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
                                 Konsultasi Layanan &rarr;
                             </a>
                             <a href="{{ route('pricing') }}" class="px-5 py-2.5 text-xs font-semibold btn-pill-secondary">
@@ -510,7 +510,7 @@
                         </div>
 
                         <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
-                            <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Workflow%20Automation%20%26%20Maintenance" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
+                            <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20tertarik%20dengan%20layanan%20Workflow%20Automation%20%26%20Maintenance" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-xs font-semibold btn-pill-primary">
                                 Konsultasi Layanan &rarr;
                             </a>
                             <a href="{{ route('pricing') }}" class="px-5 py-2.5 text-xs font-semibold btn-pill-secondary">
@@ -716,7 +716,7 @@
                     </div>
 
                     <div class="flex flex-wrap items-center gap-3.5 flex-shrink-0">
-                        <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20layanan%20rekayasa%20website" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 text-xs font-semibold btn-pill-white">
+                        <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20layanan%20rekayasa%20website" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 text-xs font-semibold btn-pill-white">
                             Chat WhatsApp Langsung &rarr;
                         </a>
                         <a href="{{ route('pricing') }}" class="px-6 py-3.5 text-xs font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all duration-200">
