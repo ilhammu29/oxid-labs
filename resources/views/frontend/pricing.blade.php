@@ -115,7 +115,7 @@
                         <div class="p-4 rounded-xl bg-night-midnight border border-night-border mb-6">
                             <div class="flex items-baseline gap-1.5">
                                 <span class="text-sm font-bold text-night-text">Rp</span>
-                                <span class="text-3xl font-extrabold text-night-text font-mono">450.000</span>
+                                <span class="text-3xl font-extrabold text-night-text font-mono">500.000</span>
                                 <span class="text-xs text-night-dim font-mono">/ project</span>
                             </div>
                             <div class="text-[10px] text-night-dim font-mono mt-1">
@@ -148,7 +148,7 @@
                         </ul>
                     </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Starter%20Landing%20Page%20(Rp%20450.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-secondary text-center hover:bg-night-surface">
+                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20memesan%20Paket%20Starter%20Landing%20Page%20(Rp%20500.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 text-xs font-semibold btn-pill-secondary text-center hover:bg-night-surface">
                         Pesan Paket Starter &rarr;
                     </a>
                 </div>
