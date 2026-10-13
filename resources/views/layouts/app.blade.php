@@ -356,10 +356,19 @@
 
         /* 1. Header Hero Dark State (Aktif saat di section hitam hero pada Home & Katalog Harga) */
         #global-header.header-hero-dark {
-            background-color: #0E0E10 !important;
+            background-color: rgba(14, 14, 16, 0.92) !important;
             border-bottom-color: rgba(255, 255, 255, 0.1) !important;
             backdrop-filter: blur(14px) !important;
             -webkit-backdrop-filter: blur(14px) !important;
+        }
+
+        /* 1a. Header Top State di Section 1 (Tanpa garis batas, menyatu langsung dengan Section 1) */
+        #global-header.header-hero-dark.header-hero-top {
+            background-color: transparent !important;
+            border-bottom-color: transparent !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            box-shadow: none !important;
         }
         #global-header.header-hero-dark .header-wordmark {
             color: #ffffff !important;
@@ -491,7 +500,7 @@
 <body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden {{ request()->routeIs('home', 'pricing*') ? 'has-dark-hero' : '' }}">
 
     <!-- Unified Global Header Navigation -->
-    <header id="global-header" class="fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 {{ request()->routeIs('home', 'pricing*') ? 'header-hero-dark' : 'header-top' }}">
+    <header id="global-header" class="fixed top-0 left-0 right-0 z-50 border-b border-transparent transition-all duration-300 {{ request()->routeIs('home', 'pricing*') ? 'header-hero-dark header-hero-top' : 'header-top' }}">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 h-20 flex items-center justify-between">
             <!-- Studio Logo & Wordmark (Logo lama) -->
             <a href="{{ route('home') }}" class="flex items-center gap-3 group">
@@ -592,8 +601,8 @@
         </div>
     </div>
 
-    <!-- Main Page Content Slot (Pad top for navbar) -->
-    <main class="relative z-10 pt-20">
+    <!-- Main Page Content Slot (Pad top for navbar except on home page to unify Section 1) -->
+    <main class="relative z-10 {{ request()->routeIs('home') ? '' : 'pt-20' }}">
         @yield('content')
     </main>
 
@@ -678,20 +687,26 @@
                 // Navbar has height 80px (h-20). When the bottom of the dark hero section is <= 80px,
                 // the user has scrolled past the dark hero into the light/white content sections.
                 const isPastDarkHero = rect.bottom <= 80;
+                const isAtTop = window.scrollY <= 15;
 
                 if (isPastDarkHero) {
-                    globalHeader.classList.remove('header-hero-dark', 'header-top');
+                    globalHeader.classList.remove('header-hero-dark', 'header-hero-top', 'header-top');
                     globalHeader.classList.add('header-scrolled');
                 } else {
                     globalHeader.classList.remove('header-scrolled', 'header-top');
                     globalHeader.classList.add('header-hero-dark');
+                    if (isAtTop) {
+                        globalHeader.classList.add('header-hero-top');
+                    } else {
+                        globalHeader.classList.remove('header-hero-top');
+                    }
                 }
             } else {
                 if (window.scrollY > 20) {
-                    globalHeader.classList.remove('header-top', 'header-hero-dark');
+                    globalHeader.classList.remove('header-top', 'header-hero-dark', 'header-hero-top');
                     globalHeader.classList.add('header-scrolled');
                 } else {
-                    globalHeader.classList.remove('header-scrolled', 'header-hero-dark');
+                    globalHeader.classList.remove('header-scrolled', 'header-hero-dark', 'header-hero-top');
                     globalHeader.classList.add('header-top');
                 }
             }

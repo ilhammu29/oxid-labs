@@ -5,256 +5,80 @@
 
 @section('content')
     <!-- ========================================================================= -->
-    <!-- HERO SECTION 1: REDESIGNED TO MATCH REFERENCE_2.JPG                         -->
-    <!-- Atmospheric Rounded Card Showcase with Center Constellation & Circuit Nodes -->
+    <!-- HERO SECTION 1: SEAMLESS HERO INTEGRATED WITH SIDEBAR/NAVBAR              -->
+    <!-- Clean Full-Bleed Atmosphere without Inner Boxes, Badges, or Clutter      -->
     <!-- ========================================================================= -->
-    <section id="dark-hero-section" class="relative w-full bg-[#0E0E10] text-white pt-4 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="dark-hero-section" class="relative w-full bg-[#0E0E10] text-white pt-28 sm:pt-36 pb-14 sm:pb-20 px-6 sm:px-8 lg:px-12 overflow-hidden min-h-[90vh] flex flex-col justify-between">
         
-        <!-- Large Showcase Framed Container (Exact Card Shape from reference_2.jpg) -->
-        <div class="relative max-w-7xl mx-auto rounded-[2rem] sm:rounded-[2.5rem] bg-[#07080A] border border-white/10 overflow-hidden shadow-2xl py-12 sm:py-16 px-6 sm:px-12 flex flex-col justify-between min-h-[80vh]">
+        <!-- Three.js Spatial Background Layer (Full-Bleed across entire hero) -->
+        <div id="three-hero-container" class="absolute inset-0 pointer-events-none z-0 opacity-25 overflow-hidden"></div>
+
+        <!-- Atmospheric Diffuse Ambient Glows -->
+        <!-- Top-Right Diffuse Glow (Hazy soft cyan/emerald aura) -->
+        <div class="absolute -top-32 -right-20 w-[600px] lg:w-[850px] h-[600px] lg:h-[850px] rounded-full bg-gradient-to-bl from-emerald-400/20 via-teal-500/10 to-transparent blur-[140px] pointer-events-none z-0"></div>
+        <!-- Bottom-Left Diffuse Glow (Hazy soft cyan/slate aura) -->
+        <div class="absolute -bottom-32 -left-20 w-[500px] lg:w-[750px] h-[500px] lg:h-[750px] rounded-full bg-gradient-to-tr from-cyan-500/15 via-blue-500/10 to-transparent blur-[130px] pointer-events-none z-0"></div>
+        
+        <!-- Subtle Stardust & Cyber Grid Texture -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/[0.04] via-transparent to-transparent pointer-events-none z-0"></div>
+
+        <!-- ===================================================================== -->
+        <!-- CENTER STAGE CONTENT (Minimalist, Clean Typography, Zero Badges/Symbols) -->
+        <!-- ===================================================================== -->
+        <div class="relative z-10 max-w-4xl mx-auto my-auto text-center py-8 sm:py-12">
             
-            <!-- Three.js Spatial Background Layer (Softly integrated in card background) -->
-            <div id="three-hero-container" class="absolute inset-0 pointer-events-none z-0 opacity-25 overflow-hidden"></div>
+            <!-- Headline (Bold, High-Contrast Centered Headline) -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white mb-6 leading-[1.08]">
+                <span class="bg-gradient-to-b from-white via-white to-zinc-400 bg-clip-text text-transparent">
+                    One-Click for Digital Excellence
+                </span>
+            </h1>
 
-            <!-- Atmospheric Diffuse Ambient Glows (from reference_2.jpg) -->
-            <!-- Top-Right Diffuse Glow (Hazy soft cyan/emerald aura) -->
-            <div class="absolute -top-32 -right-20 w-[550px] lg:w-[680px] h-[550px] lg:h-[680px] rounded-full bg-gradient-to-bl from-emerald-400/25 via-teal-500/15 to-transparent blur-[130px] pointer-events-none z-0"></div>
-            <!-- Bottom-Left Diffuse Glow (Hazy soft cyan/slate aura) -->
-            <div class="absolute -bottom-32 -left-20 w-[450px] lg:w-[580px] h-[450px] lg:h-[580px] rounded-full bg-gradient-to-tr from-cyan-500/20 via-blue-500/10 to-transparent blur-[120px] pointer-events-none z-0"></div>
-            
-            <!-- Subtle Stardust & Cyber Grid Texture -->
-            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/[0.05] via-transparent to-transparent pointer-events-none z-0"></div>
+            <!-- Subtitle (Clean & Concise description) -->
+            <p class="text-sm sm:text-base md:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-10 font-normal">
+                Wujudkan website berkecepatan kilat, sistem web kustom, dan kehadiran digital profesional dengan arsitektur kode bersih dan terverifikasi.
+            </p>
 
-            <!-- ===================================================================== -->
-            <!-- DESKTOP CIRCUIT TRACES & ORBIT DATA NODES (Matches reference_2.jpg)    -->
-            <!-- ===================================================================== -->
-            
-            <!-- TOP-LEFT NODE: Cortex / Speed Engine (▲) -->
-            <div class="hidden lg:flex absolute left-8 xl:left-14 top-28 items-center gap-3 z-10 select-none">
-                <div class="relative flex items-center">
-                    <!-- Circuit SVG Trace -->
-                    <svg class="absolute -right-24 top-1/2 -translate-y-1/2 w-24 h-12 pointer-events-none overflow-visible" fill="none">
-                        <path d="M 0 6 L 50 6 L 80 30" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" stroke-dasharray="3 3"/>
-                        <circle cx="80" cy="30" r="2.5" fill="#34d399"/>
-                    </svg>
-                    <div class="w-8 h-8 rounded-full bg-white/10 border border-white/25 backdrop-blur-md flex items-center justify-center text-white text-xs shadow-lg hover:border-emerald-400 transition-colors">
-                        <span class="text-[10px] font-bold">▲</span>
-                    </div>
-                </div>
-                <div class="text-left font-mono">
-                    <div class="text-xs font-bold text-white flex items-center gap-1.5">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                        Ultra Speed
-                    </div>
-                    <div class="text-[10px] text-zinc-400 tracking-wider">&lt; 1.2s Core Vitals</div>
-                </div>
-            </div>
-
-            <!-- BOTTOM-LEFT NODE: Aelf / Clean Architecture (❖) -->
-            <div class="hidden lg:flex absolute left-8 xl:left-14 bottom-32 items-center gap-3 z-10 select-none">
-                <div class="relative flex items-center">
-                    <!-- Circuit SVG Trace -->
-                    <svg class="absolute -right-24 top-1/2 -translate-y-1/2 w-24 h-12 pointer-events-none overflow-visible" fill="none">
-                        <path d="M 0 18 L 50 18 L 80 -6" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" stroke-dasharray="3 3"/>
-                        <circle cx="80" cy="-6" r="2.5" fill="#38bdf8"/>
-                    </svg>
-                    <div class="w-8 h-8 rounded-full bg-white/10 border border-white/25 backdrop-blur-md flex items-center justify-center text-white text-xs shadow-lg hover:border-sky-400 transition-colors">
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-                    </div>
-                </div>
-                <div class="text-left font-mono">
-                    <div class="text-xs font-bold text-white flex items-center gap-1.5">
-                        <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
-                        Clean Code
-                    </div>
-                    <div class="text-[10px] text-zinc-400 tracking-wider">100% Hak Milik</div>
-                </div>
-            </div>
-
-            <!-- TOP-RIGHT NODE: Quant / Conversion Focus (➔) -->
-            <div class="hidden lg:flex absolute right-8 xl:right-14 top-28 items-center flex-row-reverse gap-3 z-10 select-none">
-                <div class="relative flex items-center">
-                    <!-- Circuit SVG Trace -->
-                    <svg class="absolute -left-24 top-1/2 -translate-y-1/2 w-24 h-12 pointer-events-none overflow-visible" fill="none">
-                        <path d="M 96 6 L 46 6 L 16 30" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" stroke-dasharray="3 3"/>
-                        <circle cx="16" cy="30" r="2.5" fill="#a78bfa"/>
-                    </svg>
-                    <div class="w-8 h-8 rounded-full bg-white/10 border border-white/25 backdrop-blur-md flex items-center justify-center text-white text-xs shadow-lg hover:border-purple-400 transition-colors">
-                        <span class="text-[11px] font-bold">&rarr;</span>
-                    </div>
-                </div>
-                <div class="text-right font-mono">
-                    <div class="text-xs font-bold text-white flex items-center justify-end gap-1.5">
-                        Conversion Ready
-                        <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
-                    </div>
-                    <div class="text-[10px] text-zinc-400 tracking-wider">SEO &amp; Analytics</div>
-                </div>
-            </div>
-
-            <!-- BOTTOM-RIGHT NODE: Meeton / Support SLA (🛡) -->
-            <div class="hidden lg:flex absolute right-8 xl:right-14 bottom-32 items-center flex-row-reverse gap-3 z-10 select-none">
-                <div class="relative flex items-center">
-                    <!-- Circuit SVG Trace -->
-                    <svg class="absolute -left-24 top-1/2 -translate-y-1/2 w-24 h-12 pointer-events-none overflow-visible" fill="none">
-                        <path d="M 96 18 L 46 18 L 16 -6" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" stroke-dasharray="3 3"/>
-                        <circle cx="16" cy="-6" r="2.5" fill="#f43f5e"/>
-                    </svg>
-                    <div class="w-8 h-8 rounded-full bg-white/10 border border-white/25 backdrop-blur-md flex items-center justify-center text-white text-xs shadow-lg hover:border-rose-400 transition-colors">
-                        <svg class="w-3.5 h-3.5 text-zinc-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                    </div>
-                </div>
-                <div class="text-right font-mono">
-                    <div class="text-xs font-bold text-white flex items-center justify-end gap-1.5">
-                        Support SLA
-                        <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
-                    </div>
-                    <div class="text-[10px] text-zinc-400 tracking-wider">Garansi 30 Hari</div>
-                </div>
-            </div>
-
-            <!-- ===================================================================== -->
-            <!-- CENTER STAGE CONTENT (Exact typography, buttons, and vertical beams)  -->
-            <!-- ===================================================================== -->
-            <div class="relative z-10 max-w-3xl mx-auto my-auto text-center py-6 sm:py-8">
-                
-                <!-- 1. Play / Showreel Button (Matching top play icon in reference_2.jpg) -->
-                <a href="#layanan" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white mb-5 transition-all duration-300 hover:scale-110 shadow-lg group" aria-label="Jelajahi Solusi Digital">
-                    <svg class="w-4 h-4 ml-0.5 fill-current text-white/90 group-hover:text-white transition-colors" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
+            <!-- Centered Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <!-- Secondary Glass Pill Button -->
+                <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 rounded-full text-xs sm:text-sm font-semibold bg-white/5 hover:bg-white/10 border border-white/20 hover:border-white/40 text-white transition-all backdrop-blur-sm">
+                    <span>Konsultasi Proyek</span>
                 </a>
 
-                <!-- 2. Eyebrow Badge Pill (Matching reference_2.jpg: Unlock Your Assets Spark! ->) -->
-                <div class="flex justify-center mb-6">
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.07] border border-white/15 text-xs text-zinc-300 font-medium backdrop-blur-md hover:border-white/30 transition-all cursor-default">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                        <span class="tracking-wide">Unlock Your Digital Growth</span>
-                        <span class="text-zinc-400">&rarr;</span>
-                    </div>
-                </div>
-
-                <!-- 3. Headline (Bold, High-Contrast Centered Headline from reference_2.jpg) -->
-                <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.12]">
-                    <span class="bg-gradient-to-b from-white via-white to-zinc-400 bg-clip-text text-transparent">
-                        One-Click for Digital Excellence
-                    </span>
-                </h1>
-
-                <!-- 4. Subtitle (Clean & Concise description) -->
-                <p class="text-xs sm:text-sm md:text-base text-zinc-400 max-w-xl mx-auto leading-relaxed mb-8 font-normal">
-                    Wujudkan website berkecepatan kilat, sistem web kustom, dan kehadiran digital profesional dengan arsitektur kode bersih dan terverifikasi.
-                </p>
-
-                <!-- 5. Centered Action Buttons (Matching Open App & Discover More in reference_2.jpg) -->
-                <div class="flex flex-wrap items-center justify-center gap-3.5 mb-2">
-                    <!-- Secondary Glass Pill Button (Open App) -->
-                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full text-xs sm:text-sm font-semibold bg-white/5 hover:bg-white/10 border border-white/20 hover:border-white/40 text-white transition-all flex items-center gap-2">
-                        <span>Konsultasi Proyek</span>
-                        <span class="text-xs">&nearr;</span>
-                    </a>
-
-                    <!-- Primary Solid White Pill Button (Discover More) -->
-                    <a href="{{ route('pricing') }}" class="px-7 py-3 rounded-full text-xs sm:text-sm font-bold bg-white text-[#0E0E10] hover:bg-zinc-100 transition-all shadow-xl hover:shadow-white/10 flex items-center gap-2">
-                        <span>Lihat Katalog Harga &amp; Paket</span>
-                    </a>
-                </div>
-
-                <!-- 6. Vertical Light Streaks (Signature element falling beneath CTA from reference_2.jpg) -->
-                <div class="flex items-start justify-center gap-6 mt-8 h-16 pointer-events-none select-none">
-                    <div class="w-[1px] h-10 bg-gradient-to-b from-white/30 via-white/10 to-transparent"></div>
-                    <div class="w-[1px] h-16 bg-gradient-to-b from-white/70 via-white/20 to-transparent"></div>
-                    <div class="w-[1px] h-12 bg-gradient-to-b from-white/40 via-white/10 to-transparent"></div>
-                </div>
-
-                <!-- Mobile Circuit Stats Badges (Visible on mobile/tablet) -->
-                <div class="grid grid-cols-2 gap-2.5 mt-6 lg:hidden text-left font-mono">
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-                        <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                            Ultra Speed
-                        </div>
-                        <div class="text-[10px] text-zinc-400">&lt; 1.2s Core Vitals</div>
-                    </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-                        <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
-                            Conversion Ready
-                        </div>
-                        <div class="text-[10px] text-zinc-400">SEO &amp; Analytics</div>
-                    </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-                        <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
-                            Clean Code
-                        </div>
-                        <div class="text-[10px] text-zinc-400">100% Hak Milik</div>
-                    </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-                        <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
-                            Support SLA
-                        </div>
-                        <div class="text-[10px] text-zinc-400">Garansi 30 Hari</div>
-                    </div>
-                </div>
-
+                <!-- Primary Solid White Pill Button -->
+                <a href="{{ route('pricing') }}" class="px-8 py-3.5 rounded-full text-xs sm:text-sm font-bold bg-white text-[#0E0E10] hover:bg-zinc-100 transition-all shadow-xl hover:shadow-white/10">
+                    <span>Lihat Katalog Harga &amp; Paket</span>
+                </a>
             </div>
 
-            <!-- ===================================================================== -->
-            <!-- BOTTOM CONTROLS OF THE HERO FRAME (Exact match with reference_2.jpg)  -->
-            <!-- ===================================================================== -->
-            <div class="relative z-10 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 select-none">
-                
-                <!-- Bottom Left: Scroll Down Pill (↓ 01/04 . Scroll down) -->
-                <a href="#layanan" class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono text-zinc-300 transition-colors">
-                    <span class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center text-[10px] text-white">
-                        &darr;
-                    </span>
-                    <span>01/04 &bull; Scroll down</span>
-                </a>
-
-                <!-- Bottom Right: Horizons Progress Segment (DeFi horizons — — — —) -->
-                <div class="flex items-center gap-3 text-xs font-mono text-zinc-400">
-                    <span class="tracking-wider">Digital Horizons</span>
-                    <div class="flex items-center gap-1.5">
-                        <span class="w-5 h-0.5 bg-white rounded-full"></span>
-                        <span class="w-5 h-0.5 bg-white/20 rounded-full"></span>
-                        <span class="w-5 h-0.5 bg-white/20 rounded-full"></span>
-                        <span class="w-5 h-0.5 bg-white/20 rounded-full"></span>
-                    </div>
-                </div>
-
+            <!-- Vertical Light Streaks (Signature falling light beneath CTA) -->
+            <div class="flex items-start justify-center gap-6 mt-10 h-20 pointer-events-none select-none">
+                <div class="w-[1px] h-12 bg-gradient-to-b from-white/30 via-white/10 to-transparent"></div>
+                <div class="w-[1px] h-20 bg-gradient-to-b from-white/70 via-white/20 to-transparent"></div>
+                <div class="w-[1px] h-14 bg-gradient-to-b from-white/40 via-white/10 to-transparent"></div>
             </div>
 
         </div>
 
         <!-- ========================================================================= -->
-        <!-- BOTTOM LOGO RIBBON (Matching Vercel, Loom, Zapier ribbon in reference_2)  -->
+        <!-- BOTTOM TECH STRIP (Clean subtle typography without badges or symbols)      -->
         <!-- ========================================================================= -->
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 pt-8 pb-2">
-            <div class="flex flex-wrap items-center justify-center md:justify-between gap-6 sm:gap-8 text-zinc-500 font-mono text-xs opacity-75">
-                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
-                    <span class="text-white text-sm">▲</span> Vercel Deploy
-                </span>
-                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
-                    <span class="text-rose-400 text-sm">⚡</span> Laravel 11 Core
-                </span>
-                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
-                    <span class="text-cyan-400 text-sm">✦</span> Three.js WebGL
-                </span>
-                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
-                    <span class="text-sky-400 text-sm">◈</span> Tailwind CSS
-                </span>
-                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
-                    <span class="text-orange-400 text-sm">☁</span> Cloudflare CDN
-                </span>
-                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
-                    <span class="text-emerald-400 text-sm">⛁</span> MySQL Cluster
-                </span>
-                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
-                    <span class="text-indigo-400 text-sm">⚙</span> PHP 8.4 Engine
-                </span>
+        <div class="relative z-10 max-w-5xl mx-auto w-full pt-8 pb-2 border-t border-white/5 select-none">
+            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-zinc-500 font-mono text-xs opacity-75">
+                <span class="hover:text-zinc-300 transition-colors">Vercel Deploy</span>
+                <span class="text-zinc-700">&bull;</span>
+                <span class="hover:text-zinc-300 transition-colors">Laravel 11 Core</span>
+                <span class="text-zinc-700">&bull;</span>
+                <span class="hover:text-zinc-300 transition-colors">Three.js WebGL</span>
+                <span class="text-zinc-700">&bull;</span>
+                <span class="hover:text-zinc-300 transition-colors">Tailwind CSS</span>
+                <span class="text-zinc-700">&bull;</span>
+                <span class="hover:text-zinc-300 transition-colors">Cloudflare CDN</span>
+                <span class="text-zinc-700">&bull;</span>
+                <span class="hover:text-zinc-300 transition-colors">MySQL Cluster</span>
+                <span class="text-zinc-700">&bull;</span>
+                <span class="hover:text-zinc-300 transition-colors">PHP 8.4 Engine</span>
             </div>
         </div>
 
