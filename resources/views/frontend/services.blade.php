@@ -58,7 +58,7 @@
     <!-- ========================================================================= -->
     <!-- DETAILED SERVICES CATALOG SECTION                                         -->
     <!-- ========================================================================= -->
-    <section class="reveal-init py-12 sm:py-24 px-4 sm:px-8 bg-night-base min-h-screen">
+    <section class="py-12 sm:py-24 px-4 sm:px-8 bg-night-base min-h-screen">
         <div class="max-w-7xl mx-auto">
 
             <!-- Category Filter Tabs & Navigation -->

@@ -27,7 +27,7 @@
         <!-- ========================================================================= -->
         <!-- HERO MARKETPLACE SHOWCASE (2 COLUMNS LAYOUT PERSIS GERAIKITA)             -->
         <!-- ========================================================================= -->
-        <section class="reveal-init grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
             
             <!-- Left Banner: 3-Slide Carousel Showcase (Pure Banner Art, Minimalist & Modern) -->
             <div class="lg:col-span-8 rounded-2xl sm:rounded-3xl border border-white/10 bg-[#0E0E10] overflow-hidden shadow-xl relative group flex flex-col justify-center min-h-[260px] sm:min-h-[380px] lg:min-h-[480px]">
