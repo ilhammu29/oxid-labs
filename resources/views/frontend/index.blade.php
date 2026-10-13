@@ -10,7 +10,7 @@
     <!-- ========================================================================= -->
     <!-- HERO SECTION: CLEAN MINIMALIST HERO WITH REAL DEVICE MOCKUP SHOWCASE       -->
     <!-- ========================================================================= -->
-    <section class="relative w-full min-h-[85vh] flex flex-col justify-center overflow-hidden bg-[#0E0E10] text-white pt-10 pb-16 sm:pb-20">
+    <section id="dark-hero-section" class="relative w-full min-h-[85vh] flex flex-col justify-center overflow-hidden bg-[#0E0E10] text-white pt-10 pb-16 sm:pb-20">
         
         <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 w-full">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">

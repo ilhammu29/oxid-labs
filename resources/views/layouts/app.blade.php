@@ -343,56 +343,155 @@
             background: var(--color-scrollbar-hover);
         }
 
-        /* Navbar Blur & Scroll States */
+        /* ========================================================================= */
+        /* NAVBAR THEME & SCROLL DYNAMICS                                            */
+        /* ========================================================================= */
         #global-header {
-            transition: background-color 0.25s ease, border-color 0.25s ease, backdrop-filter 0.25s ease, -webkit-backdrop-filter 0.25s ease;
+            transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                        border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                        backdrop-filter 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                        -webkit-backdrop-filter 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                        box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
+
+        /* 1. Header Hero Dark State (Aktif saat di section hitam hero pada Home & Katalog Harga) */
+        #global-header.header-hero-dark {
+            background-color: #0E0E10 !important;
+            border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(14px) !important;
+            -webkit-backdrop-filter: blur(14px) !important;
+        }
+        #global-header.header-hero-dark .header-wordmark {
+            color: #ffffff !important;
+        }
+        #global-header.header-hero-dark .header-submark {
+            color: #94a3b8 !important;
+        }
+        #global-header.header-hero-dark nav a {
+            color: #94a3b8 !important;
+        }
+        #global-header.header-hero-dark nav a:hover {
+            color: #ffffff !important;
+        }
+        #global-header.header-hero-dark nav a.nav-active {
+            color: #ffffff !important;
+            font-weight: 700 !important;
+        }
+        #global-header.header-hero-dark .header-cta {
+            background-color: #ffffff !important;
+            color: #0E0E10 !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        }
+        #global-header.header-hero-dark .header-cta:hover {
+            background-color: #f4f4f6 !important;
+        }
+        #global-header.header-hero-dark #mobile-nav-toggle {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-color: rgba(255, 255, 255, 0.15) !important;
+            color: #ffffff !important;
+        }
+        #global-header.header-hero-dark .theme-toggle-btn {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-color: rgba(255, 255, 255, 0.15) !important;
+            color: #ffffff !important;
+        }
+        #global-header.header-hero-dark .theme-icon-moon {
+            color: #cbd5e1 !important;
+        }
+        #global-header.header-hero-dark .theme-icon-sun {
+            color: #fcd34d !important;
+        }
+
+        /* 2. Header Scrolled State (Ketika scroll melewati section hitam menuju section putih) */
+        /* Light mode scrolled: Putih susu bersih & teks gelap dengan kontras tajam */
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled {
+            background-color: rgba(248, 249, 250, 0.95) !important;
+            border-bottom-color: rgba(0, 0, 0, 0.08) !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled .header-wordmark {
+            color: #0E0E10 !important;
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled .header-submark {
+            color: #64748b !important;
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled nav a {
+            color: #64748b !important;
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled nav a:hover {
+            color: #0E0E10 !important;
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled nav a.nav-active {
+            color: #0E0E10 !important;
+            font-weight: 700 !important;
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled .header-cta {
+            background-color: #0E0E10 !important;
+            color: #ffffff !important;
+            border: 1px solid #0E0E10 !important;
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled .header-cta:hover {
+            background-color: #27272a !important;
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled #mobile-nav-toggle {
+            background-color: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            color: #0E0E10 !important;
+        }
+        html:not([data-theme="dark"]):not(.dark) #global-header.header-scrolled .theme-toggle-btn {
+            background-color: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            color: #64748b !important;
+        }
+
+        /* 3. Dark mode scrolled: Tetap hitam doff konsisten */
+        html[data-theme="dark"] #global-header.header-scrolled,
+        html.dark #global-header.header-scrolled,
+        html.theme-dark #global-header.header-scrolled {
+            background-color: rgba(14, 14, 16, 0.92) !important;
+            border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+        }
+
+        /* 4. Top state di halaman tanpa dark hero */
         #global-header.header-top {
             background-color: transparent !important;
             border-bottom-color: transparent !important;
             backdrop-filter: none !important;
             -webkit-backdrop-filter: none !important;
         }
-        #global-header.header-scrolled {
-            background-color: rgba(248, 249, 250, 0.88) !important;
-            border-bottom-color: var(--color-border) !important;
-            backdrop-filter: blur(14px) !important;
-            -webkit-backdrop-filter: blur(14px) !important;
-        }
-        html[data-theme="dark"] #global-header.header-scrolled,
-        html.theme-dark #global-header.header-scrolled {
-            background-color: rgba(14, 14, 16, 0.90) !important;
-            border-bottom-color: var(--color-border) !important;
-        }
 
-        /* High-contrast header navigation over black hero on home page */
-        body.is-home #global-header.header-top nav a {
-            color: #94a3b8;
+        /* 5. Mobile Drawer Terbuka: Selalu hitam doff agar selaras dengan drawer */
+        body.mobile-drawer-open #global-header {
+            background-color: #0E0E10 !important;
+            border-bottom-color: rgba(255, 255, 255, 0.1) !important;
         }
-        body.is-home #global-header.header-top nav a:hover,
-        body.is-home #global-header.header-top nav a.text-night-text {
+        body.mobile-drawer-open #global-header .header-wordmark {
             color: #ffffff !important;
         }
-        body.is-home #global-header.header-top .text-night-text {
-            color: #ffffff;
+        body.mobile-drawer-open #global-header .header-submark {
+            color: #94a3b8 !important;
         }
-        body.is-home #global-header.header-top .text-night-dim {
-            color: #94a3b8;
+        body.mobile-drawer-open #global-header #mobile-nav-toggle {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-color: rgba(255, 255, 255, 0.15) !important;
+            color: #ffffff !important;
         }
-        body.is-home #global-header.header-top .btn-pill-primary {
-            background-color: #ffffff;
-            color: #111113;
-        }
-        body.is-home #global-header.header-top .btn-pill-primary:hover {
-            background-color: #f4f4f6;
+        body.mobile-drawer-open #global-header .theme-toggle-btn {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-color: rgba(255, 255, 255, 0.15) !important;
+            color: #ffffff !important;
         }
     </style>
     @stack('styles')
 </head>
-<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden {{ request()->routeIs('home') ? 'is-home' : '' }}">
+<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden {{ request()->routeIs('home', 'pricing*') ? 'has-dark-hero' : '' }}">
 
     <!-- Unified Global Header Navigation -->
-    <header id="global-header" class="fixed top-0 left-0 right-0 z-50 header-top border-b transition-all duration-300">
+    <header id="global-header" class="fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 {{ request()->routeIs('home', 'pricing*') ? 'header-hero-dark' : 'header-top' }}">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 h-20 flex items-center justify-between">
             <!-- Studio Logo & Wordmark (Logo lama) -->
             <a href="{{ route('home') }}" class="flex items-center gap-3 group">
@@ -400,10 +499,10 @@
                     <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID" class="w-full h-full object-contain">
                 </div>
                 <div class="flex items-baseline gap-1">
-                    <span class="font-sans font-extrabold text-lg tracking-wider text-night-text">
+                    <span class="font-sans font-extrabold text-lg tracking-wider text-night-text header-wordmark transition-colors">
                         OXID
                     </span>
-                    <span class="font-sans font-light tracking-[0.25em] text-xs uppercase text-night-dim">
+                    <span class="font-sans font-light tracking-[0.25em] text-xs uppercase text-night-dim header-submark transition-colors">
                         LABS
                     </span>
                 </div>
@@ -411,25 +510,25 @@
 
             <!-- Desktop Primary Navigation Items -->
             <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase text-night-muted">
-                <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'nav-active text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Home
                 </a>
-                <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'nav-active text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Layanan
                 </a>
-                <a href="{{ route('pricing') }}" class="{{ request()->routeIs('pricing*') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                <a href="{{ route('pricing') }}" class="{{ request()->routeIs('pricing*') ? 'nav-active text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Katalog Harga
                 </a>
-                <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                <a href="{{ route('products') }}" class="{{ request()->routeIs('products') ? 'nav-active text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Produk & Portofolio
                 </a>
-                <a href="{{ route('capabilities') }}" class="{{ request()->routeIs('capabilities') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                <a href="{{ route('capabilities') }}" class="{{ request()->routeIs('capabilities') ? 'nav-active text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Kemampuan
                 </a>
-                <a href="{{ route('studio') }}" class="{{ request()->routeIs('studio') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                <a href="{{ route('studio') }}" class="{{ request()->routeIs('studio') ? 'nav-active text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Studio
                 </a>
-                <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact*') ? 'text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
+                <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact*') ? 'nav-active text-night-text font-bold' : 'hover:text-night-text' }} transition-colors">
                     Kontak
                 </a>
             </nav>
@@ -439,12 +538,12 @@
                 <!-- Theme Mode Toggle Control -->
                 <x-theme-toggle variant="default" />
 
-                <a href="{{ route('contact') }}" class="hidden sm:inline-flex px-5 py-2.5 text-xs font-semibold btn-pill-primary">
+                <a href="{{ route('contact') }}" class="hidden sm:inline-flex px-5 py-2.5 text-xs font-semibold btn-pill-primary header-cta transition-colors">
                     <span>Konsultasi Gratis</span>
                     <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </a>
 
-                <button id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" class="lg:hidden p-2.5 rounded-xl border border-night-border bg-night-surface text-night-muted hover:text-night-text focus:outline-none">
+                <button id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" class="lg:hidden p-2.5 rounded-xl border border-night-border bg-night-surface text-night-muted hover:text-night-text focus:outline-none transition-colors">
                     <svg id="hamburger-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
                     <svg id="close-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                 </button>
@@ -569,17 +668,39 @@
     <!-- Header Scroll Handler -->
     <script>
         const globalHeader = document.getElementById('global-header');
+        const darkHeroSection = document.getElementById('dark-hero-section');
+
         function updateHeaderScrollState() {
             if (!globalHeader) return;
-            if (window.scrollY > 20) {
-                globalHeader.classList.remove('header-top');
-                globalHeader.classList.add('header-scrolled');
+
+            if (darkHeroSection) {
+                const rect = darkHeroSection.getBoundingClientRect();
+                // Navbar has height 80px (h-20). When the bottom of the dark hero section is <= 80px,
+                // the user has scrolled past the dark hero into the light/white content sections.
+                const isPastDarkHero = rect.bottom <= 80;
+
+                if (isPastDarkHero) {
+                    globalHeader.classList.remove('header-hero-dark', 'header-top');
+                    globalHeader.classList.add('header-scrolled');
+                } else {
+                    globalHeader.classList.remove('header-scrolled', 'header-top');
+                    globalHeader.classList.add('header-hero-dark');
+                }
             } else {
-                globalHeader.classList.remove('header-scrolled');
-                globalHeader.classList.add('header-top');
+                if (window.scrollY > 20) {
+                    globalHeader.classList.remove('header-top', 'header-hero-dark');
+                    globalHeader.classList.add('header-scrolled');
+                } else {
+                    globalHeader.classList.remove('header-scrolled', 'header-hero-dark');
+                    globalHeader.classList.add('header-top');
+                }
             }
         }
+
         window.addEventListener('scroll', updateHeaderScrollState, { passive: true });
+        window.addEventListener('resize', updateHeaderScrollState, { passive: true });
+        window.addEventListener('oxid-theme-changed', updateHeaderScrollState);
+        document.addEventListener('DOMContentLoaded', updateHeaderScrollState);
         updateHeaderScrollState();
 
         // Mobile drawer toggle
@@ -592,6 +713,7 @@
             mobileToggle.addEventListener('click', () => {
                 const isOpen = !mobileDrawer.classList.contains('hidden');
                 mobileDrawer.classList.toggle('hidden');
+                document.body.classList.toggle('mobile-drawer-open', !isOpen);
                 if (hamburgerIcon && closeIcon) {
                     hamburgerIcon.classList.toggle('hidden', !isOpen);
                     closeIcon.classList.toggle('hidden', isOpen);

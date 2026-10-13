@@ -7,7 +7,7 @@
     <!-- ========================================================================= -->
     <!-- HERO SECTION: PRICING CATALOG & ACTIVE PROMO                               -->
     <!-- ========================================================================= -->
-    <section class="relative w-full py-16 sm:py-24 bg-[#0E0E10] text-white border-b border-white/10 overflow-hidden">
+    <section id="dark-hero-section" class="relative w-full py-16 sm:py-24 bg-[#0E0E10] text-white border-b border-white/10 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
             <div class="max-w-3xl">
                 <!-- Eyebrow Badge -->
