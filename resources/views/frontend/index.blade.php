@@ -5,149 +5,259 @@
 
 @section('content')
     <!-- ========================================================================= -->
-    <!-- HERO SECTION: CLEAN MINIMALIST HERO WITH REAL DEVICE MOCKUP SHOWCASE       -->
+    <!-- HERO SECTION 1: REDESIGNED TO MATCH REFERENCE_2.JPG                         -->
+    <!-- Atmospheric Rounded Card Showcase with Center Constellation & Circuit Nodes -->
     <!-- ========================================================================= -->
-    <!-- ========================================================================= -->
-    <!-- HERO SECTION: CLEAN MINIMALIST HERO WITH REAL DEVICE MOCKUP SHOWCASE       -->
-    <!-- ========================================================================= -->
-    <section id="dark-hero-section" class="relative w-full min-h-[85vh] flex flex-col justify-center overflow-hidden bg-[#0E0E10] text-white pt-10 pb-16 sm:pb-20">
+    <section id="dark-hero-section" class="relative w-full bg-[#0E0E10] text-white pt-4 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
         
-        <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <!-- Large Showcase Framed Container (Exact Card Shape from reference_2.jpg) -->
+        <div class="relative max-w-7xl mx-auto rounded-[2rem] sm:rounded-[2.5rem] bg-[#07080A] border border-white/10 overflow-hidden shadow-2xl py-12 sm:py-16 px-6 sm:px-12 flex flex-col justify-between min-h-[80vh]">
+            
+            <!-- Three.js Spatial Background Layer (Softly integrated in card background) -->
+            <div id="three-hero-container" class="absolute inset-0 pointer-events-none z-0 opacity-25 overflow-hidden"></div>
+
+            <!-- Atmospheric Diffuse Ambient Glows (from reference_2.jpg) -->
+            <!-- Top-Right Diffuse Glow (Hazy soft cyan/emerald aura) -->
+            <div class="absolute -top-32 -right-20 w-[550px] lg:w-[680px] h-[550px] lg:h-[680px] rounded-full bg-gradient-to-bl from-emerald-400/25 via-teal-500/15 to-transparent blur-[130px] pointer-events-none z-0"></div>
+            <!-- Bottom-Left Diffuse Glow (Hazy soft cyan/slate aura) -->
+            <div class="absolute -bottom-32 -left-20 w-[450px] lg:w-[580px] h-[450px] lg:h-[580px] rounded-full bg-gradient-to-tr from-cyan-500/20 via-blue-500/10 to-transparent blur-[120px] pointer-events-none z-0"></div>
+            
+            <!-- Subtle Stardust & Cyber Grid Texture -->
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/[0.05] via-transparent to-transparent pointer-events-none z-0"></div>
+
+            <!-- ===================================================================== -->
+            <!-- DESKTOP CIRCUIT TRACES & ORBIT DATA NODES (Matches reference_2.jpg)    -->
+            <!-- ===================================================================== -->
+            
+            <!-- TOP-LEFT NODE: Cortex / Speed Engine (▲) -->
+            <div class="hidden lg:flex absolute left-8 xl:left-14 top-28 items-center gap-3 z-10 select-none">
+                <div class="relative flex items-center">
+                    <!-- Circuit SVG Trace -->
+                    <svg class="absolute -right-24 top-1/2 -translate-y-1/2 w-24 h-12 pointer-events-none overflow-visible" fill="none">
+                        <path d="M 0 6 L 50 6 L 80 30" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" stroke-dasharray="3 3"/>
+                        <circle cx="80" cy="30" r="2.5" fill="#34d399"/>
+                    </svg>
+                    <div class="w-8 h-8 rounded-full bg-white/10 border border-white/25 backdrop-blur-md flex items-center justify-center text-white text-xs shadow-lg hover:border-emerald-400 transition-colors">
+                        <span class="text-[10px] font-bold">▲</span>
+                    </div>
+                </div>
+                <div class="text-left font-mono">
+                    <div class="text-xs font-bold text-white flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                        Ultra Speed
+                    </div>
+                    <div class="text-[10px] text-zinc-400 tracking-wider">&lt; 1.2s Core Vitals</div>
+                </div>
+            </div>
+
+            <!-- BOTTOM-LEFT NODE: Aelf / Clean Architecture (❖) -->
+            <div class="hidden lg:flex absolute left-8 xl:left-14 bottom-32 items-center gap-3 z-10 select-none">
+                <div class="relative flex items-center">
+                    <!-- Circuit SVG Trace -->
+                    <svg class="absolute -right-24 top-1/2 -translate-y-1/2 w-24 h-12 pointer-events-none overflow-visible" fill="none">
+                        <path d="M 0 18 L 50 18 L 80 -6" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" stroke-dasharray="3 3"/>
+                        <circle cx="80" cy="-6" r="2.5" fill="#38bdf8"/>
+                    </svg>
+                    <div class="w-8 h-8 rounded-full bg-white/10 border border-white/25 backdrop-blur-md flex items-center justify-center text-white text-xs shadow-lg hover:border-sky-400 transition-colors">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                    </div>
+                </div>
+                <div class="text-left font-mono">
+                    <div class="text-xs font-bold text-white flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+                        Clean Code
+                    </div>
+                    <div class="text-[10px] text-zinc-400 tracking-wider">100% Hak Milik</div>
+                </div>
+            </div>
+
+            <!-- TOP-RIGHT NODE: Quant / Conversion Focus (➔) -->
+            <div class="hidden lg:flex absolute right-8 xl:right-14 top-28 items-center flex-row-reverse gap-3 z-10 select-none">
+                <div class="relative flex items-center">
+                    <!-- Circuit SVG Trace -->
+                    <svg class="absolute -left-24 top-1/2 -translate-y-1/2 w-24 h-12 pointer-events-none overflow-visible" fill="none">
+                        <path d="M 96 6 L 46 6 L 16 30" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" stroke-dasharray="3 3"/>
+                        <circle cx="16" cy="30" r="2.5" fill="#a78bfa"/>
+                    </svg>
+                    <div class="w-8 h-8 rounded-full bg-white/10 border border-white/25 backdrop-blur-md flex items-center justify-center text-white text-xs shadow-lg hover:border-purple-400 transition-colors">
+                        <span class="text-[11px] font-bold">&rarr;</span>
+                    </div>
+                </div>
+                <div class="text-right font-mono">
+                    <div class="text-xs font-bold text-white flex items-center justify-end gap-1.5">
+                        Conversion Ready
+                        <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                    </div>
+                    <div class="text-[10px] text-zinc-400 tracking-wider">SEO &amp; Analytics</div>
+                </div>
+            </div>
+
+            <!-- BOTTOM-RIGHT NODE: Meeton / Support SLA (🛡) -->
+            <div class="hidden lg:flex absolute right-8 xl:right-14 bottom-32 items-center flex-row-reverse gap-3 z-10 select-none">
+                <div class="relative flex items-center">
+                    <!-- Circuit SVG Trace -->
+                    <svg class="absolute -left-24 top-1/2 -translate-y-1/2 w-24 h-12 pointer-events-none overflow-visible" fill="none">
+                        <path d="M 96 18 L 46 18 L 16 -6" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" stroke-dasharray="3 3"/>
+                        <circle cx="16" cy="-6" r="2.5" fill="#f43f5e"/>
+                    </svg>
+                    <div class="w-8 h-8 rounded-full bg-white/10 border border-white/25 backdrop-blur-md flex items-center justify-center text-white text-xs shadow-lg hover:border-rose-400 transition-colors">
+                        <svg class="w-3.5 h-3.5 text-zinc-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                </div>
+                <div class="text-right font-mono">
+                    <div class="text-xs font-bold text-white flex items-center justify-end gap-1.5">
+                        Support SLA
+                        <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+                    </div>
+                    <div class="text-[10px] text-zinc-400 tracking-wider">Garansi 30 Hari</div>
+                </div>
+            </div>
+
+            <!-- ===================================================================== -->
+            <!-- CENTER STAGE CONTENT (Exact typography, buttons, and vertical beams)  -->
+            <!-- ===================================================================== -->
+            <div class="relative z-10 max-w-3xl mx-auto my-auto text-center py-6 sm:py-8">
                 
-                <!-- Hero Left: High-Impact Typography & Conversion Actions -->
-                <div class="lg:col-span-7 space-y-6 pt-2 lg:pt-0 text-left">
-                    <!-- Category Eyebrow Badge -->
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                        <span class="text-[11px] font-mono tracking-widest uppercase text-zinc-300 font-semibold">
-                            WEB DEVELOPMENT SERVICES
-                        </span>
-                    </div>
+                <!-- 1. Play / Showreel Button (Matching top play icon in reference_2.jpg) -->
+                <a href="#layanan" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white mb-5 transition-all duration-300 hover:scale-110 shadow-lg group" aria-label="Jelajahi Solusi Digital">
+                    <svg class="w-4 h-4 ml-0.5 fill-current text-white/90 group-hover:text-white transition-colors" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </a>
 
-                    <!-- Main Headline (Direct match with reference) -->
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
-                        Landing Page <span class="text-white">Profesional</span> untuk <span class="text-zinc-400">Bisnis &amp; Produk Anda</span>
-                    </h1>
-
-                    <!-- Subtitle / Value Proposition -->
-                    <p class="text-base sm:text-lg text-zinc-400 max-w-xl leading-relaxed font-normal">
-                        Dari landing page hingga website lengkap, kami bantu wujudkan kehadiran digital yang modern, cepat, dan berorientasi pada hasil.
-                    </p>
-
-                    <!-- Primary Conversion Action Buttons -->
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                        <a href="{{ route('pricing') }}" class="px-8 py-4 text-xs sm:text-sm font-semibold btn-pill-white shadow-lg">
-                            <span>Mulai Sekarang</span>
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                        </a>
-                        
-                        <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="px-7 py-4 text-xs sm:text-sm font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all flex items-center justify-center gap-2.5">
-                            <svg class="w-4 h-4 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
-                            <span>Konsultasi Gratis via Chat / Email</span>
-                        </a>
-                    </div>
-
-                    <!-- Client Trust & Delivery Assurance Note -->
-                    <div class="pt-2 flex items-center gap-6 text-xs text-zinc-400 font-mono">
-                        <div class="flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            <span>Estimasi 1 &ndash; 7 Hari</span>
-                        </div>
-                        <div class="flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            <span>Garansi Support Teknis</span>
-                        </div>
+                <!-- 2. Eyebrow Badge Pill (Matching reference_2.jpg: Unlock Your Assets Spark! ->) -->
+                <div class="flex justify-center mb-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.07] border border-white/15 text-xs text-zinc-300 font-medium backdrop-blur-md hover:border-white/30 transition-all cursor-default">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="tracking-wide">Unlock Your Digital Growth</span>
+                        <span class="text-zinc-400">&rarr;</span>
                     </div>
                 </div>
 
-                <!-- Hero Right: High-Resolution Device Presentation Mockup (OXID Labs Tech Device Mockup) -->
-                <div class="lg:col-span-5 relative flex flex-col items-center justify-center">
-                    
-                    <!-- Direct Transparent Mockup Image -->
-                    <div class="relative w-full flex items-center justify-center animate-float">
-                        <img src="{{ asset('images/oxid-device-mockup.png') }}" 
-                             alt="OXID Labs Tech Device Mockup" 
-                             class="w-full max-w-lg lg:max-w-xl h-auto object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-105"
-                             loading="eager">
+                <!-- 3. Headline (Bold, High-Contrast Centered Headline from reference_2.jpg) -->
+                <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.12]">
+                    <span class="bg-gradient-to-b from-white via-white to-zinc-400 bg-clip-text text-transparent">
+                        One-Click for Digital Excellence
+                    </span>
+                </h1>
+
+                <!-- 4. Subtitle (Clean & Concise description) -->
+                <p class="text-xs sm:text-sm md:text-base text-zinc-400 max-w-xl mx-auto leading-relaxed mb-8 font-normal">
+                    Wujudkan website berkecepatan kilat, sistem web kustom, dan kehadiran digital profesional dengan arsitektur kode bersih dan terverifikasi.
+                </p>
+
+                <!-- 5. Centered Action Buttons (Matching Open App & Discover More in reference_2.jpg) -->
+                <div class="flex flex-wrap items-center justify-center gap-3.5 mb-2">
+                    <!-- Secondary Glass Pill Button (Open App) -->
+                    <a href="https://wa.me/6281234567890?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full text-xs sm:text-sm font-semibold bg-white/5 hover:bg-white/10 border border-white/20 hover:border-white/40 text-white transition-all flex items-center gap-2">
+                        <span>Konsultasi Proyek</span>
+                        <span class="text-xs">&nearr;</span>
+                    </a>
+
+                    <!-- Primary Solid White Pill Button (Discover More) -->
+                    <a href="{{ route('pricing') }}" class="px-7 py-3 rounded-full text-xs sm:text-sm font-bold bg-white text-[#0E0E10] hover:bg-zinc-100 transition-all shadow-xl hover:shadow-white/10 flex items-center gap-2">
+                        <span>Lihat Katalog Harga &amp; Paket</span>
+                    </a>
+                </div>
+
+                <!-- 6. Vertical Light Streaks (Signature element falling beneath CTA from reference_2.jpg) -->
+                <div class="flex items-start justify-center gap-6 mt-8 h-16 pointer-events-none select-none">
+                    <div class="w-[1px] h-10 bg-gradient-to-b from-white/30 via-white/10 to-transparent"></div>
+                    <div class="w-[1px] h-16 bg-gradient-to-b from-white/70 via-white/20 to-transparent"></div>
+                    <div class="w-[1px] h-12 bg-gradient-to-b from-white/40 via-white/10 to-transparent"></div>
+                </div>
+
+                <!-- Mobile Circuit Stats Badges (Visible on mobile/tablet) -->
+                <div class="grid grid-cols-2 gap-2.5 mt-6 lg:hidden text-left font-mono">
+                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                        <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                            Ultra Speed
+                        </div>
+                        <div class="text-[10px] text-zinc-400">&lt; 1.2s Core Vitals</div>
                     </div>
-
-                    <!-- Floating Badges Layer (Below mockup - exact match with reference) -->
-                    <div class="grid grid-cols-3 gap-3 w-full mt-6">
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#0E0E10] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
-                            <div class="text-emerald-400 mb-1 flex justify-center">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
-                            </div>
-                            <div class="text-[11px] font-bold text-white leading-tight">Fast Loading</div>
-                            <div class="text-[10px] text-zinc-400 font-mono">&lt; 1.5s</div>
+                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                        <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                            Conversion Ready
                         </div>
-
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#0E0E10] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
-                            <div class="text-zinc-200 mb-1 flex justify-center">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                            </div>
-                            <div class="text-[11px] font-bold text-white leading-tight">Modern Design</div>
-                            <div class="text-[10px] text-zinc-400 font-mono">Responsive</div>
-                        </div>
-
-                        <div class="p-3 sm:p-3.5 rounded-2xl bg-[#0E0E10] border border-white/10 text-center shadow-sm hover:border-white/20 transition-all">
-                            <div class="text-zinc-200 mb-1 flex justify-center">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-                            </div>
-                            <div class="text-[11px] font-bold text-white leading-tight">Clean Code</div>
-                            <div class="text-[10px] text-zinc-400 font-mono">Easy to Scale</div>
-                        </div>
+                        <div class="text-[10px] text-zinc-400">SEO &amp; Analytics</div>
                     </div>
-
+                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                        <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+                            Clean Code
+                        </div>
+                        <div class="text-[10px] text-zinc-400">100% Hak Milik</div>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                        <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+                            Support SLA
+                        </div>
+                        <div class="text-[10px] text-zinc-400">Garansi 30 Hari</div>
+                    </div>
                 </div>
 
             </div>
+
+            <!-- ===================================================================== -->
+            <!-- BOTTOM CONTROLS OF THE HERO FRAME (Exact match with reference_2.jpg)  -->
+            <!-- ===================================================================== -->
+            <div class="relative z-10 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 select-none">
+                
+                <!-- Bottom Left: Scroll Down Pill (↓ 01/04 . Scroll down) -->
+                <a href="#layanan" class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono text-zinc-300 transition-colors">
+                    <span class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center text-[10px] text-white">
+                        &darr;
+                    </span>
+                    <span>01/04 &bull; Scroll down</span>
+                </a>
+
+                <!-- Bottom Right: Horizons Progress Segment (DeFi horizons — — — —) -->
+                <div class="flex items-center gap-3 text-xs font-mono text-zinc-400">
+                    <span class="tracking-wider">Digital Horizons</span>
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-5 h-0.5 bg-white rounded-full"></span>
+                        <span class="w-5 h-0.5 bg-white/20 rounded-full"></span>
+                        <span class="w-5 h-0.5 bg-white/20 rounded-full"></span>
+                        <span class="w-5 h-0.5 bg-white/20 rounded-full"></span>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- Horizontal Key Benefits Ribbon -->
-        <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 mt-16 w-full">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-2xl bg-[#0E0E10] border border-white/10 shadow-sm">
-                <div class="flex items-center gap-3 p-2">
-                    <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    </div>
-                    <div>
-                        <div class="text-xs font-bold text-white">Proses Cepat</div>
-                        <div class="text-[11px] text-zinc-400">1 – 7 hari kerja</div>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-3 p-2">
-                    <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                    </div>
-                    <div>
-                        <div class="text-xs font-bold text-white">Desain Modern</div>
-                        <div class="text-[11px] text-zinc-400">Responsive di semua perangkat</div>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-3 p-2">
-                    <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-                    </div>
-                    <div>
-                        <div class="text-xs font-bold text-white">Kode Bersih</div>
-                        <div class="text-[11px] text-zinc-400">Mudah dikembangkan</div>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-3 p-2">
-                    <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white flex-shrink-0">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                    </div>
-                    <div>
-                        <div class="text-xs font-bold text-white">Support Teknis</div>
-                        <div class="text-[11px] text-zinc-400">Setelah project selesai</div>
-                    </div>
-                </div>
+        <!-- ========================================================================= -->
+        <!-- BOTTOM LOGO RIBBON (Matching Vercel, Loom, Zapier ribbon in reference_2)  -->
+        <!-- ========================================================================= -->
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 pt-8 pb-2">
+            <div class="flex flex-wrap items-center justify-center md:justify-between gap-6 sm:gap-8 text-zinc-500 font-mono text-xs opacity-75">
+                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <span class="text-white text-sm">▲</span> Vercel Deploy
+                </span>
+                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <span class="text-rose-400 text-sm">⚡</span> Laravel 11 Core
+                </span>
+                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <span class="text-cyan-400 text-sm">✦</span> Three.js WebGL
+                </span>
+                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <span class="text-sky-400 text-sm">◈</span> Tailwind CSS
+                </span>
+                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <span class="text-orange-400 text-sm">☁</span> Cloudflare CDN
+                </span>
+                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <span class="text-emerald-400 text-sm">⛁</span> MySQL Cluster
+                </span>
+                <span class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <span class="text-indigo-400 text-sm">⚙</span> PHP 8.4 Engine
+                </span>
             </div>
         </div>
+
     </section>
 
 
@@ -791,7 +901,12 @@
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('js/hero-3d.js') }}"></script>
+@endpush
+
+
