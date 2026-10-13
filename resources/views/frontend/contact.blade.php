@@ -7,7 +7,7 @@
     <div class="max-w-7xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
         
         <!-- Page Header -->
-        <div class="max-w-3xl mb-16">
+        <div class="reveal-init max-w-3xl mb-16">
             <span class="inline-block text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold mb-3">
                 HUBUNGI KAMI &amp; KONSULTASI &bull; DIRECT STUDIO CHANNEL
             </span>
@@ -19,7 +19,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="reveal-init delay-100 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             <!-- Left Info & WhatsApp Quick Connect -->
             <div class="lg:col-span-5 space-y-6">

@@ -61,7 +61,7 @@
     <!-- ========================================================================= -->
     <!-- PRICING TIERS & CATALOG FILTER SECTION                                    -->
     <!-- ========================================================================= -->
-    <section class="py-16 sm:py-24 px-6 sm:px-8 bg-night-base min-h-screen">
+    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-base min-h-screen">
         <div class="max-w-7xl mx-auto">
 
             <!-- Category Filter Tabs -->

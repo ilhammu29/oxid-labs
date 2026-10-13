@@ -27,7 +27,7 @@
         <!-- ========================================================================= -->
         <!-- HERO MARKETPLACE SHOWCASE (2 COLUMNS LAYOUT PERSIS GERAIKITA)             -->
         <!-- ========================================================================= -->
-        <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+        <section class="reveal-init grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
             
             <!-- Left Banner: 3-Slide Carousel Showcase (Pure Banner Art, Minimalist & Modern) -->
             <div class="lg:col-span-8 rounded-2xl sm:rounded-3xl border border-white/10 bg-[#0E0E10] overflow-hidden shadow-xl relative group flex flex-col justify-center min-h-[260px] sm:min-h-[380px] lg:min-h-[480px]">
@@ -228,7 +228,7 @@
         <!-- ========================================================================= -->
         <!-- CATEGORIES ICON GRID (8 COLUMNS LAYOUT PERSIS GERAIKITA)                  -->
         <!-- ========================================================================= -->
-        <div class="mb-12">
+        <div class="reveal-init mb-12">
             <div class="flex items-center justify-between mb-4">
                 <div class="flex items-center gap-2">
                     <span class="w-1.5 h-5 rounded-full bg-slate-900 dark:bg-white"></span>
@@ -504,7 +504,7 @@
         <!-- ========================================================================= -->
         <!-- BOTTOM MARKETPLACE CTA BANNER                                             -->
         <!-- ========================================================================= -->
-        <div class="mt-16 p-8 sm:p-12 rounded-3xl bg-[#0E0E10] text-white border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="reveal-init mt-16 p-8 sm:p-12 rounded-3xl bg-[#0E0E10] text-white border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="max-w-xl">
                 <span class="text-xs font-mono uppercase tracking-[0.2em] text-emerald-400 font-bold block mb-2">
                     KUSTOMISASI &bull; OXID LABS VENTURE

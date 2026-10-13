@@ -299,11 +299,26 @@
             animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
 
+        /* Page Enter Animation */
+        @keyframes pageFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .page-enter-animation {
+            animation: pageFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
         /* Scroll Reveal System */
         .reveal-init {
             opacity: 0;
-            transform: translateY(18px);
-            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(22px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: opacity, transform;
         }
         .reveal-active {
@@ -315,6 +330,8 @@
         .delay-200 { transition-delay: 200ms; }
         .delay-250 { transition-delay: 250ms; }
         .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .delay-500 { transition-delay: 500ms; }
 
         @media (prefers-reduced-motion: reduce) {
             .reveal-init {
@@ -497,10 +514,10 @@
     </style>
     @stack('styles')
 </head>
-<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden {{ request()->routeIs('home', 'pricing*', 'services*') ? 'has-dark-hero' : '' }}">
+<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden {{ request()->routeIs('home', 'pricing*', 'services*', 'capabilities*', 'studio*') ? 'has-dark-hero' : '' }}">
 
     <!-- Unified Global Header Navigation -->
-    <header id="global-header" class="fixed top-0 left-0 right-0 z-50 border-b border-transparent transition-all duration-300 {{ request()->routeIs('home', 'pricing*', 'services*') ? 'header-hero-dark header-hero-top' : 'header-top' }}">
+    <header id="global-header" class="fixed top-0 left-0 right-0 z-50 border-b border-transparent transition-all duration-300 {{ request()->routeIs('home', 'pricing*', 'services*', 'capabilities*', 'studio*') ? 'header-hero-dark header-hero-top' : 'header-top' }}">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 h-20 flex items-center justify-between">
             <!-- Studio Logo & Wordmark (Logo lama) -->
             <a href="{{ route('home') }}" class="flex items-center gap-3 group">
@@ -601,8 +618,8 @@
         </div>
     </div>
 
-    <!-- Main Page Content Slot (Pad top for navbar except on home, pricing, and services to unify Section 1) -->
-    <main class="relative z-10 {{ request()->routeIs('home', 'pricing*', 'services*') ? '' : 'pt-20' }}">
+    <!-- Main Page Content Slot (Pad top for navbar except on dark hero pages to unify Section 1) -->
+    <main class="relative z-10 page-enter-animation {{ request()->routeIs('home', 'pricing*', 'services*', 'capabilities*', 'studio*') ? '' : 'pt-20' }}">
         @yield('content')
     </main>
 

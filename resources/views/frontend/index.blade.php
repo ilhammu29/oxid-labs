@@ -88,7 +88,7 @@
     <!-- ========================================================================= -->
     <!-- SECTION 2: LAYANAN KAMI (SOLUSI WEBSITE & DIGITAL UNTUK SETIAP KEBUTUHAN)  -->
     <!-- ========================================================================= -->
-    <section id="layanan" class="py-20 sm:py-28 px-6 sm:px-8 bg-night-base border-t border-night-border">
+    <section id="layanan" class="reveal-init py-20 sm:py-28 px-6 sm:px-8 bg-night-base border-t border-night-border">
         <div class="max-w-7xl mx-auto">
             
             <!-- Section Header (Exact match with reference) -->
@@ -228,7 +228,7 @@
     <!-- ========================================================================= -->
     <!-- SECTION 3: KATALOG HARGA & PAKET (DIRECT MATCH WITH REFERENCE 2)          -->
     <!-- ========================================================================= -->
-    <section id="pricing" class="py-20 sm:py-28 px-6 sm:px-8 bg-night-surface border-t border-night-border">
+    <section id="pricing" class="reveal-init py-20 sm:py-28 px-6 sm:px-8 bg-night-surface border-t border-night-border">
         <div class="max-w-7xl mx-auto">
             
             <!-- Section Header -->
@@ -459,7 +459,7 @@
     <!-- ========================================================================= -->
     <!-- SECTION 4: PORTOFOLIO & PRODUK UNGGULAN (DATABASE LIVE SHOWCASE)          -->
     <!-- ========================================================================= -->
-    <section class="py-20 sm:py-28 px-6 sm:px-8 bg-night-base border-t border-night-border">
+    <section class="reveal-init py-20 sm:py-28 px-6 sm:px-8 bg-night-base border-t border-night-border">
         <div class="max-w-7xl mx-auto">
             
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -551,7 +551,7 @@
     <!-- ========================================================================= -->
     <!-- SECTION 5: PROSES KERJA (DARI IDE HINGGA ONLINE, DENGAN PROSES JELAS)      -->
     <!-- ========================================================================= -->
-    <section class="py-24 px-6 sm:px-8 bg-[#0E0E10] text-white border-t border-white/10">
+    <section class="reveal-init py-24 px-6 sm:px-8 bg-[#0E0E10] text-white border-t border-white/10">
         <div class="max-w-7xl mx-auto">
             
             <!-- Section Header (Exact Match with Reference 1) -->
@@ -673,7 +673,7 @@
     <!-- ========================================================================= -->
     <!-- SECTION 6: FAQ (PERTANYAAN UMUM)                                          -->
     <!-- ========================================================================= -->
-    <section class="py-20 sm:py-28 px-6 sm:px-8 bg-night-base border-t border-night-border">
+    <section class="reveal-init py-20 sm:py-28 px-6 sm:px-8 bg-night-base border-t border-night-border">
         <div class="max-w-4xl mx-auto">
             
             <div class="text-center mb-14">

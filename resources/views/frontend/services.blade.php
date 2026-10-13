@@ -61,7 +61,7 @@
     <!-- ========================================================================= -->
     <!-- DETAILED SERVICES CATALOG SECTION                                         -->
     <!-- ========================================================================= -->
-    <section class="py-16 sm:py-24 px-6 sm:px-8 bg-night-base min-h-screen">
+    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-base min-h-screen">
         <div class="max-w-7xl mx-auto">
 
             <!-- Category Filter Tabs & Navigation -->
@@ -574,7 +574,7 @@
     <!-- ========================================================================= -->
     <!-- ENGINEERING EXCELLENCE & STANDARDS                                        -->
     <!-- ========================================================================= -->
-    <section class="py-16 sm:py-24 px-6 sm:px-8 bg-night-midnight border-t border-night-border">
+    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-midnight border-t border-night-border">
         <div class="max-w-7xl mx-auto">
             <div class="max-w-2xl mb-14">
                 <span class="text-xs font-mono uppercase tracking-[0.2em] text-emerald-600 dark:text-emerald-400 font-bold block mb-3">
@@ -639,7 +639,7 @@
     <!-- ========================================================================= -->
     <!-- SYSTEM DELIVERY PIPELINE                                                  -->
     <!-- ========================================================================= -->
-    <section class="py-16 sm:py-24 px-6 sm:px-8 bg-night-base border-t border-night-border">
+    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-base border-t border-night-border">
         <div class="max-w-7xl mx-auto">
             <div class="max-w-2xl mb-14">
                 <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold block mb-3">
@@ -696,7 +696,7 @@
     <!-- ========================================================================= -->
     <!-- BOTTOM CALL TO ACTION                                                     -->
     <!-- ========================================================================= -->
-    <section class="py-16 sm:py-24 px-6 sm:px-8 bg-night-base border-t border-night-border">
+    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-base border-t border-night-border">
         <div class="max-w-7xl mx-auto">
             <div class="rounded-3xl p-8 sm:p-14 bg-[#0E0E10] text-white border border-white/10 shadow-2xl relative overflow-hidden">
                 <!-- Ambient Subtle Glow -->
