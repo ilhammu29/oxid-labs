@@ -171,10 +171,13 @@
             --color-scrollbar-hover: #3F3F46;
         }
 
+        body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, p, span, a {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+        }
+
         body {
             background-color: var(--color-bg-base);
             color: var(--color-text-muted);
-            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;

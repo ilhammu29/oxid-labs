@@ -14,10 +14,9 @@
 
         <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
             <div class="max-w-3xl">
-                <!-- Typographic Eyebrow (Contains 'WHY OXID' for test assertion, No badges) -->
-                <div class="flex items-center gap-2.5 mb-6 font-mono text-[11px] tracking-[0.25em] text-zinc-400 uppercase">
-                    <span class="w-1.5 h-1.5 bg-emerald-400"></span>
-                    <span>WHY OXID &bull; INDEPENDENT DIGITAL STUDIO &amp; MANIFESTO</span>
+                <!-- Eyebrow: Contains 'WHY OXID' for test assertion, clean Plus Jakarta Sans, no AI symbols -->
+                <div class="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-4">
+                    WHY OXID &bull; TENTANG STUDIO OXID LABS
                 </div>
 
                 <!-- Main Headline (Contains 'Substance Over Superficial Complexity' for test assertion) -->
@@ -30,26 +29,26 @@
 
                 <!-- Subtitle (Contains 'Substance Over Spectacle' for test assertion) -->
                 <p class="text-sm sm:text-base md:text-lg text-zinc-400 leading-relaxed font-normal mb-8 max-w-2xl">
-                    OXID Labs adalah studio produk digital independen yang memprioritaskan Substance Over Spectacle: berfokus membangun landing page berkonversi tinggi, platform web, dan sistem aplikasi yang dirancang untuk hasil nyata tanpa beban gimik visual berlebihan.
+                    OXID Labs adalah studio produk digital independen yang memprioritaskan Substance Over Spectacle: berfokus membangun landing page berkonversi tinggi, platform web, dan sistem aplikasi yang dirancang untuk hasil nyata tanpa beban tampilan berlebihan.
                 </p>
 
-                <!-- Value Proposition Trust Bar (Clean Architectural Grid, No Badges) -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 font-mono text-xs text-zinc-300">
-                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-white/25 transition-colors">
-                        <div class="text-[10px] text-zinc-400 mb-0.5">// ETHOS</div>
-                        <div class="font-bold text-white">Substance First</div>
+                <!-- Value Proposition Trust Bar (Clean Grid, Plus Jakarta Sans, Zero AI Symbols) -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs text-zinc-300">
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-white/25 transition-colors">
+                        <div class="text-sm font-bold text-white mb-1">Fokus Hasil Nyata</div>
+                        <div class="text-xs text-zinc-400">Bukan sekadar animasi visual</div>
                     </div>
-                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-white/25 transition-colors">
-                        <div class="text-[10px] text-zinc-400 mb-0.5">// ACCESS</div>
-                        <div class="font-bold text-white">Direct Senior Dev</div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-white/25 transition-colors">
+                        <div class="text-sm font-bold text-white mb-1">Komunikasi Langsung</div>
+                        <div class="text-xs text-zinc-400">Dengan tim teknis pembuat proyek</div>
                     </div>
-                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-white/25 transition-colors">
-                        <div class="text-[10px] text-zinc-400 mb-0.5">// SOVEREIGNTY</div>
-                        <div class="font-bold text-white">100% Client Owned</div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-white/25 transition-colors">
+                        <div class="text-sm font-bold text-white mb-1">100% Hak Milik</div>
+                        <div class="text-xs text-zinc-400">Kode sumber dan aset diserahkan</div>
                     </div>
-                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-white/25 transition-colors">
-                        <div class="text-[10px] text-zinc-400 mb-0.5">// RESILIENCE</div>
-                        <div class="font-bold text-white">Zero Vendor Lock</div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-white/25 transition-colors">
+                        <div class="text-sm font-bold text-white mb-1">Bebas Lock-in</div>
+                        <div class="text-xs text-zinc-400">Tanpa biaya langganan terkunci</div>
                     </div>
                 </div>
             </div>
@@ -65,12 +64,12 @@
         <!-- SECTION 1: ORIGIN & PHILOSOPHY OF OXID                                -->
         <!-- ===================================================================== -->
         <section class="reveal-init studio-card p-8 sm:p-12 border border-night-border relative overflow-hidden">
-            <!-- Background Decorative Grid Lines -->
+            <!-- Background Decorative Ambient Glow -->
             <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-white/5 to-transparent rounded-bl-full pointer-events-none"></div>
 
             <div class="max-w-3xl space-y-6 relative z-10">
-                <div class="font-mono text-xs uppercase tracking-[0.25em] text-zinc-500 font-semibold">
-                    // FILOSOFI OXID
+                <div class="text-xs uppercase tracking-widest text-slate-500 font-bold">
+                    FILOSOFI OXID
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-night-text tracking-tight">
                     Prinsip Ketahanan &amp; Perlindungan Alami
@@ -86,22 +85,22 @@
                 </div>
 
                 <!-- 3 Pillars of Oxidation Metaphor -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-night-border font-mono text-xs">
-                    <div class="space-y-1">
-                        <div class="text-emerald-500 font-bold">01 // PASSIVE LAYER</div>
-                        <p class="text-night-dim text-[11px] leading-relaxed">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-night-border text-xs">
+                    <div class="space-y-1.5">
+                        <div class="text-sm font-bold text-emerald-600 dark:text-emerald-400">01. Keamanan Terintegrasi</div>
+                        <p class="text-night-muted leading-relaxed">
                             Arsitektur keamanan bawaan yang melindungi dari kerentanan dan malware tanpa menambah beban server.
                         </p>
                     </div>
-                    <div class="space-y-1">
-                        <div class="text-sky-500 font-bold">02 // LEAN CORE</div>
-                        <p class="text-night-dim text-[11px] leading-relaxed">
-                            Kode inti yang bersih dan esensial, bebas sampah plugin demi kecepatan muat instan di koneksi seluler.
+                    <div class="space-y-1.5">
+                        <div class="text-sm font-bold text-sky-600 dark:text-sky-400">02. Kode Ringan &amp; Bersih</div>
+                        <p class="text-night-muted leading-relaxed">
+                            Kode inti yang bersih dan esensial, bebas tumpukan plugin demi kecepatan muat instan di koneksi seluler.
                         </p>
                     </div>
-                    <div class="space-y-1">
-                        <div class="text-indigo-500 font-bold">03 // LONGEVITY</div>
-                        <p class="text-night-dim text-[11px] leading-relaxed">
+                    <div class="space-y-1.5">
+                        <div class="text-sm font-bold text-indigo-600 dark:text-indigo-400">03. Keandalan Jangka Panjang</div>
+                        <p class="text-night-muted leading-relaxed">
                             Dibangun di atas standar terbuka universal yang tetap berjalan andal hingga bertahun-tahun mendatang.
                         </p>
                     </div>
@@ -110,18 +109,18 @@
         </section>
 
         <!-- ===================================================================== -->
-        <!-- SECTION 2: THREE WORKING PRINCIPLES (Prinsip 01, 02, 03)             -->
+        <!-- SECTION 2: THREE WORKING PRINCIPLES                                   -->
         <!-- ===================================================================== -->
         <section class="reveal-init space-y-10">
             <!-- Section Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-night-border">
                 <div class="max-w-2xl space-y-2">
-                    <div class="font-mono text-xs uppercase tracking-[0.25em] text-zinc-500 font-semibold">
-                        // PRINSIP KERJA UTAMA
-                    </div>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-night-text tracking-tight">
-                        Tiga Komitmen Fondasional Pengerjaan Proyek
+                    <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold">
+                        PRINSIP KERJA UTAMA
                     </h2>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-night-text tracking-tight">
+                        Tiga Komitmen Fondasional Pengerjaan Proyek
+                    </h3>
                 </div>
                 <p class="text-xs sm:text-sm text-night-muted max-w-md leading-relaxed">
                     Pedoman operasional yang kami pegang teguh dalam setiap baris kode, arsitektur database, dan interaksi bersama klien.
@@ -133,55 +132,46 @@
 
                 <!-- Prinsip 01: Fokus pada Hasil Nyata -->
                 <div class="reveal-init delay-100 studio-card p-8 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between font-mono text-xs text-night-dim">
-                            <span class="font-bold text-night-text">PRINSIP 01</span>
-                            <span>COMMERCIAL CLARITY</span>
-                        </div>
+                    <div class="space-y-3">
+                        <span class="text-xs font-bold text-slate-500">PRINSIP 01</span>
                         <h3 class="text-lg font-bold text-night-text">Fokus pada Hasil Nyata</h3>
                         <p class="text-xs sm:text-sm text-night-muted leading-relaxed">
                             Kami menolak fitur rumit yang tidak dibutuhkan. Setiap tombol, kata, dan tata letak dirancang untuk satu tujuan: mempermudah calon pelanggan memahami produk dan melakukan transaksi.
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-night-border font-mono text-[11px] text-night-dim space-y-1">
-                        <div>&mdash; Mengutamakan konversi calon pembeli</div>
-                        <div>&mdash; Mengeliminasi distraksi visual tak bermakna</div>
+                    <div class="pt-4 border-t border-night-border text-xs text-night-dim space-y-1.5 font-medium">
+                        <div>&bull; Mengutamakan konversi calon pelanggan</div>
+                        <div>&bull; Mengeliminasi distraksi visual tak bermakna</div>
                     </div>
                 </div>
 
                 <!-- Prinsip 02: Kecepatan & Kode Bersih -->
                 <div class="reveal-init delay-200 studio-card p-8 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between font-mono text-xs text-night-dim">
-                            <span class="font-bold text-night-text">PRINSIP 02</span>
-                            <span>ENGINEERING PURITY</span>
-                        </div>
+                    <div class="space-y-3">
+                        <span class="text-xs font-bold text-slate-500">PRINSIP 02</span>
                         <h3 class="text-lg font-bold text-night-text">Kecepatan &amp; Kode Bersih</h3>
                         <p class="text-xs sm:text-sm text-night-muted leading-relaxed">
                             Kami membangun dengan pondasi teknologi teruji: kode yang rapi, ringan, dan efisien. Website Anda memuat instan di browser dan tidak membebani kuota data pengunjung.
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-night-border font-mono text-[11px] text-night-dim space-y-1">
-                        <div>&mdash; Standar kecepatan Core Web Vitals</div>
-                        <div>&mdash; Bebas ketergantungan CMS rapuh</div>
+                    <div class="pt-4 border-t border-night-border text-xs text-night-dim space-y-1.5 font-medium">
+                        <div>&bull; Standar kecepatan Google Core Web Vitals</div>
+                        <div>&bull; Bebas ketergantungan plugin rentan</div>
                     </div>
                 </div>
 
                 <!-- Prinsip 03: Kepemilikan Penuh Klien -->
                 <div class="reveal-init delay-300 studio-card p-8 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between font-mono text-xs text-night-dim">
-                            <span class="font-bold text-night-text">PRINSIP 03</span>
-                            <span>ASSET SOVEREIGNTY</span>
-                        </div>
+                    <div class="space-y-3">
+                        <span class="text-xs font-bold text-slate-500">PRINSIP 03</span>
                         <h3 class="text-lg font-bold text-night-text">Kepemilikan Penuh Klien</h3>
                         <p class="text-xs sm:text-sm text-night-muted leading-relaxed">
                             Anda memiliki 100% kontrol atas aset digital, domain, dan konten website Anda. Tidak ada biaya langganan tersembunyi atau sistem terkunci yang merugikan bisnis Anda.
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-night-border font-mono text-[11px] text-night-dim space-y-1">
-                        <div>&mdash; Source code dan repositori diserahkan utuh</div>
-                        <div>&mdash; Bebas dipindahkan ke server mana saja</div>
+                    <div class="pt-4 border-t border-night-border text-xs text-night-dim space-y-1.5 font-medium">
+                        <div>&bull; Seluruh source code diserahkan utuh</div>
+                        <div>&bull; Bebas dipindahkan ke server mana saja</div>
                     </div>
                 </div>
 
@@ -189,12 +179,12 @@
         </section>
 
         <!-- ===================================================================== -->
-        <!-- SECTION 3: OPERATIONAL STRUCTURE (Senior-Led & Direct Model)          -->
+        <!-- SECTION 3: OPERATIONAL STRUCTURE                                      -->
         <!-- ===================================================================== -->
         <section class="reveal-init studio-card p-8 sm:p-12 border border-night-border space-y-8">
             <div class="max-w-3xl space-y-4">
-                <div class="font-mono text-xs uppercase tracking-[0.25em] text-zinc-500 font-semibold">
-                    // STRUKTUR OPERASIONAL
+                <div class="text-xs uppercase tracking-widest text-slate-500 font-bold">
+                    STRUKTUR OPERASIONAL
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-night-text tracking-tight">
                     Studio Ramping, Senior-Led &amp; Efisien
@@ -213,10 +203,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-night-border">
                 
                 <div class="p-6 rounded-xl bg-night-surface border border-night-border space-y-3">
-                    <div class="font-mono text-xs font-bold text-night-dim uppercase tracking-wider">
-                        AGENCY CONVENTIONAL MODEL
+                    <div class="text-xs font-bold text-night-dim uppercase tracking-wider">
+                        Model Agensi Konvensional
                     </div>
-                    <div class="font-mono text-xs text-night-dim space-y-2">
+                    <div class="text-xs text-night-dim space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="text-red-500 font-bold">&times;</span>
                             <span>Klien &rarr; Account Exec &rarr; PM &rarr; Outsourced Dev</span>
@@ -233,13 +223,13 @@
                 </div>
 
                 <div class="p-6 rounded-xl bg-emerald-500/5 border border-emerald-500/20 space-y-3">
-                    <div class="font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
-                        OXID LABS DIRECT MODEL
+                    <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
+                        Model Kerja Studio OXID Labs
                     </div>
-                    <div class="font-mono text-xs text-night-text space-y-2">
+                    <div class="text-xs text-night-text space-y-2 font-medium">
                         <div class="flex items-center gap-2">
                             <span class="text-emerald-500 font-bold">&check;</span>
-                            <span>Klien &rarr; Senior Engineer / Technical Architect</span>
+                            <span>Klien berkomunikasi langsung dengan Senior Developer</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="text-emerald-500 font-bold">&check;</span>
@@ -260,9 +250,9 @@
         <!-- ===================================================================== -->
         <section class="reveal-init space-y-8">
             <div class="max-w-2xl space-y-2">
-                <div class="font-mono text-xs uppercase tracking-[0.25em] text-zinc-500 font-semibold">
-                    // KOMPARASI PENDEKATAN
-                </div>
+                <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold">
+                    KOMPARASI PENDEKATAN
+                </h2>
                 <h3 class="text-2xl sm:text-3xl font-extrabold text-night-text tracking-tight">
                     Mengapa Pendekatan Studio Berbeda?
                 </h3>
@@ -274,7 +264,7 @@
             <div class="overflow-x-auto rounded-xl border border-night-border bg-night-surface">
                 <table class="w-full text-left text-xs sm:text-sm">
                     <thead>
-                        <tr class="border-b border-night-border bg-night-base/50 font-mono text-xs uppercase tracking-wider text-night-dim">
+                        <tr class="border-b border-night-border bg-night-base/50 text-xs uppercase tracking-wider text-night-dim font-bold">
                             <th class="py-4 px-6">Dimensi Evaluasi</th>
                             <th class="py-4 px-6 text-night-dim">Agensi Konvensional / Builder</th>
                             <th class="py-4 px-6 text-emerald-600 dark:text-emerald-400 font-bold">OXID Labs Studio</th>
@@ -312,19 +302,19 @@
         </section>
 
         <!-- ===================================================================== -->
-        <!-- SECTION 5: STUDIO CTA (Zero badges)                                   -->
+        <!-- SECTION 5: STUDIO CTA                                                 -->
         <!-- ===================================================================== -->
         <section class="reveal-init rounded-2xl p-8 sm:p-12 bg-[#0E0E10] text-white border border-white/10 shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <!-- Ambient Glow -->
             <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/10 blur-[100px] pointer-events-none"></div>
 
             <div class="space-y-3 max-w-xl relative z-10">
-                <div class="font-mono text-xs uppercase tracking-widest text-emerald-400 font-semibold">
-                    // MULAI KOLABORASI PROYEK
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                    Siap Bekerja Sama dengan Kami?
+                <h3 class="text-xs uppercase tracking-widest text-emerald-400 font-bold">
+                    KONSULTASI PROYEK
                 </h3>
+                <h4 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                    Siap Bekerja Sama dengan Kami?
+                </h4>
                 <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
                     Mulai konsultasi gratis untuk merancang landing page atau platform web yang tepat untuk bisnis Anda tanpa komitmen di awal.
                 </p>

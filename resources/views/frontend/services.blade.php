@@ -14,12 +14,9 @@
 
         <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
             <div class="max-w-3xl">
-                <!-- Eyebrow Pill -->
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/15 mb-6 backdrop-blur-sm">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span class="text-[11px] font-mono tracking-widest uppercase text-zinc-300 font-semibold">
-                        Engineering & Technical Services &bull; OXID LABS
-                    </span>
+                <!-- Eyebrow -->
+                <div class="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-4">
+                    Engineering & Technical Services &bull; OXID LABS
                 </div>
 
                 <!-- Main Headline -->
