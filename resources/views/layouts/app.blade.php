@@ -497,10 +497,10 @@
     </style>
     @stack('styles')
 </head>
-<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden {{ request()->routeIs('home', 'pricing*') ? 'has-dark-hero' : '' }}">
+<body class="relative min-h-screen bg-night-base text-night-muted antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black overflow-x-hidden {{ request()->routeIs('home', 'pricing*', 'services*') ? 'has-dark-hero' : '' }}">
 
     <!-- Unified Global Header Navigation -->
-    <header id="global-header" class="fixed top-0 left-0 right-0 z-50 border-b border-transparent transition-all duration-300 {{ request()->routeIs('home', 'pricing*') ? 'header-hero-dark header-hero-top' : 'header-top' }}">
+    <header id="global-header" class="fixed top-0 left-0 right-0 z-50 border-b border-transparent transition-all duration-300 {{ request()->routeIs('home', 'pricing*', 'services*') ? 'header-hero-dark header-hero-top' : 'header-top' }}">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 h-20 flex items-center justify-between">
             <!-- Studio Logo & Wordmark (Logo lama) -->
             <a href="{{ route('home') }}" class="flex items-center gap-3 group">
@@ -601,8 +601,8 @@
         </div>
     </div>
 
-    <!-- Main Page Content Slot (Pad top for navbar except on home and pricing to unify Section 1) -->
-    <main class="relative z-10 {{ request()->routeIs('home', 'pricing*') ? '' : 'pt-20' }}">
+    <!-- Main Page Content Slot (Pad top for navbar except on home, pricing, and services to unify Section 1) -->
+    <main class="relative z-10 {{ request()->routeIs('home', 'pricing*', 'services*') ? '' : 'pt-20' }}">
         @yield('content')
     </main>
 
