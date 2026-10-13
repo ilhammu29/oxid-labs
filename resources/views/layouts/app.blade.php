@@ -601,8 +601,8 @@
         </div>
     </div>
 
-    <!-- Main Page Content Slot (Pad top for navbar except on home page to unify Section 1) -->
-    <main class="relative z-10 {{ request()->routeIs('home') ? '' : 'pt-20' }}">
+    <!-- Main Page Content Slot (Pad top for navbar except on home and pricing to unify Section 1) -->
+    <main class="relative z-10 {{ request()->routeIs('home', 'pricing*') ? '' : 'pt-20' }}">
         @yield('content')
     </main>
 
