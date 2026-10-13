@@ -143,7 +143,7 @@
         <div class="text-center mb-8">
             <a href="{{ route('home') }}" class="inline-flex items-center gap-3.5 group">
                 <div class="w-12 h-12 rounded-2xl bg-white p-2 flex items-center justify-center shadow-sm border border-slate-200/80 group-hover:scale-105 transition-transform duration-300">
-                    <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID Labs" class="w-full h-full object-contain">
+                    <img src="{{ asset('images/oxid-logo.png') }}?v=2" alt="OXID Labs" class="w-full h-full object-contain">
                 </div>
                 <div class="text-left">
                     <span class="font-display font-extrabold text-2xl tracking-tight text-slate-900 dark:text-white block leading-none">

@@ -196,7 +196,7 @@
             <div class="h-20 flex items-center gap-3.5 px-6 border-b border-night-border bg-night-midnight">
                 <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 group">
                     <div class="w-9 h-9 rounded-xl bg-white p-1.5 flex items-center justify-center shadow-sm border border-slate-200/50 group-hover:scale-105 transition-transform duration-300">
-                        <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID Labs" class="w-full h-full object-contain">
+                        <img src="{{ asset('images/oxid-logo.png') }}?v=2" alt="OXID Labs" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <span class="font-display font-extrabold text-base tracking-wider text-night-text block leading-none">
@@ -310,7 +310,7 @@
             <div class="h-20 flex items-center justify-between px-6 border-b border-night-border bg-night-midnight">
                 <div class="flex items-center gap-3">
                     <div class="w-8 h-8 rounded-xl bg-white p-1 flex items-center justify-center border border-slate-200/50 shadow-sm">
-                        <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID Labs" class="w-full h-full object-contain">
+                        <img src="{{ asset('images/oxid-logo.png') }}?v=2" alt="OXID Labs" class="w-full h-full object-contain">
                     </div>
                     <span class="font-display font-extrabold text-sm tracking-wider text-night-text">OXID ADMIN</span>
                 </div>

@@ -525,7 +525,7 @@
             <!-- Studio Logo & Wordmark (Logo lama) -->
             <a href="{{ route('home') }}" class="flex items-center gap-3 group">
                 <div class="w-9 h-9 rounded-xl bg-white p-1.5 flex items-center justify-center transition-transform group-hover:scale-95 shadow-sm overflow-hidden flex-shrink-0 border border-slate-200">
-                    <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID" class="w-full h-full object-contain">
+                    <img src="{{ asset('images/oxid-logo.png') }}?v=2" alt="OXID" class="w-full h-full object-contain">
                 </div>
                 <div class="flex items-baseline gap-1">
                     <span class="font-sans font-extrabold text-lg tracking-wider text-night-text header-wordmark transition-colors">
@@ -635,7 +635,7 @@
                 <div class="md:col-span-4 space-y-2.5">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-lg bg-white p-1.5 flex items-center justify-center shadow-sm overflow-hidden flex-shrink-0">
-                            <img src="{{ asset('images/oxid-logo.png') }}" alt="OXID" class="w-full h-full object-contain">
+                            <img src="{{ asset('images/oxid-logo.png') }}?v=2" alt="OXID" class="w-full h-full object-contain">
                         </div>
                         <span class="font-sans font-extrabold text-base tracking-wider text-white">
                             OXID <span class="font-light tracking-[0.25em] text-xs uppercase text-zinc-400">LABS</span>
