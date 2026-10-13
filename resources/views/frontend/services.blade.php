@@ -7,46 +7,46 @@
     <!-- ========================================================================= -->
     <!-- HERO SECTION: SERVICES OVERVIEW (Seamlessly integrated with header)       -->
     <!-- ========================================================================= -->
-    <section id="dark-hero-section" class="relative w-full pt-28 sm:pt-36 pb-16 sm:pb-24 bg-[#0E0E10] text-white border-b border-white/10 overflow-hidden select-none">
+    <section id="dark-hero-section" class="relative w-full pt-24 sm:pt-36 pb-12 sm:pb-24 bg-[#0E0E10] text-white border-b border-white/10 overflow-hidden select-none">
         <!-- Atmospheric Ambient Diffuse Glows -->
         <div class="absolute -top-32 -right-20 w-[550px] lg:w-[750px] h-[550px] lg:h-[750px] rounded-full bg-gradient-to-bl from-emerald-400/15 via-teal-500/10 to-transparent blur-[130px] pointer-events-none z-0"></div>
         <div class="absolute -bottom-32 -left-20 w-[450px] lg:w-[650px] h-[450px] lg:h-[650px] rounded-full bg-gradient-to-tr from-cyan-500/15 via-blue-500/5 to-transparent blur-[120px] pointer-events-none z-0"></div>
 
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div class="max-w-3xl">
                 <!-- Eyebrow -->
-                <div class="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-4">
+                <div class="text-[11px] sm:text-xs uppercase tracking-widest text-zinc-400 font-bold mb-3 sm:mb-4">
                     Engineering & Technical Services &bull; OXID LABS
                 </div>
 
                 <!-- Main Headline -->
-                <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.12] mb-6">
-                    Layanan Rekayasa Website <br>
+                <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] sm:leading-[1.12] mb-4 sm:mb-6">
+                    Layanan Rekayasa Website <br class="hidden sm:inline">
                     <span class="bg-gradient-to-b from-white via-white to-zinc-400 bg-clip-text text-transparent">
                         &amp; Arsitektur Digital Modern
                     </span>
                 </h1>
 
                 <!-- Subtitle -->
-                <p class="text-sm sm:text-base md:text-lg text-zinc-400 leading-relaxed font-normal mb-8 max-w-2xl">
+                <p class="text-xs sm:text-base md:text-lg text-zinc-400 leading-relaxed font-normal mb-6 sm:mb-8 max-w-2xl">
                     Kami merancang dan membangun ekosistem digital presisi untuk pertumbuhan bisnis: landing page konversi tinggi, profil perusahaan kredibel, toko online terintegrasi, hingga aplikasi web SaaS skala produksi.
                 </p>
 
                 <!-- Value Proposition Trust Bar -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 font-mono text-xs text-zinc-300">
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 pt-2 font-mono text-[11px] sm:text-xs text-zinc-300">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
                         <span class="text-emerald-400 font-bold">&check;</span>
                         <span>Core Web Vitals &lt; 1.5s</span>
                     </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
                         <span class="text-emerald-400 font-bold">&check;</span>
                         <span>100% Hak Milik Kode</span>
                     </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
                         <span class="text-emerald-400 font-bold">&check;</span>
                         <span>Security &amp; SSL Cloud</span>
                     </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
                         <span class="text-emerald-400 font-bold">&check;</span>
                         <span>Garansi &amp; Free Setup</span>
                     </div>
@@ -58,30 +58,30 @@
     <!-- ========================================================================= -->
     <!-- DETAILED SERVICES CATALOG SECTION                                         -->
     <!-- ========================================================================= -->
-    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-base min-h-screen">
+    <section class="reveal-init py-12 sm:py-24 px-4 sm:px-8 bg-night-base min-h-screen">
         <div class="max-w-7xl mx-auto">
 
             <!-- Category Filter Tabs & Navigation -->
-            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-12 pb-6 border-b border-night-border">
-                <div class="flex flex-wrap items-center gap-2" id="service-filter-tabs">
-                    <button type="button" data-filter="all" class="service-tab active px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-[#111113] text-white dark:bg-white dark:text-black shadow-sm">
+            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-8 sm:mb-12 pb-6 border-b border-night-border">
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth flex-nowrap -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap pb-1" id="service-filter-tabs">
+                    <button type="button" data-filter="all" class="service-tab active flex-shrink-0 whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-[#111113] text-white dark:bg-white dark:text-black shadow-sm">
                         Semua Layanan (6)
                     </button>
-                    <button type="button" data-filter="web" class="service-tab px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
+                    <button type="button" data-filter="web" class="service-tab flex-shrink-0 whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
                         Web &amp; Landing Page (2)
                     </button>
-                    <button type="button" data-filter="ecommerce" class="service-tab px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
+                    <button type="button" data-filter="ecommerce" class="service-tab flex-shrink-0 whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
                         Toko Online (1)
                     </button>
-                    <button type="button" data-filter="saas" class="service-tab px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
+                    <button type="button" data-filter="saas" class="service-tab flex-shrink-0 whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
                         SaaS &amp; Web App (1)
                     </button>
-                    <button type="button" data-filter="maintenance" class="service-tab px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
+                    <button type="button" data-filter="maintenance" class="service-tab flex-shrink-0 whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
                         Optimasi &amp; Care (2)
                     </button>
                 </div>
 
-                <div class="text-xs text-night-dim font-mono">
+                <div class="text-[11px] sm:text-xs text-night-dim font-mono">
                     * Semua layanan menyertakan setup domain, deployment server, dan garansi pasca-rilis
                 </div>
             </div>
@@ -90,7 +90,7 @@
             <div class="space-y-8" id="services-container">
 
                 <!-- 01. Website & Web Application Development -->
-                <article class="service-card studio-card p-7 sm:p-10 border border-night-border hover:border-night-text transition-all duration-300" data-category="web">
+                <article class="service-card studio-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="web">
                     <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                         <div class="space-y-2">
                             <div class="flex items-center gap-3">
@@ -170,7 +170,7 @@
                 </article>
 
                 <!-- 02. Website Company Profile & Portal Korporat -->
-                <article class="service-card studio-card p-7 sm:p-10 border border-night-border hover:border-night-text transition-all duration-300" data-category="web">
+                <article class="service-card studio-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="web">
                     <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                         <div class="space-y-2">
                             <div class="flex items-center gap-3">
@@ -249,7 +249,7 @@
                 </article>
 
                 <!-- 03. Toko Online (E-Commerce) & WhatsApp Catalog -->
-                <article class="service-card studio-card p-7 sm:p-10 border border-night-border hover:border-night-text transition-all duration-300" data-category="ecommerce">
+                <article class="service-card studio-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="ecommerce">
                     <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                         <div class="space-y-2">
                             <div class="flex items-center gap-3">
@@ -328,7 +328,7 @@
                 </article>
 
                 <!-- 04. SaaS Product Development & Aplikasi Web Custom -->
-                <article class="service-card studio-card p-7 sm:p-10 border border-night-border hover:border-night-text transition-all duration-300" data-category="saas">
+                <article class="service-card studio-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="saas">
                     <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                         <div class="space-y-2">
                             <div class="flex items-center gap-3">
@@ -407,7 +407,7 @@
                 </article>
 
                 <!-- 05. Modernisasi, Redesain & Speed Optimization -->
-                <article class="service-card studio-card p-7 sm:p-10 border border-night-border hover:border-night-text transition-all duration-300" data-category="maintenance">
+                <article class="service-card studio-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="maintenance">
                     <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                         <div class="space-y-2">
                             <div class="flex items-center gap-3">
@@ -486,7 +486,7 @@
                 </article>
 
                 <!-- 06. Workflow Automation & Systems Integration -->
-                <article class="service-card studio-card p-7 sm:p-10 border border-night-border hover:border-night-text transition-all duration-300" data-category="maintenance">
+                <article class="service-card studio-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="maintenance">
                     <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-night-border">
                         <div class="space-y-2">
                             <div class="flex items-center gap-3">
@@ -571,9 +571,9 @@
     <!-- ========================================================================= -->
     <!-- ENGINEERING EXCELLENCE & STANDARDS                                        -->
     <!-- ========================================================================= -->
-    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-midnight border-t border-night-border">
+    <section class="reveal-init py-12 sm:py-24 px-4 sm:px-8 bg-night-midnight border-t border-night-border">
         <div class="max-w-7xl mx-auto">
-            <div class="max-w-2xl mb-14">
+            <div class="max-w-2xl mb-10 sm:mb-14">
                 <span class="text-xs font-mono uppercase tracking-[0.2em] text-emerald-600 dark:text-emerald-400 font-bold block mb-3">
                     STANDAR REKAYASA SISTEM
                 </span>
@@ -585,9 +585,9 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <!-- Standard 1 -->
-                <div class="p-6 rounded-2xl bg-night-surface border border-night-border space-y-3">
+                <div class="p-5 sm:p-6 rounded-2xl bg-night-surface border border-night-border space-y-3">
                     <div class="w-10 h-10 rounded-xl bg-night-midnight border border-night-border flex items-center justify-center text-emerald-500 font-mono font-bold text-sm">
                         01
                     </div>
@@ -598,7 +598,7 @@
                 </div>
 
                 <!-- Standard 2 -->
-                <div class="p-6 rounded-2xl bg-night-surface border border-night-border space-y-3">
+                <div class="p-5 sm:p-6 rounded-2xl bg-night-surface border border-night-border space-y-3">
                     <div class="w-10 h-10 rounded-xl bg-night-midnight border border-night-border flex items-center justify-center text-emerald-500 font-mono font-bold text-sm">
                         02
                     </div>
@@ -609,7 +609,7 @@
                 </div>
 
                 <!-- Standard 3 -->
-                <div class="p-6 rounded-2xl bg-night-surface border border-night-border space-y-3">
+                <div class="p-5 sm:p-6 rounded-2xl bg-night-surface border border-night-border space-y-3">
                     <div class="w-10 h-10 rounded-xl bg-night-midnight border border-night-border flex items-center justify-center text-emerald-500 font-mono font-bold text-sm">
                         03
                     </div>
@@ -620,7 +620,7 @@
                 </div>
 
                 <!-- Standard 4 -->
-                <div class="p-6 rounded-2xl bg-night-surface border border-night-border space-y-3">
+                <div class="p-5 sm:p-6 rounded-2xl bg-night-surface border border-night-border space-y-3">
                     <div class="w-10 h-10 rounded-xl bg-night-midnight border border-night-border flex items-center justify-center text-emerald-500 font-mono font-bold text-sm">
                         04
                     </div>
@@ -636,9 +636,9 @@
     <!-- ========================================================================= -->
     <!-- SYSTEM DELIVERY PIPELINE                                                  -->
     <!-- ========================================================================= -->
-    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-base border-t border-night-border">
+    <section class="reveal-init py-12 sm:py-24 px-4 sm:px-8 bg-night-base border-t border-night-border">
         <div class="max-w-7xl mx-auto">
-            <div class="max-w-2xl mb-14">
+            <div class="max-w-2xl mb-10 sm:mb-14">
                 <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold block mb-3">
                     METODOLOGI PENGERJAAN
                 </span>
@@ -650,9 +650,9 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <!-- Step 1 -->
-                <div class="relative p-6 rounded-2xl bg-night-surface border border-night-border">
+                <div class="relative p-5 sm:p-6 rounded-2xl bg-night-surface border border-night-border">
                     <div class="text-[11px] font-mono font-bold text-night-dim mb-3">LANGKAH 01</div>
                     <h4 class="text-sm font-bold text-night-text mb-2">Discovery &amp; Briefing</h4>
                     <p class="text-xs text-night-muted leading-relaxed">
@@ -661,7 +661,7 @@
                 </div>
 
                 <!-- Step 2 -->
-                <div class="relative p-6 rounded-2xl bg-night-surface border border-night-border">
+                <div class="relative p-5 sm:p-6 rounded-2xl bg-night-surface border border-night-border">
                     <div class="text-[11px] font-mono font-bold text-night-dim mb-3">LANGKAH 02</div>
                     <h4 class="text-sm font-bold text-night-text mb-2">UI/UX &amp; Prototyping</h4>
                     <p class="text-xs text-night-muted leading-relaxed">
@@ -670,7 +670,7 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div class="relative p-6 rounded-2xl bg-night-surface border border-night-border">
+                <div class="relative p-5 sm:p-6 rounded-2xl bg-night-surface border border-night-border">
                     <div class="text-[11px] font-mono font-bold text-night-dim mb-3">LANGKAH 03</div>
                     <h4 class="text-sm font-bold text-night-text mb-2">Clean Coding &amp; Integrasi</h4>
                     <p class="text-xs text-night-muted leading-relaxed">
@@ -679,7 +679,7 @@
                 </div>
 
                 <!-- Step 4 -->
-                <div class="relative p-6 rounded-2xl bg-night-surface border border-night-border">
+                <div class="relative p-5 sm:p-6 rounded-2xl bg-night-surface border border-night-border">
                     <div class="text-[11px] font-mono font-bold text-night-dim mb-3">LANGKAH 04</div>
                     <h4 class="text-sm font-bold text-night-text mb-2">Testing, Go-Live &amp; Handover</h4>
                     <p class="text-xs text-night-muted leading-relaxed">
@@ -693,13 +693,13 @@
     <!-- ========================================================================= -->
     <!-- BOTTOM CALL TO ACTION                                                     -->
     <!-- ========================================================================= -->
-    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-base border-t border-night-border">
+    <section class="reveal-init py-12 sm:py-24 px-4 sm:px-8 bg-night-base border-t border-night-border">
         <div class="max-w-7xl mx-auto">
-            <div class="rounded-3xl p-8 sm:p-14 bg-[#0E0E10] text-white border border-white/10 shadow-2xl relative overflow-hidden">
+            <div class="rounded-2xl sm:rounded-3xl p-6 sm:p-12 lg:p-14 bg-[#0E0E10] text-white border border-white/10 shadow-2xl relative overflow-hidden">
                 <!-- Ambient Subtle Glow -->
                 <div class="absolute -top-24 -right-20 w-80 h-80 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
 
-                <div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                <div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 sm:gap-8">
                     <div class="max-w-2xl space-y-3">
                         <span class="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-bold">
                             KONSULTASI GRATIS &bull; TANPA KOMITMEN
@@ -712,14 +712,14 @@
                         </p>
                     </div>
 
-                    <div class="flex flex-wrap items-center gap-3.5 flex-shrink-0">
-                        <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20layanan%20rekayasa%20website" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 text-xs font-semibold btn-pill-white">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto flex-shrink-0">
+                        <a href="https://wa.me/6289516885651?text=Halo%20OXID%20Labs,%20saya%20ingin%20konsultasi%20layanan%20rekayasa%20website" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 text-xs font-semibold btn-pill-white text-center">
                             Chat WhatsApp Langsung &rarr;
                         </a>
-                        <a href="{{ route('pricing') }}" class="px-6 py-3.5 text-xs font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all duration-200">
+                        <a href="{{ route('pricing') }}" class="px-6 py-3.5 text-xs font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all duration-200 text-center">
                             Lihat Katalog Harga
                         </a>
-                        <a href="{{ route('contact') }}" class="px-6 py-3.5 text-xs font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all duration-200">
+                        <a href="{{ route('contact') }}" class="px-6 py-3.5 text-xs font-semibold rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all duration-200 text-center">
                             Kirim Formulir Brief
                         </a>
                     </div>

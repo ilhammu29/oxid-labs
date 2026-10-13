@@ -88,7 +88,7 @@
                 <!-- Sub-strip Caption Bar -->
                 <div id="gallery-caption-bar" class="px-5 py-2 border-t border-night-border/40 bg-night-base/60 text-[11px] font-mono text-night-dim flex items-center justify-between gap-4">
                     <span id="gallery-caption-text" class="truncate">Architecture Overview</span>
-                    <span class="hidden sm:inline-block text-[10px] text-night-dim/70 font-mono">Use &larr; &rarr; keys to browse</span>
+                    <span id="gallery-keyboard-hint" class="hidden sm:inline-block text-[10px] text-night-dim/70 font-mono">Use &larr; &rarr; keys to browse</span>
                 </div>
 
                 <!-- Thumbnail Navigation Strip (Shown only when 2+ items exist) -->
@@ -377,17 +377,23 @@
             activeSlideIndex = (index + total) % total;
             const item = currentMediaList[activeSlideIndex];
 
-            // Counter Badge
+            // Counter Badge (Hide if only single primary image)
             if (counterBadge) {
-                counterBadge.classList.remove('hidden');
-                const currStr = String(activeSlideIndex + 1).padStart(2, '0');
-                const totalStr = String(total).padStart(2, '0');
-                counterBadge.textContent = `${currStr} / ${totalStr}`;
+                if (total <= 1) {
+                    counterBadge.classList.add('hidden');
+                } else {
+                    counterBadge.classList.remove('hidden');
+                    const currStr = String(activeSlideIndex + 1).padStart(2, '0');
+                    const totalStr = String(total).padStart(2, '0');
+                    counterBadge.textContent = `${currStr} / ${totalStr}`;
+                }
             }
 
             // Previous/Next visibility (hide if single item)
             if (prevBtn) prevBtn.classList.toggle('hidden', total <= 1);
             if (nextBtn) nextBtn.classList.toggle('hidden', total <= 1);
+            const keyboardHint = document.getElementById('gallery-keyboard-hint');
+            if (keyboardHint) keyboardHint.classList.toggle('hidden', total <= 1);
 
             // Caption Text
             if (captionText) {

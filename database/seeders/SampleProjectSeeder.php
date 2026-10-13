@@ -22,10 +22,7 @@ class SampleProjectSeeder extends Seeder
                 'summary' => 'Engine kalkulasi HPP dan margin menu kuliner berbasis batch & resep pintar untuk UMKM.',
                 'description' => "PawonHPP adalah aplikasi SaaS modern yang membantu pemilik usaha kuliner menghitung harga pokok produksi (HPP) secara presisi, mengelola multi-resep dinamis, memantau fluktuasi harga bahan baku, dan menyimulasikan margin laba kotor.\n\nDibangun dengan arsitektur multi-tenant, isolasi Row-Level Security, ekspor laporan real-time (.xlsx & PDF), serta antarmuka mobile-first yang dioptimalkan untuk operasional dapur harian.",
                 'thumbnail' => 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80',
-                'gallery' => [
-                    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80'
-                ],
+                'gallery' => null,
                 'video_url' => null,
                 'tech_stack' => ['Laravel 11', 'Next.js', 'Tailwind CSS', 'PostgreSQL / SQLite', 'Supabase RLS'],
                 'demo_url' => 'https://oxidlabs.my.id',
@@ -42,9 +39,7 @@ class SampleProjectSeeder extends Seeder
                 'summary' => 'High-throughput microservices backend dan distributed cache orchestration engine.',
                 'description' => "Katalis adalah engine komputasi backend modular yang dirancang untuk memproses aliran data streaming berlatensi rendah. Dilengkapi arsitektur event-driven, pipeline otentikasi zero-trust, serta dasbor telemetri real-time dengan latency sub-milidetik.",
                 'thumbnail' => 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80',
-                'gallery' => [
-                    'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80'
-                ],
+                'gallery' => null,
                 'video_url' => '/videos/katalis-demo.mp4',
                 'tech_stack' => ['Laravel 11', 'Go', 'Redis Cluster', 'PostgreSQL', 'Docker'],
                 'demo_url' => 'https://oxidlabs.my.id',
@@ -61,9 +56,7 @@ class SampleProjectSeeder extends Seeder
                 'summary' => 'Platform gateway multi-currency dengan verifikasi transaksi instan dan audit telemetri.',
                 'description' => "Sistem pemrosesan pembayaran dan settlement terdistribusi yang menggabungkan audit otomatis transaksi, kalkulator likuiditas real-time, dan webhook reliable delivery dengan zero-packet drop.",
                 'thumbnail' => 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80',
-                'gallery' => [
-                    'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80'
-                ],
+                'gallery' => null,
                 'video_url' => null,
                 'tech_stack' => ['Laravel', 'Vue 3', 'Tailwind CSS', 'Redis', 'PostgreSQL'],
                 'demo_url' => 'https://oxidlabs.my.id',
@@ -97,9 +90,7 @@ class SampleProjectSeeder extends Seeder
                 'summary' => 'Monitoring telemetri server edge dan health checks terdistribusi dengan visualisasi real-time.',
                 'description' => "Apex memantau ketersediaan node server, latensi DNS, dan penggunaan resource sistem secara simultan dengan sistem notifikasi peringatan dini otomatis.",
                 'thumbnail' => 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
-                'gallery' => [
-                    'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80'
-                ],
+                'gallery' => null,
                 'video_url' => null,
                 'tech_stack' => ['Laravel', 'TimescaleDB', 'Tailwind CSS', 'Docker', 'WebSockets'],
                 'demo_url' => null,

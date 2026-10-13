@@ -34,11 +34,18 @@
                 }
             });
         }, {
-            threshold: 0.08,
-            rootMargin: '0px 0px -40px 0px'
+            threshold: 0.01,
+            rootMargin: '0px 0px 60px 0px'
         });
 
-        revealElements.forEach(el => observer.observe(el));
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight + 60) {
+                el.classList.add('reveal-active');
+            } else {
+                observer.observe(el);
+            }
+        });
     }
 
     // =========================================================================

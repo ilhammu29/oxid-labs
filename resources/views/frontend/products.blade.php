@@ -239,84 +239,84 @@
                 <span class="text-xs text-night-dim font-mono">Pilih kategori untuk memfilter</span>
             </div>
 
-            <div class="grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-8 gap-2.5 sm:gap-3" id="marketplace-category-tiles">
+            <div class="flex overflow-x-auto no-scrollbar scroll-smooth gap-2.5 sm:gap-3 pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-4 lg:grid-cols-8" id="marketplace-category-tiles">
                 
                 <!-- Tile 1: Semua Kategori -->
-                <button type="button" data-filter="all" class="category-tile active group flex flex-col items-center gap-2 p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center">
+                <button type="button" data-filter="all" class="category-tile active group flex-shrink-0 w-[100px] sm:w-auto flex flex-col items-center gap-2 p-2.5 sm:p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center select-none">
                     <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-slate-700 to-zinc-900 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-110">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
                     </span>
-                    <span class="text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-1 leading-tight">
+                    <span class="text-[10.5px] sm:text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-2 w-full h-7 flex items-center justify-center leading-tight">
                         Semua
                     </span>
                 </button>
 
                 <!-- Tile 2: Landing Page -->
-                <button type="button" data-filter="landing-page" class="category-tile group flex flex-col items-center gap-2 p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center">
+                <button type="button" data-filter="landing-page" class="category-tile group flex-shrink-0 w-[100px] sm:w-auto flex flex-col items-center gap-2 p-2.5 sm:p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center select-none">
                     <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-rose-500 to-orange-500 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-110">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </span>
-                    <span class="text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-1 leading-tight">
+                    <span class="text-[10.5px] sm:text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-2 w-full h-7 flex items-center justify-center leading-tight">
                         Landing Page
                     </span>
                 </button>
 
                 <!-- Tile 3: E-Commerce -->
-                <button type="button" data-filter="e-commerce" class="category-tile group flex flex-col items-center gap-2 p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center">
+                <button type="button" data-filter="e-commerce" class="category-tile group flex-shrink-0 w-[100px] sm:w-auto flex flex-col items-center gap-2 p-2.5 sm:p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center select-none">
                     <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-fuchsia-500 to-pink-600 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-110">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                     </span>
-                    <span class="text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-1 leading-tight">
+                    <span class="text-[10.5px] sm:text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-2 w-full h-7 flex items-center justify-center leading-tight">
                         Toko Online
                     </span>
                 </button>
 
                 <!-- Tile 4: Company Profile -->
-                <button type="button" data-filter="company-profile" class="category-tile group flex flex-col items-center gap-2 p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center">
+                <button type="button" data-filter="company-profile" class="category-tile group flex-shrink-0 w-[100px] sm:w-auto flex flex-col items-center gap-2 p-2.5 sm:p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center select-none">
                     <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-110">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     </span>
-                    <span class="text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-1 leading-tight">
+                    <span class="text-[10.5px] sm:text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-2 w-full h-7 flex items-center justify-center leading-tight">
                         Company Profile
                     </span>
                 </button>
 
                 <!-- Tile 5: SaaS & Web App -->
-                <button type="button" data-filter="saas-platform" class="category-tile group flex flex-col items-center gap-2 p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center">
+                <button type="button" data-filter="saas-platform" class="category-tile group flex-shrink-0 w-[100px] sm:w-auto flex flex-col items-center gap-2 p-2.5 sm:p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center select-none">
                     <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-110">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     </span>
-                    <span class="text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-1 leading-tight">
+                    <span class="text-[10.5px] sm:text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-2 w-full h-7 flex items-center justify-center leading-tight">
                         SaaS Platform
                     </span>
                 </button>
 
                 <!-- Tile 6: Design System & 3D -->
-                <button type="button" data-filter="ui-ux-design" class="category-tile group flex flex-col items-center gap-2 p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center">
+                <button type="button" data-filter="ui-ux-design" class="category-tile group flex-shrink-0 w-[100px] sm:w-auto flex flex-col items-center gap-2 p-2.5 sm:p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center select-none">
                     <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-110">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
                     </span>
-                    <span class="text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-1 leading-tight">
+                    <span class="text-[10.5px] sm:text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-2 w-full h-7 flex items-center justify-center leading-tight">
                         UI/UX &amp; 3D
                     </span>
                 </button>
 
                 <!-- Tile 7: Dashboard Internal -->
-                <button type="button" data-filter="web-development" class="category-tile group flex flex-col items-center gap-2 p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center">
+                <button type="button" data-filter="web-development" class="category-tile group flex-shrink-0 w-[100px] sm:w-auto flex flex-col items-center gap-2 p-2.5 sm:p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center select-none">
                     <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-110">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                     </span>
-                    <span class="text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-1 leading-tight">
+                    <span class="text-[10.5px] sm:text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-2 w-full h-7 flex items-center justify-center leading-tight">
                         Dashboard
                     </span>
                 </button>
 
                 <!-- Tile 8: API & Backend -->
-                <button type="button" data-filter="api-service" class="category-tile group flex flex-col items-center gap-2 p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center">
+                <button type="button" data-filter="api-service" class="category-tile group flex-shrink-0 w-[100px] sm:w-auto flex flex-col items-center gap-2 p-2.5 sm:p-3 rounded-2xl bg-night-surface border border-night-border hover:border-slate-800 dark:hover:border-white transition-all text-center select-none">
                     <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-110">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                     </span>
-                    <span class="text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-1 leading-tight">
+                    <span class="text-[10.5px] sm:text-[11px] font-bold text-night-text group-hover:text-black dark:group-hover:text-white line-clamp-2 w-full h-7 flex items-center justify-center leading-tight">
                         API &amp; Backend
                     </span>
                 </button>

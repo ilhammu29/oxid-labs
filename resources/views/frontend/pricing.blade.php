@@ -7,46 +7,46 @@
     <!-- ========================================================================= -->
     <!-- HERO SECTION: PRICING CATALOG (Seamlessly integrated with header)          -->
     <!-- ========================================================================= -->
-    <section id="dark-hero-section" class="relative w-full pt-28 sm:pt-36 pb-16 sm:pb-24 bg-[#0E0E10] text-white border-b border-white/10 overflow-hidden select-none">
+    <section id="dark-hero-section" class="relative w-full pt-24 sm:pt-32 pb-10 sm:pb-20 bg-[#0E0E10] text-white border-b border-white/10 overflow-hidden select-none">
         <!-- Atmospheric Diffuse Glows -->
         <div class="absolute -top-32 -right-20 w-[550px] lg:w-[750px] h-[550px] lg:h-[750px] rounded-full bg-gradient-to-bl from-emerald-400/15 via-teal-500/10 to-transparent blur-[130px] pointer-events-none z-0"></div>
         <div class="absolute -bottom-32 -left-20 w-[450px] lg:w-[650px] h-[450px] lg:h-[650px] rounded-full bg-gradient-to-tr from-cyan-500/15 via-blue-500/5 to-transparent blur-[120px] pointer-events-none z-0"></div>
 
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
             <div class="max-w-3xl">
                 <!-- Eyebrow -->
-                <div class="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-4">
+                <div class="text-[11px] sm:text-xs uppercase tracking-widest text-zinc-400 font-bold mb-3 sm:mb-4">
                     KATALOG HARGA &bull; PROMO LAUNCHING STUDIO
                 </div>
 
                 <!-- Headline -->
-                <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.12] mb-6">
-                    Katalog Harga Layanan <br>
+                <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-4 sm:mb-6">
+                    Katalog Harga Layanan <br class="hidden sm:inline">
                     <span class="bg-gradient-to-b from-white via-white to-zinc-400 bg-clip-text text-transparent">
                         &amp; Solusi Digital Modern
                     </span>
                 </h1>
 
                 <!-- Subtitle -->
-                <p class="text-sm sm:text-base md:text-lg text-zinc-400 leading-relaxed font-normal mb-8 max-w-2xl">
+                <p class="text-xs sm:text-base md:text-lg text-zinc-400 leading-relaxed font-normal mb-6 sm:mb-8 max-w-2xl">
                     Investasi transparan tanpa biaya siluman. Dapatkan arsitektur website berkinerja tinggi, kode bersih 100% hak milik, dan diskon promo khusus untuk paket Landing Page pilihan.
                 </p>
 
                 <!-- Value Proposition Trust Bar -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 font-mono text-xs text-zinc-300">
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 pt-1 font-mono text-[11px] sm:text-xs text-zinc-300">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
                         <span class="text-emerald-400 font-bold">&check;</span>
                         <span>100% Hak Milik</span>
                     </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
                         <span class="text-emerald-400 font-bold">&check;</span>
                         <span>Free SSL &amp; Setup</span>
                     </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
                         <span class="text-emerald-400 font-bold">&check;</span>
                         <span>Garansi Support</span>
                     </div>
-                    <div class="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2">
                         <span class="text-emerald-400 font-bold">&check;</span>
                         <span>DP Fleksibel 50%</span>
                     </div>
@@ -58,39 +58,39 @@
     <!-- ========================================================================= -->
     <!-- PRICING TIERS & CATALOG FILTER SECTION                                    -->
     <!-- ========================================================================= -->
-    <section class="reveal-init py-16 sm:py-24 px-6 sm:px-8 bg-night-base min-h-screen">
+    <section class="py-10 sm:py-20 px-4 sm:px-8 bg-night-base min-h-screen">
         <div class="max-w-7xl mx-auto">
 
-            <!-- Category Filter Tabs -->
-            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-12 pb-6 border-b border-night-border">
-                <div class="flex flex-wrap items-center gap-2" id="pricing-filter-tabs">
-                    <button type="button" data-category="all" class="pricing-tab active px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-[#111113] text-white dark:bg-white dark:text-black shadow-sm">
+            <!-- Category Filter Tabs (Swipeable on mobile, flex-wrap on tablet/desktop) -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3 sm:gap-4 mb-8 sm:mb-12 pb-4 sm:pb-6 border-b border-night-border">
+                <div class="flex overflow-x-auto no-scrollbar scroll-smooth gap-2 py-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap items-center" id="pricing-filter-tabs">
+                    <button type="button" data-category="all" class="pricing-tab active whitespace-nowrap flex-shrink-0 px-3.5 sm:px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-[#111113] text-white dark:bg-white dark:text-black shadow-sm">
                         Semua Paket (10)
                     </button>
-                    <button type="button" data-category="landing" class="pricing-tab px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
+                    <button type="button" data-category="landing" class="pricing-tab whitespace-nowrap flex-shrink-0 px-3.5 sm:px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
                         Landing Page Kilat (3)
                     </button>
-                    <button type="button" data-category="business" class="pricing-tab px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
+                    <button type="button" data-category="business" class="pricing-tab whitespace-nowrap flex-shrink-0 px-3.5 sm:px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
                         Website Bisnis &amp; Toko (3)
                     </button>
-                    <button type="button" data-category="webapp" class="pricing-tab px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
+                    <button type="button" data-category="webapp" class="pricing-tab whitespace-nowrap flex-shrink-0 px-3.5 sm:px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
                         SaaS &amp; Web App (2)
                     </button>
-                    <button type="button" data-category="optimization" class="pricing-tab px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
+                    <button type="button" data-category="optimization" class="pricing-tab whitespace-nowrap flex-shrink-0 px-3.5 sm:px-4 py-2 rounded-full text-xs font-semibold text-night-muted hover:text-night-text bg-night-surface border border-night-border hover:border-night-text transition-all duration-200">
                         Optimasi &amp; Care (2)
                     </button>
                 </div>
 
-                <div class="text-xs text-night-dim font-mono">
+                <div class="text-[11px] sm:text-xs text-night-dim font-mono">
                     * Pembayaran bertahap: DP 50% di awal, pelunasan 50% setelah website live
                 </div>
             </div>
 
             <!-- Pricing Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="pricing-cards-grid">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8" id="pricing-cards-grid">
                 
                 <!-- 1. Landing Page Starter (TIDAK ADA DISKON - Harga Normal) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="landing">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="landing">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -151,9 +151,9 @@
                 </div>
 
                 <!-- 2. Pro Conversion Landing Page (MEMILIKI DISKON - PALING LARIS) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border-2 border-slate-900 dark:border-white shadow-xl hover:-translate-y-1 transition-all duration-300" data-category="landing">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border-2 border-slate-900 dark:border-white shadow-xl hover:-translate-y-1 transition-all duration-300" data-category="landing">
                     <!-- Populer Tag -->
-                    <div class="absolute -top-3.5 right-6 px-3.5 py-1 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-[10px] font-mono tracking-widest uppercase font-bold shadow-md">
+                    <div class="absolute -top-3 right-4 sm:-top-3.5 sm:right-6 px-3 py-0.5 sm:px-3.5 sm:py-1 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-[9px] sm:text-[10px] font-mono tracking-widest uppercase font-bold shadow-md">
                         PALING LARIS
                     </div>
 
@@ -221,7 +221,7 @@
                 </div>
 
                 <!-- 3. 3D Interactive & Immersive Landing Page (MEMILIKI DISKON) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="landing">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="landing">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -286,7 +286,7 @@
                 </div>
 
                 <!-- 4. Company Profile Bisnis & UMKM (TIDAK ADA DISKON - Harga Normal) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="business">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="business">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -347,7 +347,7 @@
                 </div>
 
                 <!-- 5. Toko Online & E-Commerce WhatsApp (TIDAK ADA DISKON - Harga Normal) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="business">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="business">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -408,7 +408,7 @@
                 </div>
 
                 <!-- 6. Corporate Brand Authority Portal (TIDAK ADA DISKON - Harga Normal) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="business">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="business">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -469,7 +469,7 @@
                 </div>
 
                 <!-- 7. SaaS MVP Prototype (TIDAK ADA DISKON - Harga Normal) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="webapp">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="webapp">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -530,7 +530,7 @@
                 </div>
 
                 <!-- 8. Dashboard & Internal Tool (TIDAK ADA DISKON - Harga Normal) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="webapp">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="webapp">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -591,7 +591,7 @@
                 </div>
 
                 <!-- 9. Speed Optimization & Core Web Vitals (TIDAK ADA DISKON - Harga Normal) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="optimization">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="optimization">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -652,7 +652,7 @@
                 </div>
 
                 <!-- 10. Monthly Care & Cloud Maintenance (TIDAK ADA DISKON - Harga Normal) -->
-                <div class="pricing-card studio-card p-7 sm:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="optimization">
+                <div class="pricing-card studio-card p-5 sm:p-7 lg:p-8 flex flex-col justify-between relative rounded-2xl sm:rounded-3xl border border-night-border hover:border-night-text transition-all duration-300" data-category="optimization">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] font-mono tracking-widest uppercase text-slate-500 font-bold">
@@ -717,9 +717,9 @@
             <!-- ========================================================================= -->
             <!-- FEATURE COMPARISON TABLE                                                  -->
             <!-- ========================================================================= -->
-            <div class="mt-20 pt-16 border-t border-night-border">
-                <div class="text-center max-w-2xl mx-auto mb-12">
-                    <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold block mb-2">
+            <div class="mt-12 sm:mt-20 pt-10 sm:pt-16 border-t border-night-border">
+                <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+                    <span class="text-[11px] sm:text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold block mb-2">
                         TABEL KOMPARASI PAKET
                     </span>
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-night-text tracking-tight">
@@ -727,8 +727,17 @@
                     </h2>
                 </div>
 
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left border-collapse text-xs">
+                <!-- Mobile Swipe Indicator -->
+                <div class="flex items-center justify-between text-[11px] font-mono text-night-dim mb-3 sm:hidden px-1">
+                    <span class="inline-flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                        <span>Geser tabel untuk komparasi lengkap</span>
+                    </span>
+                    <span class="text-[10px] text-night-dim/70">4 Kolom</span>
+                </div>
+
+                <div class="overflow-x-auto rounded-2xl border border-night-border">
+                    <table class="w-full min-w-[620px] text-left border-collapse text-xs">
                         <thead>
                             <tr class="border-b border-night-border">
                                 <th class="py-4 px-6 font-bold text-night-text bg-night-midnight rounded-tl-2xl w-2/5">Fitur &amp; Spesifikasi</th>
@@ -786,11 +795,11 @@
             </div>
 
             <!-- ========================================================================= -->
-            <!-- FREQUENTLY ASKED QUESTIONS (FAQ)                                         -->
+            <!-- FREQUENTLY ASKED QUESTIONS (FAQ)                                          -->
             <!-- ========================================================================= -->
-            <div class="mt-20 pt-16 border-t border-night-border max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold block mb-2">
+            <div class="mt-12 sm:mt-20 pt-10 sm:pt-16 border-t border-night-border max-w-4xl mx-auto">
+                <div class="text-center mb-8 sm:mb-12">
+                    <span class="text-[11px] sm:text-xs font-mono uppercase tracking-[0.2em] text-slate-500 font-bold block mb-2">
                         PERTANYAAN UMUM
                     </span>
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-night-text tracking-tight">
@@ -798,9 +807,9 @@
                     </h2>
                 </div>
 
-                <div class="space-y-4">
-                    <div class="studio-card p-6 rounded-2xl">
-                        <h3 class="text-sm font-bold text-night-text mb-2 flex items-center justify-between">
+                <div class="space-y-3 sm:space-y-4">
+                    <div class="studio-card p-4 sm:p-6 rounded-xl sm:rounded-2xl">
+                        <h3 class="text-xs sm:text-sm font-bold text-night-text mb-2 flex items-center justify-between">
                             <span>Bagaimana alur dan sistem pembayarannya?</span>
                             <span class="text-xs text-night-dim font-mono">01</span>
                         </h3>
@@ -809,8 +818,8 @@
                         </p>
                     </div>
 
-                    <div class="studio-card p-6 rounded-2xl">
-                        <h3 class="text-sm font-bold text-night-text mb-2 flex items-center justify-between">
+                    <div class="studio-card p-4 sm:p-6 rounded-xl sm:rounded-2xl">
+                        <h3 class="text-xs sm:text-sm font-bold text-night-text mb-2 flex items-center justify-between">
                             <span>Apakah saya perlu menyiapkan domain dan hosting sendiri?</span>
                             <span class="text-xs text-night-dim font-mono">02</span>
                         </h3>
@@ -819,8 +828,8 @@
                         </p>
                     </div>
 
-                    <div class="studio-card p-6 rounded-2xl">
-                        <h3 class="text-sm font-bold text-night-text mb-2 flex items-center justify-between">
+                    <div class="studio-card p-4 sm:p-6 rounded-xl sm:rounded-2xl">
+                        <h3 class="text-xs sm:text-sm font-bold text-night-text mb-2 flex items-center justify-between">
                             <span>Apakah ada garansi jika terjadi kendala atau bug pasca peluncuran?</span>
                             <span class="text-xs text-night-dim font-mono">03</span>
                         </h3>
@@ -829,8 +838,8 @@
                         </p>
                     </div>
 
-                    <div class="studio-card p-6 rounded-2xl">
-                        <h3 class="text-sm font-bold text-night-text mb-2 flex items-center justify-between">
+                    <div class="studio-card p-4 sm:p-6 rounded-xl sm:rounded-2xl">
+                        <h3 class="text-xs sm:text-sm font-bold text-night-text mb-2 flex items-center justify-between">
                             <span>Apakah saya memegang kepemilikan penuh atas kode dan website?</span>
                             <span class="text-xs text-night-dim font-mono">04</span>
                         </h3>
@@ -844,7 +853,7 @@
             <!-- ========================================================================= -->
             <!-- CUSTOM QUOTE & CONSULTATION BANNER                                        -->
             <!-- ========================================================================= -->
-            <div class="mt-20 p-8 sm:p-12 rounded-3xl bg-[#0E0E10] text-white border border-white/10 text-center relative overflow-hidden">
+            <div class="mt-12 sm:mt-20 p-6 sm:p-12 rounded-2xl sm:rounded-3xl bg-[#0E0E10] text-white border border-white/10 text-center relative overflow-hidden">
                 <div class="max-w-2xl mx-auto relative z-10">
                     <span class="text-xs font-mono uppercase tracking-[0.2em] text-zinc-400 font-bold block mb-3">
                         KONSULTASI KEBUTUHAN KHUSUS

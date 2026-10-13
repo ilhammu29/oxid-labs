@@ -93,10 +93,13 @@ class Project extends Model
             ];
         }
 
-        // 2. Extra gallery images
+        // 2. Extra gallery images (exclude unsplash dummy stock images)
         if (!empty($this->gallery) && is_array($this->gallery)) {
             foreach ($this->gallery as $index => $item) {
                 if (is_string($item)) {
+                    if (str_contains($item, 'unsplash.com')) {
+                        continue;
+                    }
                     $url = Str::startsWith($item, ['http://', 'https://']) 
                         ? $item 
                         : (Str::startsWith($item, '/') ? asset(ltrim($item, '/')) : asset('storage/' . $item));
@@ -108,8 +111,11 @@ class Project extends Model
                         'caption' => 'Interface Detail ' . ($index + 1)
                     ];
                 } elseif (is_array($item)) {
-                    $type = $item['type'] ?? 'image';
                     $rawUrl = $item['url'] ?? '';
+                    if (str_contains($rawUrl, 'unsplash.com')) {
+                        continue;
+                    }
+                    $type = $item['type'] ?? 'image';
                     $url = Str::startsWith($rawUrl, ['http://', 'https://']) 
                         ? $rawUrl 
                         : (Str::startsWith($rawUrl, '/') ? asset(ltrim($rawUrl, '/')) : asset('storage/' . $rawUrl));
