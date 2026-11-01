@@ -62,7 +62,82 @@
         </div>
 
         <!-- ========================================================================= -->
-        <!-- BOTTOM TECH STRIP (Clean subtle typography without badges or symbols)      -->
+        
+    <!-- ========================================================================= -->
+    <!-- REAL PORTFOLIO CARDBOX SECTION (EXCLUSIVELY 5 OXID LABS PROJECTS)          -->
+    <!-- ========================================================================= -->
+    <section id="portfolio-grid" class="py-20 sm:py-28 px-6 sm:px-8 bg-[#0E0E10] border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                <div>
+                    <span class="block text-xs font-mono uppercase tracking-[0.2em] text-emerald-400 font-bold mb-3">
+                        PORTFOLIO &amp; KARYA UTAMA
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                        Proyek Digital &amp; Platform SaaS Pilihan
+                    </h2>
+                </div>
+                <div class="max-w-md">
+                    <p class="text-sm text-zinc-400 leading-relaxed">
+                        Daftar platform, SaaS, dan aplikasi web live yang dikembangkan dan dioperasikan secara penuh di ekosistem OXID Labs.
+                    </p>
+                </div>
+            </div>
+
+            @if(isset($projects) && $projects->count() > 0)
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    @foreach($projects as $project)
+                        <article class="group relative rounded-2xl bg-[#141418] border border-white/10 hover:border-emerald-500/50 p-7 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10">
+                            <div>
+                                <div class="flex items-center justify-between gap-2 mb-4">
+                                    <span class="px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-white/5 text-emerald-400 border border-emerald-500/20">
+                                        {{ $project->category }}
+                                    </span>
+                                    <span class="text-xs font-mono text-zinc-500">
+                                        {{ $project->year ?? '2026' }}
+                                    </span>
+                                </div>
+
+                                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
+                                    {{ $project->title }}
+                                </h3>
+                                <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6">
+                                    {{ $project->summary }}
+                                </p>
+
+                                @if($project->tech_stack)
+                                    <div class="flex flex-wrap gap-1.5 mb-6">
+                                        @foreach(json_decode($project->tech_stack) as $tech)
+                                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">
+                                                {{ $tech }}
+                                            </span>
+                                        @endforeach
+                                    </div>
+                                @endif
+                            </div>
+
+                            <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+                                <span class="text-xs text-zinc-500 font-mono">
+                                    Client: {{ $project->client_name ?? 'Internal' }}
+                                </span>
+                                @if($project->demo_url)
+                                    <a href="{{ $project->demo_url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                                        <span>Live Demo</span>
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                    </a>
+                                @endif
+                            </div>
+                        </article>
+                    @endforeach
+                </div>
+            @else
+                <p class="text-center text-zinc-500 py-12 font-mono">Belum ada data proyek.</p>
+            @endif
+        </div>
+    </section>
+    
+
+    <!-- BOTTOM TECH STRIP (Clean subtle typography without badges or symbols)      -->
         <!-- ========================================================================= -->
         <div class="relative z-10 max-w-5xl mx-auto w-full pt-8 pb-2 border-t border-white/5 select-none">
             <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-zinc-500 font-mono text-xs opacity-75">
