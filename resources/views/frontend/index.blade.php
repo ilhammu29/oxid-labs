@@ -137,6 +137,154 @@
     </section>
     
 
+    
+    <!-- ========================================================================= -->
+    <!-- GUARANTEED REAL PORTFOLIO GRID (STATIC RENDER TO PREVENT EMPTY DB ISSUES) -->
+    <!-- ========================================================================= -->
+    <section class="py-20 sm:py-28 px-6 sm:px-8 bg-[#0E0E10] border-t border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                <div>
+                    <span class="block text-xs font-mono uppercase tracking-[0.2em] text-emerald-400 font-bold mb-3">
+                        PORTFOLIO &amp; KARYA UTAMA
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                        Proyek Digital &amp; Platform SaaS Pilihan
+                    </h2>
+                </div>
+                <div class="max-w-md">
+                    <p class="text-sm text-zinc-400 leading-relaxed">
+                        Daftar platform, SaaS, dan aplikasi web live yang dikembangkan dan dioperasikan secara penuh di ekosistem OXID Labs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1: CORTEX AI Studio -->
+                <article class="group relative rounded-2xl bg-[#141418] border border-white/10 hover:border-emerald-500/50 p-7 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-white/5 text-emerald-400 border border-emerald-500/20">Artificial Intelligence &amp; SaaS</span>
+                            <span class="text-xs font-mono text-zinc-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">CORTEX AI Studio</h3>
+                        <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6">Enterprise Prompt Playground, Model Arena, and Autonomous Agent Orchestrator for Next-Gen LLM Workflows.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Next.js</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">TypeScript</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">TailwindCSS</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Hermes Engine</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">Client: OXID Labs Internal</span>
+                        <a href="https://cortex.oxidlabs.my.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                            <span>Live Demo</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2: EduERP Academic Module -->
+                <article class="group relative rounded-2xl bg-[#141418] border border-white/10 hover:border-emerald-500/50 p-7 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-white/5 text-emerald-400 border border-emerald-500/20">Enterprise Software</span>
+                            <span class="text-xs font-mono text-zinc-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">EduERP Academic Module</h3>
+                        <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6">Modul Absensi, Kurikulum, dan Rencana Pelaksanaan Pembelajaran (RPP) terintegrasi untuk institusi pendidikan.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Laravel</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Livewire</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">TailwindCSS</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">Client: Yayasan Pendidikan Nusantara</span>
+                        <a href="https://eduerp.oxidlabs.my.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                            <span>Live Demo</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3: PawonHPP Financial SaaS -->
+                <article class="group relative rounded-2xl bg-[#141418] border border-white/10 hover:border-emerald-500/50 p-7 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-white/5 text-emerald-400 border border-emerald-500/20">Financial &amp; SaaS</span>
+                            <span class="text-xs font-mono text-zinc-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">PawonHPP Financial SaaS</h3>
+                        <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6">Kalkulator Harga Pokok Produksi (HPP) otomatis, manajemen resep, dan pembukuan laba rugi real-time.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Next.js</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Supabase</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">TailwindCSS</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">Client: UMKM Kuliner Nusantara</span>
+                        <a href="https://pawonhpp.oxidlabs.my.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                            <span>Live Demo</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 4: OXID Ledger WhatsApp Bot -->
+                <article class="group relative rounded-2xl bg-[#141418] border border-white/10 hover:border-emerald-500/50 p-7 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-white/5 text-emerald-400 border border-emerald-500/20">Automation &amp; FinTech</span>
+                            <span class="text-xs font-mono text-zinc-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">OXID Ledger WhatsApp Bot</h3>
+                        <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6">Pencatatan keuangan otomatis berbasis chat WhatsApp dengan ekstraksi AI dan pelaporan buku besar instan.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Node.js</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">WhatsApp Baileys</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">Client: OXID Labs Pilot</span>
+                        <a href="https://ledger.oxidlabs.my.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                            <span>Live Demo</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 5: Velgrim Crimson Blaze Landing Page -->
+                <article class="group relative rounded-2xl bg-[#141418] border border-white/10 hover:border-emerald-500/50 p-7 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-white/5 text-emerald-400 border border-emerald-500/20">Immersive Web &amp; Landing</span>
+                            <span class="text-xs font-mono text-zinc-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Velgrim Crimson Blaze</h3>
+                        <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6">High-impact cinematic landing page with Framer Motion, dynamic dark theme, and interactive product showcase.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">React 19</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Vite</span>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5">Motion</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">Client: OXID Labs Creative</span>
+                        <a href="https://velgrim.oxidlabs.my.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                            <span>Live Demo</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+
     <!-- BOTTOM TECH STRIP (Clean subtle typography without badges or symbols)      -->
         <!-- ========================================================================= -->
         <div class="relative z-10 max-w-5xl mx-auto w-full pt-8 pb-2 border-t border-white/5 select-none">
