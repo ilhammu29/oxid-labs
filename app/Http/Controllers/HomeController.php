@@ -17,7 +17,7 @@ class HomeController extends Controller
         $featuredProjects = Project::published()
             ->where('is_featured', true)
             ->orderBy('display_order', 'asc')
-            ->take(3)
+            ->take(12)
             ->get();
 
         $projects = Project::published()
